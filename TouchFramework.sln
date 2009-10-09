@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual C# Express 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFramework", "TouchFramework.csproj", "{7C59D620-D502-4916-A503-80B237A0DE8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFramework", "TouchFramework\TouchFramework.csproj", "{7C59D620-D502-4916-A503-80B237A0DE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchExample", "..\TouchExample\TouchExample.csproj", "{628E043F-0F45-4658-91C2-BC319439E016}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchExample", "TouchExample\TouchExample.csproj", "{628E043F-0F45-4658-91C2-BC319439E016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFrameworkTracking", "..\TouchFrameworkTracking\TouchFrameworkTracking.csproj", "{045758F1-33E8-4985-9A10-AAA35EC4EFBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFrameworkTracking", "TouchFrameworkTracking\TouchFrameworkTracking.csproj", "{045758F1-33E8-4985-9A10-AAA35EC4EFBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchControls", "..\TouchControls\TouchControls.csproj", "{D9540245-BBB6-4D42-8204-1553777ABF0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchControls", "TouchControls\TouchControls.csproj", "{D9540245-BBB6-4D42-8204-1553777ABF0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchHelpers", "..\TouchHelpers\TouchHelpers.csproj", "{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchHelpers", "TouchHelpers\TouchHelpers.csproj", "{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
