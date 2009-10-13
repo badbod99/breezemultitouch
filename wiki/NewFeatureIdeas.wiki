@@ -3,8 +3,11 @@
 = Introduction =
 
 1. Drag and drop
+
 2. Cut and paste
+
 3. Multi-touch keyboard
+
 4. Projection control
 
 = Details =
