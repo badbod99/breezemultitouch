@@ -34,6 +34,9 @@ using System.Drawing;
 
 namespace TouchFramework
 {
+    /// <summary>
+    /// Handles simple data about a touch including status, properties and ID
+    /// </summary>
     public class Touch
     {
         public readonly int TouchId;

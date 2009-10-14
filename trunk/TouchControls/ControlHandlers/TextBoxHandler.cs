@@ -37,6 +37,9 @@ using System.Windows.Input;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Implements custom behaviour for selecting and scrolling a textbox.
+    /// </summary>
     public class TextBoxHandler : ElementHandler
     {
         public override void Tap(PointF p)

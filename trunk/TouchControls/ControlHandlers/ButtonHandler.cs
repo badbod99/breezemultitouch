@@ -36,6 +36,9 @@ using System.Windows.Controls;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Custom logic for handling multi-touch button interation
+    /// </summary>
     public class ButtonHandler : ElementHandler
     {
         public override void Tap(PointF p)

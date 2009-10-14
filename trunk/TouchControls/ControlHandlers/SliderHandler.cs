@@ -34,6 +34,9 @@ using System.Windows.Controls;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Implements custom behaviour to handle the slide of a thumb on a slider.
+    /// </summary>
     public class SliderHandler : ElementHandler
     {
         public override void Slide(float x, float y)

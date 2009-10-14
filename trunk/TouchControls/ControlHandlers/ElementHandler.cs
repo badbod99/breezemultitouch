@@ -40,6 +40,11 @@ using TouchFramework.Events;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Provides default behaviour which is applied to all multi-touch element.
+    /// Derive from this class to create custom behaviors for different types of element.
+    /// Note: Currently the static GetHandler method needs to be modified to support additional added handlers.
+    /// </summary>
     public class ElementHandler
     {
         public static ElementHandler GetHandler(FrameworkElement source, Panel cont)
@@ -77,11 +82,23 @@ namespace TouchFramework.ControlHandlers
         public FrameworkElement Source = null;
         public Panel Container = null;
 
+        /// <summary>
+        /// Raises the tap event as a routed event on the element.
+        /// </summary>
+        /// <param name="p">Relative point in element space</param>
         public virtual void Tap(PointF p)
         {
             this.Source.RaiseEvent(new RoutedEventArgs(MTEvents.TapEvent, Source));
         }
 
+        /// <summary>
+        /// Checks if the element has a scroll viewer.  It it does, uses the scroll viewer
+        /// to scroll the content by the number of pixels moved.
+        /// X and Y are inverted so that the scroll works like the iPhone (i.e. the touched
+        /// item sticks to your finger).  Works better without scrollbars shown.
+        /// </summary>
+        /// <param name="x">Change in the horizontal object relative movement center in pixels</param>
+        /// <param name="y">Change in the vertical object relative movement center in pixels</param>
         public virtual void Scroll(float x, float y)
         {
             // This sets it so that we scroll by pixels rather than by lines
@@ -98,21 +115,43 @@ namespace TouchFramework.ControlHandlers
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.ScrollEvent, Source));
         }
 
+        /// <summary>
+        /// Raises the Drag event as a routed event on the element.
+        /// Override this to implement custom drag functionality.
+        /// </summary>
+        /// <param name="x">Horizontal coordinate in screen space of the center of movement.</param>
+        /// <param name="y">Vertical coordinate in screen space of the center of movement.</param>
         public virtual void Drag(float x, float y)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.DragEvent, Source));
         }
 
+        /// <summary>
+        /// Raises the Slide event as a routed event on the element.
+        /// Overeride this to implement custom slide behaviour.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         public virtual void Slide(float x, float y)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.SlideEvent, Source));
         }
 
+        /// <summary>
+        /// Raises the TouchDown event as a routed event on the element.
+        /// Override this to implement custom TouchDown behaviour.
+        /// </summary>
+        /// <param name="p">Point in element relative space of the touch center.</param>
         public virtual void TouchDown(PointF p)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.TouchDownEvent, Source));
         }
 
+        /// <summary>
+        /// Raises the TouchUp event as a routed event on the element.
+        /// Override this to implement custom TouchUp behaviour.
+        /// </summary>
+        /// <param name="p">Last valid point in element relative space of the touch center.</param>
         public virtual void TouchUp(PointF p)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.TouchUpEvent, Source));
