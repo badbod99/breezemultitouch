@@ -32,6 +32,10 @@ using System.Text;
 
 namespace TouchFramework
 {
+    /// <summary>
+    /// Provides support for setting different properties to control a multi-touch element.
+    /// Currently provides only limited functionality, but could easily be extended.
+    /// </summary>
     public class ElementProperties
     {
         const float DEFAULT_DRAG_THRESHOLD = 10;

@@ -77,6 +77,11 @@ namespace TouchFramework
             this.DampingDelay = 1200;
         }
 
+        /// <summary>
+        /// Delay in Milliseconds which handles the length of time the filters run for.
+        /// A lower delay values makes movement faster, a higher value slows everything down.
+        /// The default of 100 is usually fine here.
+        /// </summary>
         public int Delay
         {
             set
@@ -89,6 +94,11 @@ namespace TouchFramework
             }
         }
 
+        /// <summary>
+        /// Delay in Milliseconds which handles the length of time the damping filters run for.
+        /// Damping filters are used for the inertia functionality.  A lower value results in the element
+        /// moving a shorter distance when flicked, a higher value increases the distance.
+        /// </summary>
         public int DampingDelay
         {
             set
