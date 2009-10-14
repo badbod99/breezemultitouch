@@ -95,11 +95,14 @@ namespace TouchExample
             framework.OnProcessUpdates += new FrameworkControl.ProcessUpdatesDelegate(this.DisplayPoints);
             framework.Start();
 
+            // Containers are used to provide multi-touch functionality to any existing WPF control
             MTContainer cont;
-
+            
+            // Element properties defines what features a multi-touch container supports
             ElementProperties prop = new ElementProperties();
             prop.ElementSupport.AddSupport(TouchAction.Tap);
 
+            // We use direct containers to help performance on object that don't move
             cont = new MTDirectContainer(button1, canvas1, prop);
             button1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contbut_Tap));
             framework.RegisterElement(cont);
@@ -122,6 +125,7 @@ namespace TouchExample
             cont.StartY = (int)Canvas.GetTop(textBox1);
 
             prop = new ElementProperties();
+            // The add support function allows for bitwise enum passing to provide support for multiple options easily
             prop.ElementSupport.AddSupport(TouchAction.Tap | TouchAction.Slide | TouchAction.Resize);
 
             cont = new MTDirectContainer(slider1, canvas1, prop);
@@ -134,6 +138,7 @@ namespace TouchExample
             prop = new ElementProperties();
             prop.ElementSupport.AddSupport(TouchAction.Tap | TouchAction.ScrollY | TouchAction.Resize | TouchAction.Drag);
 
+            // We use smooth containers on object which move about, this filters their movement using a linear filter
             cont = new MTSmoothContainer(listBox1, canvas1, prop);
             listBox1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(listbox_Tap));
             listBox1.AddHandler(MTEvents.ScrollEvent, new RoutedEventHandler(listbox_Scroll));
