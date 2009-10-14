@@ -38,11 +38,16 @@ namespace TouchFramework.ControlHandlers
 {
     public class CheckBoxHandler : ElementHandler
     {
+        /// <summary>
+        /// Custom logic for handling multi-touch checkbox interation.
+        /// Basically just switched the IsChecked when the Checkbox is tapped.
+        /// </summary>
         public override void Tap(PointF p)
         {
             CheckBox c = this.Source as CheckBox;
             if (c == null) return;
 
+            // IsChecked is nullable, so this is the most readable way to handle
             if (c.IsChecked == true)
             {
                 c.IsChecked = false;

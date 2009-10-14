@@ -43,6 +43,9 @@ using TouchFramework.Helpers;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Implements custom behaviour for ListBoxes such as item selection and scrolling.
+    /// </summary>
     public class ListBoxHandler : ElementHandler
     {
         public override void Scroll(float x, float y)

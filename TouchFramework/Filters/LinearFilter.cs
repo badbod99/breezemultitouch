@@ -34,6 +34,9 @@ using System.Drawing;
 
 namespace TouchFramework
 {
+    /// <summary>
+    /// Uses an OS timer to accurately provide linear filtering of a variable from one value to another.
+    /// </summary>
     public sealed class LinearFilter
     {
         [DllImport("kernel32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
@@ -221,6 +224,9 @@ namespace TouchFramework
         }
     }
 
+    /// <summary>
+    /// Implements 2 linear filters to provide filtering of a point in x and y.
+    /// </summary>
     public class LinearFilter2d
     {
         #region Fields

@@ -52,6 +52,10 @@ namespace TouchFramework
         Drag = 2048
     }
 
+    /// <summary>
+    /// Handles bitwise support for TouchAction enums to allow containers to 
+    /// easily specify the multiple behaviours they support.
+    /// </summary>
     public class SupportedActions
     {
         TouchAction actions = TouchAction.None;

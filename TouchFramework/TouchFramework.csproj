@@ -77,7 +77,7 @@
     <Compile Include="SupportedActions.cs" />
     <Compile Include="TouchElement.cs" />
     <Compile Include="Containers\MTDirectContainer.cs" />
-    <Compile Include="Containers\MTElementDictionary.cs" />
+    <Compile Include="MTElementDictionary.cs" />
     <Compile Include="TouchElementAssigner.cs" />
     <Compile Include="TouchElementDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
