@@ -32,6 +32,9 @@ using System.Text;
 
 namespace TouchFramework
 {
+    /// <summary>
+    /// If the system config is not done and you attempt to start the framework this exception is used.
+    /// </summary>
     public class NotConfiguredException : Exception
     {
         public NotConfiguredException()

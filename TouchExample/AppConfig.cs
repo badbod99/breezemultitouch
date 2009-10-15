@@ -33,6 +33,9 @@ using TouchFramework;
 
 namespace TouchExample
 {
+    /// <summary>
+    /// Loads data from App.config file for basic app configuration.
+    /// </summary>
     internal static class AppConfig
     {
         const bool DEFAULT_FLIPX = false;

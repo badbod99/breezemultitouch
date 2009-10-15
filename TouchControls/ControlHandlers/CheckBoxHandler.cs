@@ -36,12 +36,12 @@ using System.Windows.Controls;
 
 namespace TouchFramework.ControlHandlers
 {
+    /// <summary>
+    /// Custom logic for handling multi-touch checkbox interation.
+    /// Basically just switched the IsChecked when the Checkbox is tapped.
+    /// </summary>
     public class CheckBoxHandler : ElementHandler
     {
-        /// <summary>
-        /// Custom logic for handling multi-touch checkbox interation.
-        /// Basically just switched the IsChecked when the Checkbox is tapped.
-        /// </summary>
         public override void Tap(PointF p)
         {
             CheckBox c = this.Source as CheckBox;

@@ -30,6 +30,9 @@ using System.Text;
 
 namespace TouchFramework.Helpers
 {
+    /// <summary>
+    /// Some basic math functions.
+    /// </summary>
     public static class ExtMaths
     {
         public static float RadiansToDegrees(float radians)
