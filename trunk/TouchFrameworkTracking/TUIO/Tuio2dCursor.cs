@@ -33,6 +33,9 @@ using TouchFramework.Tracking.Tuio;
 
 namespace TouchFramework.Tracking
 {
+    /// <summary>
+    /// Handles all data required for a TUIO cursor ready to send or receive on OSC.
+    /// </summary>
     public class Tuio2DCursor
     {
         int sessionID;

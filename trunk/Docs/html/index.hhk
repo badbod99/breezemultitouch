@@ -189,6 +189,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#afb76ec368d83658d6bf2c0c37f7b2b3f"><param name="Name" value="LastVelocityY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a646b46ed91c41e1e61035e587ab086ef"><param name="Name" value="Lifted"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a169b21f89a369f4f449536e1841c30d6"><param name="Name" value="Load"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a3c7c9b3d1e7b5b903e61e813195a87d6"><param name="Name" value="LoadDefaults"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a6284ec39fa7ee91702530eb45cf07e0f"><param name="Name" value="LONG"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#ace611ac3db31a0b59ad0645be0505e33"><param name="Name" value="Main"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa76cbeb0048049cb681ae79f0155c945"><param name="Name" value="MaxX"></OBJECT>
@@ -671,6 +672,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html"><param name="Name" value="TouchFramework::Tracking::ProjectionConfig"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a169b21f89a369f4f449536e1841c30d6"><param name="Name" value="Load"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a3c7c9b3d1e7b5b903e61e813195a87d6"><param name="Name" value="LoadDefaults"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#ab6c51b089cfafb99c200a1313cfe0f63"><param name="Name" value="OffsetX"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a9a575c4a0af8c772e60f7696b93a0d53"><param name="Name" value="OffsetY"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a263705d0d06babfe6f9d2427cd472309"><param name="Name" value="ScaleX"></OBJECT>

@@ -33,6 +33,9 @@ using TouchFramework.Tracking.Tuio;
 
 namespace TouchFramework.Tracking
 {
+    /// <summary>
+    /// Parses TUIO messages into TUIO objects.
+    /// </summary>
     public class TuioParser
     {
         public static int GetSequenceNumber(OSCBundle pack)

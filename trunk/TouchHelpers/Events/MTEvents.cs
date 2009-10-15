@@ -30,6 +30,9 @@ using System.Windows;
 
 namespace TouchFramework.Events
 {
+    /// <summary>
+    /// UI routed events to be raised in UIElements when touch actions occur.
+    /// </summary>
     public static class MTEvents
     {
         public static readonly RoutedEvent TapEvent = EventManager.RegisterRoutedEvent(

@@ -36,6 +36,10 @@ using TouchFramework.Tracking;
 
 namespace TouchExample
 {
+    /// <summary>
+    /// Helper class for loading the correct FrameworkControl class based on the type of tracking needed
+    /// and the correct config for that tracking system.
+    /// </summary>
     internal class TrackingHelper
     {
         internal enum TrackingType
@@ -100,6 +104,7 @@ namespace TouchExample
             AppConfig.LoadAppConfig();
 
             ProjectionConfig proj = ProjectionConfig.Load(AppConfig.TrackingPath);
+            if (proj == null) proj = ProjectionConfig.LoadDefaults();
 
             AlignConfig align = new AlignConfig()
             {
@@ -126,6 +131,7 @@ namespace TouchExample
             AppConfig.LoadAppConfig();
 
             ProjectionConfig proj = ProjectionConfig.Load(AppConfig.TrackingPath);
+            if (proj == null) proj = ProjectionConfig.LoadDefaults();
 
             AlignConfig align = new AlignConfig()
             {

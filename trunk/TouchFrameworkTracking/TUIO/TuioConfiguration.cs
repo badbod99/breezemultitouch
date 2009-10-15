@@ -32,6 +32,9 @@ using System.Text;
 
 namespace TouchFramework.Tracking
 {
+    /// <summary>
+    /// Holds configuration for the TUIO receiver.
+    /// </summary>
     public class TuioConfiguration : FrameworkConfiguration
     {
         public int Port = 3333;

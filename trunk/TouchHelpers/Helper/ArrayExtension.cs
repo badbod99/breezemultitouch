@@ -29,6 +29,9 @@ using System;
 
 namespace TouchFramework.Helpers
 {
+    /// <summary>
+    /// Simple extentions for some added Array functionality.
+    /// </summary>
     public static class ArrayExtensions
     {
         public static void Shift<T>(this T[] arr)

@@ -27,6 +27,7 @@ a commercial licence, please contact Mindstorm via www.mindstorm.com.
 
 using System;
 using System.Text;
+using System.IO;
 using System.Xml.XPath;
 
 namespace TouchFramework.Tracking
@@ -54,8 +55,25 @@ namespace TouchFramework.Tracking
             set;
         }
 
+        const float DEFAULT_SCALEX = 1f;
+        const float DEFAULT_SCALEY = 1f;
+        const float DEFAULT_OFFSETX = 0f;
+        const float DEFAULT_OFFSETY = 0f;
+
+        public static ProjectionConfig LoadDefaults()
+        {
+            ProjectionConfig projection = new ProjectionConfig();
+            projection.OffsetX = DEFAULT_OFFSETX;
+            projection.OffsetY = DEFAULT_OFFSETY;
+            projection.ScaleX = DEFAULT_SCALEX;
+            projection.ScaleY = DEFAULT_SCALEY;
+            return projection;
+        }
+
         public static ProjectionConfig Load(string userSettingsPath)
         {
+            if (!File.Exists(userSettingsPath)) return null;
+
             XPathDocument doc = new XPathDocument(userSettingsPath);
             XPathNavigator nav = doc.CreateNavigator();
 

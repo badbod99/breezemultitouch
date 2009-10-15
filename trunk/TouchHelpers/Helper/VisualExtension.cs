@@ -30,6 +30,9 @@ using System.Windows.Media;
 
 namespace TouchFramework.Helpers
 {
+    /// <summary>
+    /// Extends visuals with better searching functionality.
+    /// </summary>
     public static class VisualExtensions
     {
         public static Visual FindChild<T>(this Visual myVisual)

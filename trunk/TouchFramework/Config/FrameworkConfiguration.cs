@@ -30,6 +30,10 @@ using System.Windows;
 
 namespace TouchFramework
 {
+    /// <summary>
+    /// Holds configuration for the framework regarding thread it's running on and 
+    /// the top level UI element which is manging this framework.
+    /// </summary>
     public abstract class FrameworkConfiguration
     {
         public FrameworkElement Owner
