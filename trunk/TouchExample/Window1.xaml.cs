@@ -72,7 +72,7 @@ namespace TouchExample
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
         /// Traal tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Traal;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
