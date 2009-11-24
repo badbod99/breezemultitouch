@@ -195,7 +195,10 @@ namespace TouchExample
         /// </summary>
         void DisplayPoints()
         {
-            RemovePoints();
+            foreach (int i in points.Keys)
+            {
+                if (!framework.AllTouches.Keys.Contains(i)) canvas1.Children.Remove(points[i]);
+            }
             foreach (Touch te in framework.AllTouches.Values)
             {
                 DisplayPoint(te.TouchId, te.TouchPoint);
@@ -233,25 +236,32 @@ namespace TouchExample
             if (points.ContainsKey(id))
             {
                 e = points[id] as Ellipse;
+                e.RenderTransform = new TranslateTransform(p.X - 10, p.Y - 10);
             }
 
             if (e == null)
             {
                 e = new Ellipse();
 
-                e.Stroke = new SolidColorBrush(brushColor);
-                e.Height = 15.0;
-                e.Width = 15.0;
-                e.StrokeThickness = 2.0;
+                brushColor.A = 80;
 
-                canvas1.Children.Add(e);
+                e.Stroke = new SolidColorBrush(brushColor);
+                e.Height = 20.0;
+                e.Width = 20.0;
+
+                brushColor.A = 70;
+
+                e.Fill = new SolidColorBrush(brushColor);
+                e.StrokeThickness = 4.0;
+
                 int eZ = this.framework.MaxZIndex + 100;
+                e.IsHitTestVisible = false;
+
+                e.RenderTransform = new TranslateTransform(p.X - 10, p.Y - 10);
+                canvas1.Children.Add(e);
                 Panel.SetZIndex(e, eZ);
                 points.Add(id, e);
             }
-
-            Canvas.SetLeft(e, p.X);
-            Canvas.SetTop(e, p.Y);
         }
         
         /// <summary>
