@@ -92,7 +92,7 @@ namespace TouchFramework.Tracking
         {
             System.Windows.Point pos = e.GetPosition(mouseConfig.EventWindow);
             PointF p = new PointF((float)pos.X, (float)pos.Y);
-
+            
             moveTid++;
             int id = moveTid;
 
