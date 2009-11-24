@@ -72,7 +72,7 @@ namespace TouchExample
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
         /// Traal tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Traal;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -236,28 +236,36 @@ namespace TouchExample
             if (points.ContainsKey(id))
             {
                 e = points[id] as Ellipse;
-                e.RenderTransform = new TranslateTransform(p.X - 10, p.Y - 10);
+                e.RenderTransform = new TranslateTransform(p.X - 13, p.Y - 13);
             }
 
             if (e == null)
             {
                 e = new Ellipse();
 
-                brushColor.A = 80;
+                RadialGradientBrush radialGradient = new RadialGradientBrush();
+                radialGradient.GradientOrigin = new System.Windows.Point(0.5, 0.5);
+                radialGradient.Center = new System.Windows.Point(0.5, 0.5);
+                radialGradient.RadiusX = 0.5;
+                radialGradient.RadiusY = 0.5;
+                
+                System.Windows.Media.Color shadow = Colors.Black;
+                shadow.A = 30;
+                radialGradient.GradientStops.Add(new GradientStop(shadow, 0.9));
+                brushColor.A = 60;
+                radialGradient.GradientStops.Add(new GradientStop(brushColor, 0.8));
+                brushColor.A = 150;
+                radialGradient.GradientStops.Add(new GradientStop(brushColor, 0.1));
 
-                e.Stroke = new SolidColorBrush(brushColor);
-                e.Height = 20.0;
-                e.Width = 20.0;
+                radialGradient.Freeze();
 
-                brushColor.A = 70;
-
-                e.Fill = new SolidColorBrush(brushColor);
-                e.StrokeThickness = 4.0;
+                e.Height = 26.0;
+                e.Width = 26.0;
+                e.Fill = radialGradient;                
 
                 int eZ = this.framework.MaxZIndex + 100;
                 e.IsHitTestVisible = false;
-
-                e.RenderTransform = new TranslateTransform(p.X - 10, p.Y - 10);
+                e.RenderTransform = new TranslateTransform(p.X - 13, p.Y - 13);
                 canvas1.Children.Add(e);
                 Panel.SetZIndex(e, eZ);
                 points.Add(id, e);
