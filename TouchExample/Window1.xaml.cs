@@ -51,6 +51,7 @@ using System.IO;
 using TouchFramework;
 using TouchFramework.Tracking;
 using TouchFramework.Events;
+using TouchFramework.ControlHandlers;
 
 namespace TouchExample
 {
@@ -60,7 +61,7 @@ namespace TouchExample
     public partial class Window1 : Window
     {
         double screen_width = SystemParameters.PrimaryScreenWidth;
-        double screen_height = SystemParameters.PrimaryScreenHeight;       
+        double screen_height = SystemParameters.PrimaryScreenHeight;   
         double window_width = 640;
         double window_height = 480;
         double window_left = 0;
@@ -70,9 +71,9 @@ namespace TouchExample
         /// This sets the tracking mode between all available modes from TouchFrameworkTracking.
         /// NOTE: If you use Traal (Mindstorm's tracking system) you need to copy ALL the dependencies
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
-        /// Traal tracking system.
+        /// Lightning tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -95,59 +96,9 @@ namespace TouchExample
             framework.OnProcessUpdates += new FrameworkControl.ProcessUpdatesDelegate(this.DisplayPoints);
             framework.Start();
 
-            // Containers are used to provide multi-touch functionality to any existing WPF control
-            MTContainer cont;
-            
-            // Element properties defines what features a multi-touch container supports
-            ElementProperties prop = new ElementProperties();
-            prop.ElementSupport.AddSupport(TouchAction.Tap);
-
-            // We use direct containers to help performance on object that don't move
-            cont = new MTDirectContainer(button1, canvas1, prop);
-            button1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contbut_Tap));
-            framework.RegisterElement(cont);
-            cont.StartX = (int)Canvas.GetLeft(button1);
-            cont.StartY = (int)Canvas.GetTop(button1);
-
-            cont = new MTDirectContainer(checkBox1, canvas1, prop);
-            checkBox1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(check_Tap));
-            framework.RegisterElement(cont);
-            cont.StartX = (int)Canvas.GetLeft(checkBox1);
-            cont.StartY = (int)Canvas.GetTop(checkBox1);
-
-            prop = new ElementProperties();
-            prop.ElementSupport.AddSupport(TouchAction.Tap | TouchAction.ScrollY);
-
-            cont = new MTDirectContainer(textBox1, canvas1, prop);
-            textBox1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(textbox_Tap));
-            framework.RegisterElement(cont);
-            cont.StartX = (int)Canvas.GetLeft(textBox1);
-            cont.StartY = (int)Canvas.GetTop(textBox1);
-
-            prop = new ElementProperties();
-            // The add support function allows for bitwise enum passing to provide support for multiple options easily
-            prop.ElementSupport.AddSupport(TouchAction.Tap | TouchAction.Slide | TouchAction.Resize);
-
-            cont = new MTDirectContainer(slider1, canvas1, prop);
-            slider1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(slider_Tap));
-            slider1.AddHandler(MTEvents.SlideEvent, new RoutedEventHandler(slider_Slide));
-            framework.RegisterElement(cont);
-            cont.StartX = (int)Canvas.GetLeft(slider1);
-            cont.StartY = (int)Canvas.GetTop(slider1);
-
-            prop = new ElementProperties();
-            prop.ElementSupport.AddSupport(TouchAction.Tap | TouchAction.ScrollY | TouchAction.Resize | TouchAction.Drag);
-
-            // We use smooth containers on object which move about, this filters their movement using a linear filter
-            cont = new MTSmoothContainer(listBox1, canvas1, prop);
-            listBox1.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(listbox_Tap));
-            listBox1.AddHandler(MTEvents.ScrollEvent, new RoutedEventHandler(listbox_Scroll));
-            framework.RegisterElement(cont);
-            cont.StartX = (int)Canvas.GetLeft(listBox1);
-            cont.StartY = (int)Canvas.GetTop(listBox1);
-
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
             LoadAllImages(path);
+            LoadAllVideos(path);
         }
 
         void listbox_Tap(object sender, RoutedEventArgs e)
@@ -290,6 +241,34 @@ namespace TouchExample
         }
 
         /// <summary>
+        /// Loads all images within a specified folder.
+        /// </summary>
+        /// <param name="folderName">Folder to load all images from.</param>
+        void LoadAllVideos(string folderName)
+        {
+            string[] fileNames = Directory.GetFiles(folderName);
+            DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
+            foreach (string fileName in fileNames)
+            {
+                if (System.IO.Path.GetExtension(fileName).ToLower() == ".wmv")
+                {
+                    AddVideo(fileName);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Checks if a file has the specified extension
+        /// </summary>
+        /// <param name="filename">Name or path to the file</param>
+        /// <param name="ext">Extension to compare for</param>
+        /// <returns>Whether or not the filename has the extension</returns>
+        bool CheckExtension(string filename, string ext)
+        {
+            return (System.IO.Path.GetExtension(filename).ToLower() == ext);
+        }
+
+        /// <summary>
         /// Creates a new photo and adds it as a touch managed object to the MTElementDictionary withing the framework.
         /// Randomly positions and rotates the photo within the screen area.
         /// </summary>
@@ -323,12 +302,49 @@ namespace TouchExample
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
 
-            //cont.Tap += new RoutedEventHandler(cont_Tap);
             p.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contimg_Tap));
 
             Canvas.SetLeft(p, x);
             Canvas.SetTop(p, y);
         }
+
+        /// <summary>
+        /// Creates a new video and adds it as a touch managed object to the MTElementDictionary withing the framework.
+        /// Randomly positions and rotates the photo within the screen area.
+        /// </summary>
+        /// <param name="filePath">Full path to the image.</param>
+        void AddVideo(string filePath)
+        {
+            VideoControl p = new VideoControl();
+            System.Windows.Shapes.Rectangle i = p.SetVideo(filePath);
+
+            ElementProperties prop = new ElementProperties();
+            prop.ElementSupport.AddSupportForAll();
+
+            MTContainer cont = new MTSmoothContainer(p, canvas1, prop);
+            framework.RegisterElement(cont);
+
+            canvas1.Children.Add(p);
+
+            int x = randomGen.Next(0, (int)screen_width - (int)p.ActualWidth);
+            int y = randomGen.Next(0, (int)screen_height - (int)p.ActualHeight);
+            int a = randomGen.Next(0, 360);
+
+            cont.StartX = x;
+            cont.StartY = y;
+            cont.Rotate(a, new PointF(x, y));
+            cont.ApplyTransforms();
+            cont.MaxX = (int)(this.screen_height);
+            cont.MaxY = (int)(this.screen_width);
+            cont.MinX = (int)(this.screen_height / 10);
+            cont.MinY = (int)(this.screen_width / 10);
+
+            p.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contimg_Tap));
+
+            Canvas.SetLeft(p, x);
+            Canvas.SetTop(p, y);
+        }
+
 
         /// <summary>
         /// Handles key presses to clear the background etc...
@@ -344,13 +360,8 @@ namespace TouchExample
             {
                 framework.ForceRefresh();
             }
-            else if (e.Key == Key.E)
-            {
-                framework.Stop();
-            }
             else if (e.Key == Key.Return)
             {
-
                 fullscreen = !fullscreen;
                 if (fullscreen)
                 {
@@ -360,12 +371,7 @@ namespace TouchExample
                     window_width = this.Width;
                     window_height = this.Height;
 
-                    this.ResizeMode = ResizeMode.NoResize;
-                    this.WindowStyle = WindowStyle.None;
-                    this.Left = 0;
-                    this.Top = 0;
-                    this.Width = screen_width;
-                    this.Height = screen_height;
+                    GoFull();
                 }
                 else
                 {
@@ -377,6 +383,17 @@ namespace TouchExample
                     this.Height = window_height;
                 }
             }
+        }
+
+        void GoFull()
+        {
+            this.Left = 0;
+            this.Top = 0;
+            this.Width = screen_width;
+            this.Height = screen_height;
+            this.ResizeMode = ResizeMode.NoResize;
+            this.WindowStyle = WindowStyle.None;
+            this.Topmost = true;
         }
 
         void Window_Closed(object sender, EventArgs e)

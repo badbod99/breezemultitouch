@@ -40,7 +40,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TouchExample
+namespace TouchFramework.ControlHandlers
 {
     /// <summary>
     /// Interaction logic for Photo.xaml
