@@ -39,6 +39,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -65,10 +66,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Photo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Window1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,9 +76,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConfig.cs" />
-    <Compile Include="Photo.xaml.cs">
-      <DependentUpon>Photo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,6 +105,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TouchControls\TouchControls.csproj">
+      <Project>{D9540245-BBB6-4D42-8204-1553777ABF0B}</Project>
+      <Name>TouchControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TouchFrameworkTracking\TouchFrameworkTracking.csproj">
       <Project>{045758F1-33E8-4985-9A10-AAA35EC4EFBA}</Project>
       <Name>TouchFrameworkTracking</Name>

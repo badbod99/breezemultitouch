@@ -69,7 +69,11 @@ namespace TouchFramework.ControlHandlers
             else if (source is ListBox)
             {
                 handler = new ListBoxHandler() as ElementHandler;
-            }                
+            }
+            else if (source is VideoControl)
+            {
+                handler = new VideoControlHandler() as ElementHandler;
+            }
             else
             {
                 handler = new ButtonHandler() as ElementHandler;
