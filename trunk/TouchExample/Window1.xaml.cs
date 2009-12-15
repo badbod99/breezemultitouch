@@ -233,7 +233,7 @@ namespace TouchExample
             DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
             foreach (string fileName in fileNames)
             {
-                if (System.IO.Path.GetExtension(fileName).ToLower() == ".jpg")
+                if (IsImageExt(System.IO.Path.GetExtension(fileName)))
                 {                   
                     AddPhoto(fileName);
                 }
@@ -250,12 +250,36 @@ namespace TouchExample
             DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
             foreach (string fileName in fileNames)
             {
-                if (System.IO.Path.GetExtension(fileName).ToLower() == ".wmv")
+                if (IsVideoExt(System.IO.Path.GetExtension(fileName)))
                 {
                     AddVideo(fileName);
                 }
             }
         }
+
+        /// <summary>
+        /// Checks if a file extension is a valid image file extension
+        /// </summary>
+        /// <param name="ext">Extension to check if it's valid</param>
+        /// <returns>True if valid false if not.</returns>
+        bool IsImageExt(string ext)
+        {
+            string[] exts = { ".jpg", ".png", ".gif", ".tiff", ".bmp", ".jpeg" };
+            return exts.Contains(ext.ToLower());
+        }
+
+        /// <summary>
+        /// Checks if a file extension is a valid video file extension
+        /// </summary>
+        /// <param name="ext">Extension to check if it's valid</param>
+        /// <returns>True if valid false if not.</returns>
+        bool IsVideoExt(string ext)
+        {
+            string[] exts = { ".wmv", ".mpeg", ".mpg", ".avi" };
+            return exts.Contains(ext.ToLower());
+        }
+
+        
 
         /// <summary>
         /// Checks if a file has the specified extension
