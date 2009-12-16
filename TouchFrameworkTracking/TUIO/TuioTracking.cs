@@ -97,7 +97,7 @@ namespace TouchFramework.Tracking
         {
             try
             {
-                //Might throw an exception
+                //Might throw an exception which is meaningless when we are shutting down
                 this.udpreceiver.Close();
             }
             catch
@@ -108,6 +108,7 @@ namespace TouchFramework.Tracking
 
         public override void ForceRefresh()
         {
+            // For tuio this is only useful to remove stuck points after a TUIO server restart
             lock (m_lock)
             {
                 this.current.Clear();

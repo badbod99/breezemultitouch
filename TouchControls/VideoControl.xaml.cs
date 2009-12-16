@@ -52,6 +52,7 @@ namespace TouchFramework.ControlHandlers
         delegate void InvokeDelegate();     
 
         MediaPlayer player = new MediaPlayer();
+        DrawingVisual videoVisual = new DrawingVisual();
         bool playing = false;
         bool inPreview = false;
         bool loaded = false;
@@ -70,23 +71,20 @@ namespace TouchFramework.ControlHandlers
             return rectangle1;
         }
 
-        void CalcDisplay()
+        public void PlayVideo()
         {
-            double width = Convert.ToDouble(player.NaturalVideoWidth);
-            double height = Convert.ToDouble(player.NaturalVideoHeight);
-
-            double ratio = height / width;
-
-            dispHeight = rectangle1.Width * ratio;
-            dispWidth = rectangle1.Width;
+            if (!loaded) return;
+            if (inPreview) renderVideo();
+            playing = !playing;
+            if (playing) player.Play(); else player.Pause();
         }
 
         void player_MediaOpened(object sender, EventArgs e)
         {
-            CalcDisplay();
+            calcDisplay();
             rectangle1.Height = dispHeight;
 
-            StartPlayer();
+            startPreviewPlayer();
 
             BackgroundWorker wk = new BackgroundWorker();
             wk.DoWork += new DoWorkEventHandler(wk_DoWork);
@@ -96,8 +94,8 @@ namespace TouchFramework.ControlHandlers
 
         void wk_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            RenderPreview();
-            StopPlayer();
+            renderPreview();
+            stopPlayer();
 
             loaded = true;
             inPreview = true;
@@ -108,14 +106,13 @@ namespace TouchFramework.ControlHandlers
             Thread.Sleep(1000);
         }
 
-        void RenderVideo()
+        void renderVideo()
         {
-            DrawingVisual rend = new DrawingVisual();
-            VideoDrawing aVideoDrawing = new VideoDrawing();
-            aVideoDrawing.Rect = new Rect(0, 0, dispWidth, dispHeight);
-            aVideoDrawing.Player = player;
+            DrawingContext context = videoVisual.RenderOpen();
+            context.DrawVideo(player, new Rect(0, 0, dispWidth, dispHeight));
+            context.Close();
 
-            Brush brush = new DrawingBrush(aVideoDrawing);
+            Brush brush = new VisualBrush(videoVisual);
             rectangle1.Fill = brush;
 
             RenderOptions.SetCachingHint(brush, CachingHint.Cache);
@@ -123,38 +120,18 @@ namespace TouchFramework.ControlHandlers
             RenderOptions.SetCacheInvalidationThresholdMaximum(brush, 2.0);
         }
 
-        void StopPlayer()
+        void renderPreview()
         {
-            player.Stop();
-        }
+            BitmapImage playIcon = getPlayIcon();
+            Rect iconPos = calcIconCenterPosition(playIcon);
 
-        void StartPlayer()
-        {
-            player.Position = TimeSpan.FromSeconds(1);
-            player.Play();
-        }
-
-        BitmapImage GetPlayImage()
-        {
-            BitmapImage bi = new BitmapImage(new Uri(@"pack://application:,,,/TouchControls;component/play.png"));
-            return bi;
-        }
-
-        void RenderPreview()
-        {
-            DrawingVisual visual = new DrawingVisual();
-            DrawingContext context = visual.RenderOpen();
+            DrawingContext context = videoVisual.RenderOpen();
             context.DrawVideo(player, new Rect(0, 0, dispWidth, dispHeight));
-
-            BitmapImage playIcon = GetPlayImage();
-            double xpos = (dispWidth - playIcon.Width) / 2;
-            double ypos = (dispHeight - playIcon.Height) / 2;
-
-            context.DrawImage(playIcon, new Rect(xpos, ypos, playIcon.Width, playIcon.Height));
+            context.DrawImage(playIcon, iconPos);
             context.Close();
 
             RenderTargetBitmap target = new RenderTargetBitmap((int)dispWidth, (int)dispHeight, 1 / 100, 1 / 100, PixelFormats.Pbgra32);
-            target.Render(visual);
+            target.Render(videoVisual);
             BitmapFrame frame = BitmapFrame.Create(target).GetAsFrozen() as BitmapFrame;
 
             Image img = new Image();
@@ -163,12 +140,39 @@ namespace TouchFramework.ControlHandlers
             rectangle1.Fill = brush;
         }
 
-        public void PlayVideo()
+        void stopPlayer()
         {
-            if (!loaded) return;
-            if (inPreview) RenderVideo();
-            playing = !playing;
-            if (playing) player.Play(); else player.Pause();
+            player.Stop();
+        }
+
+        void startPreviewPlayer()
+        {
+            player.Position = TimeSpan.FromSeconds(1);
+            player.Play();
+        }
+
+        BitmapImage getPlayIcon()
+        {
+            BitmapImage bi = new BitmapImage(new Uri(@"pack://application:,,,/TouchControls;component/play.png"));
+            return bi;
+        }
+
+        Rect calcIconCenterPosition(BitmapImage icon)
+        {
+            double xpos = (dispWidth - icon.Width) / 2;
+            double ypos = (dispHeight - icon.Height) / 2;
+            return new Rect(xpos, ypos, icon.Width, icon.Height);
+        }
+        
+        void calcDisplay()
+        {
+            double width = Convert.ToDouble(player.NaturalVideoWidth);
+            double height = Convert.ToDouble(player.NaturalVideoHeight);
+
+            double ratio = height / width;
+
+            dispHeight = rectangle1.Width * ratio;
+            dispWidth = rectangle1.Width;
         }
     }
 }
