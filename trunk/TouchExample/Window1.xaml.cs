@@ -73,7 +73,7 @@ namespace TouchExample
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
         /// Lightning tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -99,46 +99,6 @@ namespace TouchExample
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
             LoadAllImages(path);
             LoadAllVideos(path);
-        }
-
-        void listbox_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("ListboxTapped");
-        }
-
-        void listbox_Scroll(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("ListboxScroll");
-        }
-
-        void slider_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("SliderTapped");
-        }
-
-        void slider_Slide(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("SliderSlide");
-        }
-
-        void check_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("CheckTapped");
-        }
-
-        void contbut_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("TappedButton");
-        }
-
-        void textbox_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("TappedTextbox");
-        }
-
-        void contimg_Tap(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("TappedImage");
         }
 
         /// <summary>
@@ -326,8 +286,6 @@ namespace TouchExample
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
 
-            p.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contimg_Tap));
-
             Canvas.SetLeft(p, x);
             Canvas.SetTop(p, y);
         }
@@ -363,8 +321,6 @@ namespace TouchExample
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
 
-            p.AddHandler(MTEvents.TapEvent, new RoutedEventHandler(contimg_Tap));
-
             Canvas.SetLeft(p, x);
             Canvas.SetTop(p, y);
         }
@@ -373,7 +329,6 @@ namespace TouchExample
         /// <summary>
         /// Handles key presses to clear the background etc...
         /// B = clear background
-        /// E = Stop the tracking engine
         /// Return = Full screen toggle
         /// </summary>
         /// <param name="sender"></param>
