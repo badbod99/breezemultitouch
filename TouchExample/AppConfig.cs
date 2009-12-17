@@ -42,12 +42,14 @@ namespace TouchExample
         const bool DEFAULT_FLIPY = false;
         const bool DEFAULT_CP = false;
         const int DEFAULT_PORT = 3333;
+        const bool DEFAULT_FS = false;
 
         internal static bool FlipX = false;
         internal static bool FlipY = false;
         internal static string TrackingPath = string.Empty;
         internal static bool CorrectProjection = false;
         internal static int Port = 3333;
+        internal static bool StartFullscreen = false;
 
         static internal void LoadAppConfig()
         {
@@ -66,6 +68,10 @@ namespace TouchExample
             bool cp = false;
             parseOk = bool.TryParse(GetConfigVal("correctprojection"), out cp);
             CorrectProjection = parseOk ? cp : DEFAULT_CP;
+
+            bool sf = false;
+            parseOk = bool.TryParse(GetConfigVal("startfullscreen"), out sf);
+            StartFullscreen = parseOk ? sf : DEFAULT_FS;
 
             int port = 3333;
             parseOk = int.TryParse(GetConfigVal("port"), out port);

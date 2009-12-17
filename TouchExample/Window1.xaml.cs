@@ -99,6 +99,10 @@ namespace TouchExample
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
             LoadAllImages(path);
             LoadAllVideos(path);
+
+            if (AppConfig.StartFullscreen) toggleFullscreen();
+            
+            takeBackground();
         }
 
         /// <summary>
@@ -337,35 +341,44 @@ namespace TouchExample
         {
             if (e.Key == Key.B)
             {
-                framework.ForceRefresh();
+                takeBackground();
             }
             else if (e.Key == Key.Return)
             {
-                fullscreen = !fullscreen;
-                if (fullscreen)
-                {
-                    window_left = this.Left;
-                    window_top = this.Top;
-
-                    window_width = this.Width;
-                    window_height = this.Height;
-
-                    GoFull();
-                }
-                else
-                {
-                    this.WindowState = WindowState.Normal;
-                    this.WindowStyle = WindowStyle.SingleBorderWindow;
-                    this.Left = window_left;
-                    this.Top = window_top;
-                    this.Width = window_width;
-                    this.Height = window_height;
-                }
+                toggleFullscreen();
             }
         }
 
-        void GoFull()
+        void takeBackground()
         {
+            framework.ForceRefresh();
+        }
+
+        void toggleFullscreen()
+        {
+            if (!fullscreen) switchFullScreen(); else switchWindowed();
+        }
+
+        void switchWindowed()
+        {
+            this.WindowState = WindowState.Normal;
+            this.WindowStyle = WindowStyle.SingleBorderWindow;
+            this.Left = window_left;
+            this.Top = window_top;
+            this.Width = window_width;
+            this.Height = window_height;
+
+            fullscreen = false;
+        }
+
+        void switchFullScreen()
+        {
+            window_left = this.Left;
+            window_top = this.Top;
+
+            window_width = this.Width;
+            window_height = this.Height;
+
             this.Left = 0;
             this.Top = 0;
             this.Width = screen_width;
@@ -373,6 +386,8 @@ namespace TouchExample
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStyle = WindowStyle.None;
             this.Topmost = true;
+
+            fullscreen = true;
         }
 
         void Window_Closed(object sender, EventArgs e)
