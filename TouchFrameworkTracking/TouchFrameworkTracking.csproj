@@ -68,6 +68,7 @@
     <Compile Include="Traal\Config\ProjectionConfig.cs" />
     <Compile Include="Traal\TraalConfiguration.cs" />
     <Compile Include="Traal\TraalTracking.cs" />
+    <Compile Include="Traal\XmlConfigLoader.cs" />
     <Compile Include="TUIO\OSC\OSCBundle.cs" />
     <Compile Include="TUIO\OSC\OSCMessage.cs" />
     <Compile Include="TUIO\OSC\OSCPacket.cs" />
