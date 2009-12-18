@@ -77,10 +77,10 @@ namespace TouchFramework.Tracking
             XPathDocument doc = new XPathDocument(userSettingsPath);
             XPathNavigator nav = doc.CreateNavigator();
 
-            XPathNavigator posxA = nav.SelectSingleNode("//Projection/Screen/@PosX");
-            XPathNavigator posyA = nav.SelectSingleNode("//Projection/Screen/@PosY");
-            XPathNavigator scalexA = nav.SelectSingleNode("//Projection/Screen/@ScaleX");
-            XPathNavigator scaleyA = nav.SelectSingleNode("//Projection/Screen/@ScaleY");
+            XPathNavigator posxA = nav.SelectSingleNode("//Projection/Screens/Screen/@PosX");
+            XPathNavigator posyA = nav.SelectSingleNode("//Projection/Screens/Screen/@PosY");
+            XPathNavigator scalexA = nav.SelectSingleNode("//Projection/Screens/Screen/@ScaleX");
+            XPathNavigator scaleyA = nav.SelectSingleNode("//Projection/Screens/Screen/@ScaleY");
 
             ProjectionConfig projection = new ProjectionConfig();
             projection.OffsetX = float.Parse(posxA.Value);

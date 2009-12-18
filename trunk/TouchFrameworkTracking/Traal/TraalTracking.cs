@@ -64,7 +64,7 @@ namespace TouchFramework.Tracking
 
         void setTrackingConfig(TrackingClient client, string trackingConfigPath, bool useVfw)
         {
-            XmlTrackingConfigurator tconf = new XmlTrackingConfigurator();
+            XmlConfigLoader tconf = new XmlConfigLoader();
             tconf.LoadFromFile(trackingConfigPath);
             tconf.Configure(client);
             if (useVfw) client.CameraSettings.SetDriver(eCameraDriver.Vfw);
