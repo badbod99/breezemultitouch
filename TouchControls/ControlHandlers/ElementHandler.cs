@@ -38,6 +38,8 @@ using System.Windows.Controls;
 using TouchFramework.Helpers;
 using TouchFramework.Events;
 
+using WPFMitsuControls;
+
 namespace TouchFramework.ControlHandlers
 {
     /// <summary>
@@ -73,6 +75,10 @@ namespace TouchFramework.ControlHandlers
             else if (source is VideoControl)
             {
                 handler = new VideoControlHandler() as ElementHandler;
+            }
+            else if (source is Book)
+            {
+                handler = new BookHandler() as ElementHandler;
             }
             else
             {
@@ -128,6 +134,17 @@ namespace TouchFramework.ControlHandlers
         public virtual void Drag(float x, float y)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.DragEvent, Source));
+        }
+
+        /// <summary>
+        /// Raises the Drag event as a routed event on the element.
+        /// Override this to implement custom CenterNotify behaviour.
+        /// </summary>
+        /// <param name="global">Center of movement relative to the whole canvas</param>
+        /// <param name="relative">Center of movement relative to the object</param>
+        public virtual void Drag(PointF global, PointF relative)
+        {
+            this.Drag(global.X, global.Y);
         }
 
         /// <summary>

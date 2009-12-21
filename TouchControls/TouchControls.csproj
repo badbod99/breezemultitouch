@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="ControlHandlers\ButtonHandler.cs" />
     <Compile Include="ControlHandlers\CheckBoxHandler.cs" />
+    <Compile Include="ControlHandlers\BookHandler.cs" />
     <Compile Include="ControlHandlers\VideoControlHandler.cs" />
     <Compile Include="ControlHandlers\ElementHandler.cs" />
     <Compile Include="ControlHandlers\ListBoxHandler.cs" />
@@ -74,6 +75,10 @@
     <ProjectReference Include="..\TouchHelpers\TouchHelpers.csproj">
       <Project>{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}</Project>
       <Name>TouchHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFMitsuControls\WPFMitsuControls.csproj">
+      <Project>{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}</Project>
+      <Name>WPFMitsuControls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

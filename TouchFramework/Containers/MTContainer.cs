@@ -131,7 +131,7 @@ namespace TouchFramework
             if (ObjectTouches.JustTouched) DoTouchDown();
             if (ObjectTouches.Lifted) DoTouchUp();
             if (ObjectTouches.Tapped) DoTap();
-            if (ObjectTouches.MoveX != 0 || ObjectTouches.MoveY != 0) DoDrag();
+            if (ObjectTouches.MoveX != 0 || ObjectTouches.MoveY != 0) DoDrag(); 
 
             if (oldRelativePos != relativePos)
             {
@@ -192,8 +192,8 @@ namespace TouchFramework
         {
             bool pass = (Math.Abs(cumulativeMoveX) > ElementDef.DragThresholdPixels);
             if (!(this.Supports(TouchAction.Drag) && pass)) return;
-         
-            handler.Drag(ObjectTouches.MoveCenter.X, ObjectTouches.MoveCenter.Y);
+
+            handler.Drag(ObjectTouches.MoveCenter, relativePos);
         }
 
         /// <summary>
