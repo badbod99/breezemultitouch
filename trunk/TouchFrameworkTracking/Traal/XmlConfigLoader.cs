@@ -56,7 +56,6 @@ namespace TouchFramework.Tracking
         {
             XmlElement root = this.doc.DocumentElement;
 
-
             //Get Driver
             String nodepath;
             XmlNode node;
@@ -66,7 +65,6 @@ namespace TouchFramework.Tracking
             node = root.SelectSingleNode(nodepath);
             int cameracount = Convert.ToInt32(node.Attributes["Count"].Value);
             float finvert = Convert.ToSingle(node.Attributes["Invert"].Value);
-
 
             try
             {
@@ -81,8 +79,6 @@ namespace TouchFramework.Tracking
 
             client.CameraSettings.SetInvertImage(finvert >= 0.5);
             client.CameraSettings.Clear();
-
-
 
             for (int i = 0; i < cameracount; i++)
             {

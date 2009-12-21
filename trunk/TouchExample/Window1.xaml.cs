@@ -100,6 +100,12 @@ namespace TouchExample
             LoadAllImages(path);
             LoadAllVideos(path);
 
+            ElementProperties prop = new ElementProperties();
+            prop.ElementSupport.AddSupport(TouchAction.Resize | TouchAction.Drag | TouchAction.Tap);
+
+            MTContainer cont = new MTSmoothContainer(myBook, canvas1, prop);
+            framework.RegisterElement(cont);
+
             if (AppConfig.StartFullscreen) toggleFullscreen();
             
             takeBackground();
