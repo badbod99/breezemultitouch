@@ -273,7 +273,9 @@ namespace TouchFramework.Tracking
         float getScreenPoint(float xOrY, float scale, float offset, bool flip, bool correctProjection, double screenDimension)
         {
             if (flip) xOrY = PointTransform.Flip(xOrY, 0.5f);
-            if (correctProjection) xOrY = PointTransform.ScaleOffset(xOrY, scale, offset);
+            float projSpace = xOrY * 2f - 1f;
+            if (correctProjection) projSpace = PointTransform.ScaleOffset(projSpace, scale, offset);
+            xOrY = PointTransform.ScaleZeroToOne(projSpace);
             xOrY *= (float)screenDimension;
             return xOrY;
         }
