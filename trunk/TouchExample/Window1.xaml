@@ -7,21 +7,5 @@
         
     <Canvas Margin="0,0,0,0" Name="canvas1">
 
-        <controls:Book x:Name="myBook" Width="770" Height="508" Margin="25" Canvas.Left="76" Canvas.Top="28">
-            <controls:Book.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="4" BorderBrush="Gray" Background="Transparent">
-                        <ContentControl Content="{Binding .}" />
-                    </Border>
-                </DataTemplate>
-            </controls:Book.ItemTemplate>
-            <local:UCBookTest />
-            <local:UCBookTest2 />
-            <local:UCBookTest />
-            <local:UCBookTest2 />
-            <local:UCBookTest />
-            <local:UCBookTest2 />
-            <local:UCBookTest />
-        </controls:Book>
     </Canvas>
 </Window>

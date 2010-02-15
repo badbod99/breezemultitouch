@@ -66,6 +66,8 @@ namespace TouchExample
         double window_height = 480;
         double window_left = 0;
         double window_top = 0;
+        int numItems = 0;
+        const int MAX_ITEMS = 40;
 
         /// <summary>
         /// This sets the tracking mode between all available modes from TouchFrameworkTracking.
@@ -73,7 +75,7 @@ namespace TouchExample
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
         /// Lightning tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -100,11 +102,6 @@ namespace TouchExample
             LoadAllImages(path);
             LoadAllVideos(path);
 
-            ElementProperties prop = new ElementProperties();
-            prop.ElementSupport.AddSupport(TouchAction.Resize | TouchAction.Drag | TouchAction.Tap);
-
-            MTContainer cont = new MTSmoothContainer(myBook, canvas1, prop);
-            framework.RegisterElement(cont);
 
             if (AppConfig.StartFullscreen) toggleFullscreen();
             
@@ -192,7 +189,16 @@ namespace TouchExample
                 points.Add(id, e);
             }
         }
-        
+
+        /// <summary>
+        /// Loads all images within My Pictures special folder.
+        /// </summary>
+        void LoadMyPictures()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            LoadAllImages(path);
+        }
+
         /// <summary>
         /// Loads all images within a specified folder.
         /// </summary>
@@ -201,13 +207,37 @@ namespace TouchExample
         {
             string[] fileNames = Directory.GetFiles(folderName);
             DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
+            
             foreach (string fileName in fileNames)
             {
                 if (IsImageExt(System.IO.Path.GetExtension(fileName)))
-                {                   
+                {
+                    if (numItems > MAX_ITEMS) break;
                     AddPhoto(fileName);
+                    numItems++;                    
                 }
             }
+        }
+
+        /// <summary>
+        /// Unregisters all containers and clears the whole canvas then recreates the touch points. 
+        /// </summary>
+        void ClearAll()
+        {
+            this.framework.UnregisterAllElements();
+            this.RemovePoints();
+            canvas1.Children.Clear();
+            DisplayPoints();
+            numItems = 0;
+        }
+
+        /// <summary>
+        /// Loads all videos within My Pictures special folder.
+        /// </summary>
+        void LoadMyVideos()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            LoadAllVideos(path);
         }
 
         /// <summary>
@@ -222,7 +252,9 @@ namespace TouchExample
             {
                 if (IsVideoExt(System.IO.Path.GetExtension(fileName)))
                 {
+                    if (numItems > MAX_ITEMS) break;
                     AddVideo(fileName);
+                    numItems++;
                 }
             }
         }
@@ -247,9 +279,7 @@ namespace TouchExample
         {
             string[] exts = { ".wmv", ".mpeg", ".mpg", ".avi" };
             return exts.Contains(ext.ToLower());
-        }
-
-        
+        }        
 
         /// <summary>
         /// Checks if a file has the specified extension
@@ -348,6 +378,12 @@ namespace TouchExample
             if (e.Key == Key.B)
             {
                 takeBackground();
+            }
+            else if (e.Key == Key.R)
+            {
+                ClearAll();
+                LoadMyPictures();
+                LoadMyVideos();
             }
             else if (e.Key == Key.Return)
             {

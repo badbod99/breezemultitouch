@@ -46,7 +46,7 @@ namespace TouchFramework
     /// Wraps any FrameworkElement object with a controlling interface which stores touch information and 
     /// processes actions based on the touches present.
     /// </summary>
-    public class MTSmoothContainer : MTContainer
+    public class MTSmoothContainer : MTContainer, IDisposable
     {
         object sync = new object();
         Timer timer;
@@ -265,6 +265,41 @@ namespace TouchFramework
             addTransforms(st, tt, dt, rt, drt);
 
             this.ApplyTransforms();
+        }
+
+        public void Stop()
+        {
+            timer.Stop();
+        }
+
+        #region IDisposable Members
+
+        private bool disposed = false;
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        private void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    this.Stop();
+                    timer.Dispose();
+                }
+                disposed = true;
+            }
+        }
+
+        #endregion
+
+        ~MTSmoothContainer()
+        {
+            Dispose(false);
         }
     }
 }

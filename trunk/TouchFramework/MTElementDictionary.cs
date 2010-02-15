@@ -133,6 +133,6 @@ namespace TouchFramework
                 }
             }
             return hashCode;
-        }        
+        }
     }
 }

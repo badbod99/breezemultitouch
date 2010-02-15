@@ -56,6 +56,7 @@ namespace TouchFramework.ControlHandlers
         {
             BitmapImage bi = new BitmapImage(new Uri(path));
             image2.Source = bi;
+            bi.Freeze();
             return image2;
         }
     }
