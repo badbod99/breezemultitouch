@@ -263,5 +263,38 @@ namespace TouchFramework
         {
             this.Assigner.Elements.Add(cont);
         }
+
+        /// <summary>
+        /// Un-registers any FrameworkElement with the TouchFramework ready to accept
+        /// touch information.
+        /// </summary>
+        /// <param name="ele">FrameworkElement object to track touches for.</param>
+        /// <returns></returns>
+        public void UnregisterElement(int id)
+        {
+            var cont = this.Assigner.Elements[id];
+
+            this.Assigner.Touches.Remove(cont);
+            this.Assigner.Elements.Remove(id);
+
+            // Dispose the container
+            if (cont is IDisposable) ((IDisposable)cont).Dispose();
+        }
+
+        /// <summary>
+        /// Clears all registered framework elements and disposes the containers
+        /// </summary>
+        /// <returns></returns>
+        public void UnregisterAllElements()
+        {
+            // Dispose all the containers
+            foreach (var cont in this.Assigner.Elements.Values)
+            {
+                if (cont is IDisposable) ((IDisposable)cont).Dispose();
+            }
+
+            this.Assigner.Touches.Clear();
+            this.Assigner.Elements.Clear();
+        }
     }
 }

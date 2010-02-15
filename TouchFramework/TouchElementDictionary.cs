@@ -43,6 +43,15 @@ namespace TouchFramework
             base.Add(touchId, element);
         }
 
+        public void Remove(MTContainer element)
+        {
+            int[] vals = (from n in this
+                          where n.Value.MTElement == element
+                          select n.Key).ToArray();
+
+            foreach (int i in vals) this.Remove(i);
+        }
+
         public new TouchElement this[int touchId]
         {
             get
