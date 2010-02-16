@@ -62,24 +62,37 @@ namespace TouchFramework.ControlHandlers
         public VideoControl()
         {
             player.MediaOpened += new EventHandler(player_MediaOpened);
+            player.MediaEnded += new EventHandler(player_MediaEnded);
             InitializeComponent();
         }
-
+        
         public System.Windows.Shapes.Rectangle SetVideo(string path)
         {
             player.Open(new Uri(path, UriKind.RelativeOrAbsolute));
+            
             return rectangle1;
         }
 
         public void PlayVideo()
         {
             if (!loaded) return;
-            if (inPreview) renderVideo();
+            if (inPreview) { renderVideo(); inPreview = false; }
             playing = !playing;
             if (playing) player.Play(); else player.Pause();
         }
 
         void player_MediaOpened(object sender, EventArgs e)
+        {
+            initVideo();
+        }
+
+        void player_MediaEnded(object sender, EventArgs e)
+        {
+            playing = false;
+            initVideo();
+        }
+
+        void initVideo()
         {
             calcDisplay();
             rectangle1.Height = dispHeight;
