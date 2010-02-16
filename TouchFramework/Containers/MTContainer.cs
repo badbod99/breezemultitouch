@@ -68,6 +68,8 @@ namespace TouchFramework
         public int MaxY = DEFAULT_MAXY;
         public int MinX = DEFAULT_MINX;
         public int MinY = DEFAULT_MINY;
+        public double RealWidth = 0;
+        public double RealHeight = 0;
 
         delegate void InvokeDelegate();
 
@@ -145,7 +147,19 @@ namespace TouchFramework
             scale = limitScale(scale);
             updateFullScale(scale);
 
-            this.ScaleRotateMove(angle, scale, ObjectTouches.MoveX, ObjectTouches.MoveY, ObjectTouches.ActionCenter);
+            float moveX = ObjectTouches.MoveX;
+            float moveY = ObjectTouches.MoveY;
+
+            // If we are supposed to check the bounds with the container, check using the intersect
+            if (this.Supports(TouchAction.BoundsCheck))
+            {
+                if (moveX > 0 && checkIntersects(IntersectEdge.Right)) { moveX = 0; }
+                if (moveX < 0 && checkIntersects(IntersectEdge.Left)) { moveX = 0; }
+                if (moveY < 0 && checkIntersects(IntersectEdge.Top)) { moveY = 0; }
+                if (moveY > 0 && checkIntersects(IntersectEdge.Bottom)) { moveY = 0; }
+            }
+            
+            this.ScaleRotateMove(angle, scale, moveX, moveY, ObjectTouches.ActionCenter);
         }
 
         /// <summary>
@@ -163,7 +177,7 @@ namespace TouchFramework
         /// </summary>
         /// <param name="screenPoint">Point in screen space.</param>
         /// <returns>Point in relative object space.</returns>
-        PointF getRelativePos(PointF screenPoint)
+        protected PointF getRelativePos(PointF screenPoint)
         {
             GeneralTransform gt = TopContainer.TransformToVisual(this.WorkingObject);
             System.Windows.Point curPoint = gt.Transform(new System.Windows.Point(screenPoint.X, screenPoint.Y));
@@ -292,13 +306,13 @@ namespace TouchFramework
 
         float limitScale(float scale)
         {
-            double realWidth = WorkingObject.ActualWidth * (fullScale * scale);
-            double realHeight = WorkingObject.ActualHeight * (fullScale * scale);
+            RealWidth = WorkingObject.ActualWidth * (fullScale * scale);
+            RealHeight = WorkingObject.ActualHeight * (fullScale * scale);
 
-            if (realWidth >= this.MaxX && scale > 1f) scale = 1f;
-            if (realHeight >= this.MaxY && scale > 1f) scale = 1f;
-            if (realWidth <= this.MinX && scale < 1f) scale = 1f;
-            if (realHeight <= this.MinY && scale < 1f) scale = 1f;
+            if (RealWidth >= this.MaxX && scale > 1f) scale = 1f;
+            if (RealHeight >= this.MaxY && scale > 1f) scale = 1f;
+            if (RealWidth <= this.MinX && scale < 1f) scale = 1f;
+            if (RealHeight <= this.MinY && scale < 1f) scale = 1f;
 
             return scale;
         }
@@ -342,6 +356,38 @@ namespace TouchFramework
 
             // Store the current tranform ready for use in the next frame
             oldTranform = WorkingObject.RenderTransform.Value;
+        }
+
+        protected enum IntersectEdge
+        {
+            Top,
+            Bottom,
+            Left,
+            Right
+        }
+
+        protected bool checkIntersects(IntersectEdge edge)
+        {
+            var currentBoundsTop = new Rect(0, -2, TopContainer.ActualWidth, 2);
+            var currentBoundsBottom = new Rect(0, TopContainer.ActualHeight, TopContainer.ActualWidth, 2);
+            var currentBoundsLeft = new Rect(-2, 0, 2, TopContainer.ActualHeight);
+            var currentBoundsRight = new Rect(TopContainer.ActualWidth, 0, 2, TopContainer.ActualHeight);
+
+            Rect objectBounds = getBounds(WorkingObject, TopContainer);
+            bool intersect = false;
+
+            if (edge == IntersectEdge.Top) if (objectBounds.IntersectsWith(currentBoundsTop)) intersect = true;
+            if (edge == IntersectEdge.Bottom) if (objectBounds.IntersectsWith(currentBoundsBottom)) intersect = true;
+            if (edge == IntersectEdge.Left) if (objectBounds.IntersectsWith(currentBoundsLeft)) intersect = true;
+            if (edge == IntersectEdge.Right) if (objectBounds.IntersectsWith(currentBoundsRight)) intersect = true;
+
+            return intersect;
+        }
+
+        Rect getBounds(FrameworkElement of, FrameworkElement from)
+        {
+            GeneralTransform transform = of.TransformToVisual(from);
+            return transform.TransformBounds(new Rect(0, 0, of.ActualWidth, of.ActualHeight));
         }
 
         void resetTransforms()

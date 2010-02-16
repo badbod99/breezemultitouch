@@ -49,7 +49,8 @@ namespace TouchFramework
         Slide = 256,
         ScrollX = 512,
         ScrollY = 1024,
-        Drag = 2048
+        Drag = 2048,
+        BoundsCheck = 4096
     }
 
     /// <summary>

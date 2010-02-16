@@ -41,6 +41,7 @@ using System.Windows.Shapes;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Threading;
+using System.ComponentModel;
 
 using System.Xml;
 using System.Xml.XPath;
@@ -98,15 +99,28 @@ namespace TouchExample
             framework.OnProcessUpdates += new FrameworkControl.ProcessUpdatesDelegate(this.DisplayPoints);
             framework.Start();
 
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-            LoadAllImages(path);
-            LoadAllVideos(path);
-
-
             if (AppConfig.StartFullscreen) toggleFullscreen();
-            
+
             takeBackground();
+
+            // Seems like WPF needs to complete doing something before it's happy to init the timer in smooth container
+            // A timed callback gets round it (Thread.Sleep does not as it blocks the main UI thread)
+            BackgroundWorker wk = new BackgroundWorker();
+            wk.DoWork += new DoWorkEventHandler(NonBlockingDelay);
+            wk.RunWorkerCompleted += new RunWorkerCompletedEventHandler(DelayedItemLoad);
+            wk.RunWorkerAsync();
         }
+
+        void DelayedItemLoad(object sender, RunWorkerCompletedEventArgs e)
+        {
+            LoadMyPictures();
+            LoadMyVideos();
+        }
+
+        void NonBlockingDelay(object sender, DoWorkEventArgs e)
+        {
+            Thread.Sleep(0);
+        }        
 
         /// <summary>
         /// Displays all points from the collection of points on the screen as elipses.
@@ -313,9 +327,14 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            int x = randomGen.Next(0, (int)screen_width - (int)p.ActualWidth);
-            int y = randomGen.Next(0, (int)screen_height - (int)p.ActualHeight);
-            int a = randomGen.Next(0, 360);
+            // Just incase canvas is too small
+            int difX = canvas1.ActualWidth > 200 ? 200 : 0;
+            int difY = canvas1.ActualWidth > 200 ? 200 : 0;
+
+            // Get random position and rotation
+            int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
+            int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
+            int a = randomGen.Next(-90, 90);
 
             cont.StartX = x;
             cont.StartY = y;
@@ -348,9 +367,14 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            int x = randomGen.Next(0, (int)screen_width - (int)p.ActualWidth);
-            int y = randomGen.Next(0, (int)screen_height - (int)p.ActualHeight);
-            int a = randomGen.Next(0, 360);
+            // Just incase canvas is too small
+            int difX = canvas1.ActualWidth > 200 ? 200 : 0;
+            int difY = canvas1.ActualWidth > 200 ? 200 : 0;
+
+            // Get random position and rotation
+            int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
+            int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
+            int a = randomGen.Next(-90, 90);
 
             cont.StartX = x;
             cont.StartY = y;
