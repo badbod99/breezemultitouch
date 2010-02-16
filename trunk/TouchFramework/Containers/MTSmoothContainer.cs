@@ -150,6 +150,7 @@ namespace TouchFramework
             {
                 this.RotateFilter.Target += angle;
             }
+            Console.WriteLine("INROT:{0}", angle);
         }
 
         /// <summary>
@@ -242,7 +243,7 @@ namespace TouchFramework
             ScaleTransform st = new ScaleTransform(scaleFactor, scaleFactor, dCenX, dCenY);
             TranslateTransform tt = new TranslateTransform(this.TranslateFilter.Velocity.X, this.TranslateFilter.Velocity.Y);
             RotateTransform rt = new RotateTransform(RotateFilter.Velocity, dCenX, dCenY);
-                        
+
             double dPosX = 0, dPosY = 0;
             float dRotPos = 0f;
             
@@ -253,7 +254,16 @@ namespace TouchFramework
 
                 dCenX = (centerPoint.X + this.DampingFilter.CumulativePosition.X) - StartX;
                 dCenY = (centerPoint.Y + this.DampingFilter.CumulativePosition.Y) - StartY;
-            }            
+
+                // If we are supposed to check the bounds with the container, check using the intersect
+                if (this.Supports(TouchAction.BoundsCheck))
+                {
+                    if (dPosX > 0 && checkIntersects(IntersectEdge.Right)) this.DampingFilter.Stop();
+                    if (dPosX < 0 && checkIntersects(IntersectEdge.Left)) this.DampingFilter.Stop();
+                    if (dPosY < 0 && checkIntersects(IntersectEdge.Top)) this.DampingFilter.Stop();
+                    if (dPosY > 0 && checkIntersects(IntersectEdge.Bottom)) this.DampingFilter.Stop();
+                }
+            }
 
             if (this.AngularDampingFilter.IsFiltering)
             {
@@ -265,7 +275,7 @@ namespace TouchFramework
             addTransforms(st, tt, dt, rt, drt);
 
             this.ApplyTransforms();
-        }
+        }        
 
         public void Stop()
         {
