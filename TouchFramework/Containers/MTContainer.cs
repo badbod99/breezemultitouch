@@ -384,10 +384,24 @@ namespace TouchFramework
             return intersect;
         }
 
+        public PointF GetElementCenter()
+        {
+            Rect r = this.GetElementBounds();
+            double x = ((r.Right - r.Left) / 2) + r.X;
+            double y = ((r.Bottom - r.Top) / 2) + r.Y;
+            return new PointF((float)x, (float)y);
+        }
+
+        public Rect GetElementBounds()
+        {
+            return getBounds(WorkingObject, TopContainer);
+        }
+
         Rect getBounds(FrameworkElement of, FrameworkElement from)
         {
             GeneralTransform transform = of.TransformToVisual(from);
-            return transform.TransformBounds(new Rect(0, 0, of.ActualWidth, of.ActualHeight));
+            Rect r = transform.TransformBounds(new Rect(0, 0, of.ActualWidth, of.ActualHeight));
+            return r;
         }
 
         void resetTransforms()
@@ -395,6 +409,11 @@ namespace TouchFramework
             transforms = new TransformGroup();
         }
 
+        /// <summary>
+        /// Tells you whether or not this container supports a specific feature or multiple features if supplied with Or'd enum
+        /// </summary>
+        /// <param name="action">Or'd enum of features to check for</param>
+        /// <returns>Bool whether or not this container supports all featured passed</returns>
         public bool Supports(TouchAction action)
         {
             return this.ElementDef.ElementSupport.CheckSupported(action);

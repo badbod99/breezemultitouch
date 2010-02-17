@@ -51,7 +51,7 @@ namespace TouchFramework
         /// <summary>
         /// Manages assignment of touches to objects
         /// </summary>
-        protected TouchElementAssigner Assigner = null;
+        public TouchElementAssigner Assigner = null;
 
         /// <summary>
         /// Holds a dictionary of all touches related to this controller.

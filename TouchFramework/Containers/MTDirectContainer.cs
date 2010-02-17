@@ -67,6 +67,8 @@ namespace TouchFramework
             if (!Supports(TouchAction.Resize)) return;
             ScaleTransform sc = new ScaleTransform(scaleFactor, scaleFactor, centerPoint.X - StartX, centerPoint.Y - StartY);
             addTransform(sc);
+
+            this.ApplyTransforms();
         }
 
         /// <summary>
@@ -79,6 +81,8 @@ namespace TouchFramework
             if (!Supports(TouchAction.Move)) return;
             TranslateTransform tt = new TranslateTransform(offsetX, offsetY);
             addTransform(tt);
+
+            this.ApplyTransforms();
         }
         
         /// <summary>
@@ -91,6 +95,8 @@ namespace TouchFramework
             if (!Supports(TouchAction.Rotate)) return;
             RotateTransform rt = new RotateTransform(angle, centerPoint.X - StartX, centerPoint.Y - StartY);
             addTransform(rt);
+
+            this.ApplyTransforms();
         }
 
         /// <summary>
@@ -110,6 +116,7 @@ namespace TouchFramework
             if (Supports(TouchAction.Resize)) this.addTransform(sc);
             if (Supports(TouchAction.Move)) this.addTransform(tt);
             if (Supports(TouchAction.Rotate)) this.addTransform(rt);
+            
             this.ApplyTransforms();
         }
     }
