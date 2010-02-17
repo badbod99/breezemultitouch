@@ -103,23 +103,15 @@ namespace TouchExample
 
             takeBackground();
 
-            // Seems like WPF needs to complete doing something before it's happy to init the timer in smooth container
-            // A timed callback gets round it (Thread.Sleep does not as it blocks the main UI thread)
-            BackgroundWorker wk = new BackgroundWorker();
-            wk.DoWork += new DoWorkEventHandler(NonBlockingDelay);
-            wk.RunWorkerCompleted += new RunWorkerCompletedEventHandler(DelayedItemLoad);
-            wk.RunWorkerAsync();
-        }
-
-        void DelayedItemLoad(object sender, RunWorkerCompletedEventArgs e)
-        {
             LoadMyPictures();
             LoadMyVideos();
+
+            AnimateStartPos();
         }
 
         void NonBlockingDelay(object sender, DoWorkEventArgs e)
         {
-            Thread.Sleep(0);
+            Thread.Sleep(200);
         }        
 
         /// <summary>
@@ -261,7 +253,6 @@ namespace TouchExample
         void LoadAllVideos(string folderName)
         {
             string[] fileNames = Directory.GetFiles(folderName);
-            DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
             foreach (string fileName in fileNames)
             {
                 if (IsVideoExt(System.IO.Path.GetExtension(fileName)))
@@ -327,26 +318,55 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            // Just incase canvas is too small
-            int difX = canvas1.ActualWidth > 200 ? 200 : 0;
-            int difY = canvas1.ActualWidth > 200 ? 200 : 0;
-
-            // Get random position and rotation
-            int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
-            int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
-            int a = randomGen.Next(-90, 90);
-
-            cont.StartX = x;
-            cont.StartY = y;
-            cont.Rotate(a, new PointF(x, y));
-            cont.ApplyTransforms();
             cont.MaxX = (int)(this.screen_height);
             cont.MaxY = (int)(this.screen_width);
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
+        }
 
-            Canvas.SetLeft(p, x);
-            Canvas.SetTop(p, y);
+        /// <summary>
+        /// Creates a non-blocking delay using a callback to delay the animation of the items to their intial start position.
+        /// </summary>
+        void AnimateStartPos()
+        {
+            // Move then wait a bit and rotate
+            Move();
+
+            BackgroundWorker wk = new BackgroundWorker();
+            wk.DoWork += new DoWorkEventHandler(NonBlockingDelay);
+            wk.RunWorkerCompleted += new RunWorkerCompletedEventHandler(DelayedRotate);
+            wk.RunWorkerAsync();
+        }
+
+        void Move()
+        {
+            foreach (var cont in this.framework.Assigner.Elements.Values)
+            {
+                // Just incase canvas is too small
+                int difX = canvas1.ActualWidth > 200 ? 200 : 0;
+                int difY = canvas1.ActualWidth > 200 ? 200 : 0;
+
+                // Get random position and rotation
+                int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
+                int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
+
+                //cont.Move(x, y);
+                Canvas.SetTop(cont.WorkingObject, y);
+                Canvas.SetLeft(cont.WorkingObject, x);
+                cont.StartX = x;
+                cont.StartY = y;
+            }
+        }
+
+
+        void DelayedRotate(object sender, RunWorkerCompletedEventArgs e)
+        {
+            foreach (var cont in this.framework.Assigner.Elements.Values)
+            {
+                int a = randomGen.Next(-90, 90);
+                PointF p = cont.GetElementCenter();
+                cont.Rotate(a, p);
+            }
         }
 
         /// <summary>
@@ -367,26 +387,10 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            // Just incase canvas is too small
-            int difX = canvas1.ActualWidth > 200 ? 200 : 0;
-            int difY = canvas1.ActualWidth > 200 ? 200 : 0;
-
-            // Get random position and rotation
-            int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
-            int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
-            int a = randomGen.Next(-90, 90);
-
-            cont.StartX = x;
-            cont.StartY = y;
-            cont.Rotate(a, new PointF(x, y));
-            cont.ApplyTransforms();
             cont.MaxX = (int)(this.screen_height);
             cont.MaxY = (int)(this.screen_width);
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
-
-            Canvas.SetLeft(p, x);
-            Canvas.SetTop(p, y);
         }
 
 
@@ -408,6 +412,8 @@ namespace TouchExample
                 ClearAll();
                 LoadMyPictures();
                 LoadMyVideos();
+
+                AnimateStartPos();
             }
             else if (e.Key == Key.Return)
             {

@@ -58,10 +58,12 @@ namespace TouchFramework
         LinearFilter2d DampingFilter = new LinearFilter2d();
         LinearFilter AngularDampingFilter = new LinearFilter();
 
-        delegate void InvokeDelegate();        
+        bool centerInit = false;
+
+        delegate void InvokeDelegate();
 
         /// <summary>
-        /// Constructor for MTElementContainer.
+        /// Constructor for MTElementC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ontainer.
         /// </summary>
         /// <param name="createFrom">The FrameworkElement this container is going to store touches for and manipulate.</param>
         public MTSmoothContainer(FrameworkElement createFrom, Panel cont, ElementProperties props)
@@ -73,6 +75,7 @@ namespace TouchFramework
             this.timer.Start();
 
             this.ScaleFilter.Reset(1.0f, 1.0f);
+
             this.Delay = 100;
             this.DampingDelay = 1200;
         }
@@ -116,7 +119,7 @@ namespace TouchFramework
         public override void Scale(float scaleFactor, PointF centerPoint)
         {
             if (!Supports(TouchAction.Resize)) return;
-            CenterFilter.Target = centerPoint;
+            SetCenterTarget(centerPoint);
             if (scaleFactor != 1.0f && scaleFactor != 0.0f)
             {
                 this.ScaleFilter.Target *= scaleFactor;
@@ -145,12 +148,11 @@ namespace TouchFramework
         public override void Rotate(float angle, PointF centerPoint)
         {
             if (!Supports(TouchAction.Rotate)) return;
-            CenterFilter.Target = centerPoint;
+            SetCenterTarget(centerPoint);
             if (angle < 170 && angle > -170)
             {
                 this.RotateFilter.Target += angle;
             }
-            Console.WriteLine("INROT:{0}", angle);
         }
 
         /// <summary>
@@ -167,7 +169,7 @@ namespace TouchFramework
             target.X += offsetX;
             target.Y += offsetY;
             TranslateFilter.Target = target;
-            CenterFilter.Target = centerPoint;
+            SetCenterTarget(centerPoint);
         
             if (scaleFactor != 1.0f && scaleFactor != 0.0f)
             {
@@ -275,7 +277,21 @@ namespace TouchFramework
             addTransforms(st, tt, dt, rt, drt);
 
             this.ApplyTransforms();
-        }        
+        }
+
+        void SetCenterTarget(PointF target)
+        {
+            CheckInitCentre();
+            CenterFilter.Target = target;
+        }
+
+        void CheckInitCentre()
+        {
+            if (centerInit) return;
+            PointF cen = this.GetElementCenter();
+            this.CenterFilter.Reset(cen, cen);
+            centerInit = true;
+        }
 
         public void Stop()
         {
