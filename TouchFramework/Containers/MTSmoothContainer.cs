@@ -298,34 +298,10 @@ namespace TouchFramework
             timer.Stop();
         }
 
-        #region IDisposable Members
-
-        private bool disposed = false;
-
-        public void Dispose()
+        protected override void  Cleanup()
         {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        private void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    this.Stop();
-                    timer.Dispose();
-                }
-                disposed = true;
-            }
-        }
-
-        #endregion
-
-        ~MTSmoothContainer()
-        {
-            Dispose(false);
+            this.Stop();
+            timer.Dispose();
         }
     }
 }

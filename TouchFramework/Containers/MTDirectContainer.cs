@@ -119,5 +119,10 @@ namespace TouchFramework
             
             this.ApplyTransforms();
         }
+
+        protected override void Cleanup()
+        {
+            // Nothing to cleanup here
+        }
     }
 }

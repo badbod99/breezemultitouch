@@ -53,7 +53,7 @@ namespace TouchFramework.ControlHandlers
         }
 
         public Image SetPicture(string path)
-        {
+        {            
             BitmapImage bi = new BitmapImage(new Uri(path));
             image2.Source = bi;
             bi.Freeze();
