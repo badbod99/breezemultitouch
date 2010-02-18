@@ -74,9 +74,11 @@ namespace TouchExample
         /// This sets the tracking mode between all available modes from TouchFrameworkTracking.
         /// NOTE: If you use Traal (Mindstorm's tracking system) you need to copy ALL the dependencies
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
-        /// Lightning tracking system.
+        /// Lightning tracking system.  
+        /// 
+        /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -123,7 +125,7 @@ namespace TouchExample
             {
                 if (!framework.AllTouches.Keys.Contains(i)) canvas1.Children.Remove(points[i]);
             }
-            foreach (Touch te in framework.AllTouches.Values)
+            foreach (TouchFramework.Touch te in framework.AllTouches.Values)
             {
                 DisplayPoint(te.TouchId, te.TouchPoint);
             }
