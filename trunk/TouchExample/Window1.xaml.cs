@@ -212,7 +212,6 @@ namespace TouchExample
         void LoadAllImages(string folderName)
         {
             string[] fileNames = Directory.GetFiles(folderName);
-            DirectoryInfo newDir = Directory.CreateDirectory(System.IO.Path.Combine(folderName, "small"));
             
             foreach (string fileName in fileNames)
             {
@@ -220,7 +219,7 @@ namespace TouchExample
                 {
                     if (numItems > MAX_ITEMS) break;
                     AddPhoto(fileName);
-                    numItems++;                    
+                    numItems++;
                 }
             }
         }
@@ -312,6 +311,7 @@ namespace TouchExample
 
             ElementProperties prop = new ElementProperties();
             prop.ElementSupport.AddSupportForAll();
+            // prop.ElementSupport.AddSupport(TouchAction.Move | TouchAction.Rotate | TouchAction.Resize);
 
             MTContainer cont = new MTSmoothContainer(p, canvas1, prop);
             framework.RegisterElement(cont);
@@ -338,6 +338,11 @@ namespace TouchExample
             wk.RunWorkerAsync();
         }
 
+        /// <summary>
+        /// Positions all elements registered with the framework randomly within the window area.
+        /// Uses SetTop and SetLeft of the Canvas for positioning.  The timer behaviour in the MTSmoothContainer
+        /// means that Move is not suitable to set initial positioning.
+        /// </summary>
         void Move()
         {
             foreach (var cont in this.framework.Assigner.Elements.Values)
@@ -358,7 +363,12 @@ namespace TouchExample
             }
         }
 
-
+        /// <summary>
+        /// Called via callback in the Main UI thread.
+        /// Rotates all elements registered in the framework by a random angle between -90 and 90 degrees
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void DelayedRotate(object sender, RunWorkerCompletedEventArgs e)
         {
             foreach (var cont in this.framework.Assigner.Elements.Values)

@@ -47,7 +47,7 @@ namespace TouchFramework.ControlHandlers
     /// <summary>
     /// Interaction logic for VideoControl.xaml
     /// </summary>
-    public partial class VideoControl : UserControl
+    public partial class VideoControl : UserControl, IDisposable
     {
         delegate void InvokeDelegate();     
 
@@ -187,5 +187,39 @@ namespace TouchFramework.ControlHandlers
             dispHeight = rectangle1.Width * ratio;
             dispWidth = rectangle1.Width;
         }
+
+        #region IDisposable Members
+
+        protected bool disposed = false;
+
+        public void Dispose()
+        {
+            Dispose(true);            
+        }
+
+        private void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    Cleanup();
+                }
+                disposed = true;
+            }
+        }
+
+        private void Cleanup()
+        {
+            player.Close();
+        }
+
+        #endregion
+
+        ~VideoControl()
+        {
+            Dispose(false);
+        }
+        
     }
 }

@@ -46,7 +46,7 @@ namespace TouchFramework
     /// Wraps any FrameworkElement object with a controlling interface which stores touch information and 
     /// processes actions based on the touches present.
     /// </summary>
-    public abstract class MTContainer
+    public abstract class MTContainer : IDisposable
     {
         const int DEFAULT_MINX = 0;
         const int DEFAULT_MINY = 0;
@@ -368,18 +368,24 @@ namespace TouchFramework
 
         protected bool checkIntersects(IntersectEdge edge)
         {
-            var currentBoundsTop = new Rect(0, -2, TopContainer.ActualWidth, 2);
-            var currentBoundsBottom = new Rect(0, TopContainer.ActualHeight, TopContainer.ActualWidth, 2);
-            var currentBoundsLeft = new Rect(-2, 0, 2, TopContainer.ActualHeight);
-            var currentBoundsRight = new Rect(TopContainer.ActualWidth, 0, 2, TopContainer.ActualHeight);
-
             Rect objectBounds = getBounds(WorkingObject, TopContainer);
             bool intersect = false;
 
-            if (edge == IntersectEdge.Top) if (objectBounds.IntersectsWith(currentBoundsTop)) intersect = true;
-            if (edge == IntersectEdge.Bottom) if (objectBounds.IntersectsWith(currentBoundsBottom)) intersect = true;
-            if (edge == IntersectEdge.Left) if (objectBounds.IntersectsWith(currentBoundsLeft)) intersect = true;
-            if (edge == IntersectEdge.Right) if (objectBounds.IntersectsWith(currentBoundsRight)) intersect = true;
+            switch (edge)
+            {
+                case IntersectEdge.Top:
+                    intersect = (objectBounds.Top <= 0);
+                    break;
+                case IntersectEdge.Bottom:
+                    intersect = (objectBounds.Bottom >= TopContainer.ActualHeight);
+                    break;
+                case IntersectEdge.Right:
+                    intersect = (objectBounds.Right >= TopContainer.ActualWidth);
+                    break;
+                case IntersectEdge.Left:
+                    intersect = (objectBounds.Left <= 0);
+                    break;
+            }
 
             return intersect;
         }
@@ -417,6 +423,37 @@ namespace TouchFramework
         public bool Supports(TouchAction action)
         {
             return this.ElementDef.ElementSupport.CheckSupported(action);
+        }
+
+        #region IDisposable Members
+
+        protected bool disposed = false;
+
+        public void Dispose()
+        {
+            Dispose(true);
+            if (WorkingObject is IDisposable) ((IDisposable)WorkingObject).Dispose();
+        }
+
+        private void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    Cleanup();
+                }
+                disposed = true;
+            }
+        }
+
+        protected abstract void Cleanup();
+
+        #endregion
+
+        ~MTContainer()
+        {
+            Dispose(false);
         }
     }
 }
