@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.AlignConfig"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.App"><param name="Local" value="class_touch_example_1_1_app.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ButtonHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.CheckBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_check_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ElementHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ElementProperties"><param name="Local" value="class_touch_framework_1_1_element_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.FrameworkConfiguration"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.FrameworkControl"><param name="Local" value="class_touch_framework_1_1_framework_control.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.LinearFilter"><param name="Local" value="class_touch_framework_1_1_linear_filter.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.LinearFilter2d"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ListBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTContainer"><param name="Local" value="class_touch_framework_1_1_m_t_container.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTDirectContainer"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTElementDictionary"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTSmoothContainer"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.NotConfiguredException"><param name="Local" value="class_touch_framework_1_1_not_configured_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCBundle"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCMessage"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCPacket"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Photo"><param name="Local" value="class_touch_example_1_1_photo.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Helpers.PointTransform"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.PointTransform"><param name="Local" value="class_touch_framework_1_1_point_transform.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.ProjectionConfig"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Properties.Resources"><param name="Local" value="class_touch_example_1_1_properties_1_1_resources.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Properties.Resources"><param name="Local" value="class_touch_framework_1_1_properties_1_1_resources.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Properties.Settings"><param name="Local" value="class_touch_example_1_1_properties_1_1_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Properties.Settings"><param name="Local" value="class_touch_framework_1_1_properties_1_1_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.SliderHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_slider_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.SupportedActions"><param name="Local" value="class_touch_framework_1_1_supported_actions.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.TextBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_text_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Touch"><param name="Local" value="class_touch_framework_1_1_touch.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchDictionary"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElement"><param name="Local" value="class_touch_framework_1_1_touch_element.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElementAssigner"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElementDictionary"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchProperties"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.TrackingHelper"><param name="Local" value="class_touch_example_1_1_tracking_helper.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio2DCursor"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioParser"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Window1"><param name="Local" value="class_touch_example_1_1_window1.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.AlignConfig"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.App"><param name="Local" value="class_touch_example_1_1_app.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ElementHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ButtonHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ButtonHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.CheckBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_check_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.CheckBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_check_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ListBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.ListBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.SliderHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_slider_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.SliderHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_slider_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.TextBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_text_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ControlHandlers.TextBoxHandler"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_text_box_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.ElementProperties"><param name="Local" value="class_touch_framework_1_1_element_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.FrameworkConfiguration"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioConfiguration"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.FrameworkControl"><param name="Local" value="class_touch_framework_1_1_framework_control.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.MouseTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TraalTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioTracking"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.LinearFilter"><param name="Local" value="class_touch_framework_1_1_linear_filter.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.LinearFilter2d"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTContainer"><param name="Local" value="class_touch_framework_1_1_m_t_container.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTDirectContainer"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTDirectContainer"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTSmoothContainer"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTSmoothContainer"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.MTElementDictionary"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.NotConfiguredException"><param name="Local" value="class_touch_framework_1_1_not_configured_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCPacket"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCBundle"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCBundle"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCMessage"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio.OSCMessage"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Photo"><param name="Local" value="class_touch_example_1_1_photo.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Helpers.PointTransform"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.PointTransform"><param name="Local" value="class_touch_framework_1_1_point_transform.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.ProjectionConfig"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Properties.Resources"><param name="Local" value="class_touch_example_1_1_properties_1_1_resources.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Properties.Resources"><param name="Local" value="class_touch_framework_1_1_properties_1_1_resources.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Properties.Settings"><param name="Local" value="class_touch_example_1_1_properties_1_1_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Properties.Settings"><param name="Local" value="class_touch_framework_1_1_properties_1_1_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.SupportedActions"><param name="Local" value="class_touch_framework_1_1_supported_actions.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Touch"><param name="Local" value="class_touch_framework_1_1_touch.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchDictionary"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElement"><param name="Local" value="class_touch_framework_1_1_touch_element.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElementAssigner"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchElementDictionary"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.TouchProperties"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.TrackingHelper"><param name="Local" value="class_touch_example_1_1_tracking_helper.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.Tuio2DCursor"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchFramework.Tracking.TuioParser"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="TouchExample.Window1"><param name="Local" value="class_touch_example_1_1_window1.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+</UL>
+</BODY>
+</HTML>
