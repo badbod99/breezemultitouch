@@ -275,8 +275,18 @@ namespace TouchFramework
         /// Performs a rendertransform rotating the object around the center point provided from it's current rotation (after all previous transforms).
         /// </summary>
         /// <param name="angle">The angle to rotate by.</param>
-        /// <param name="centerPoint">Point in screen space for the center of the scale operation.</param>
+        /// <param name="centerPoint">Point in screen space for the center of the operation.</param>
         public abstract void Rotate(float angle, PointF centerPoint);
+
+        /// <summary>
+        /// Performs a rendertransform rotating the object around the default center point as calculated by the container (usually the center of the element).
+        /// </summary>
+        /// <param name="angle">The angle to rotate by.</param>
+        public virtual void Rotate(float angle)
+        {
+            PointF cen = this.GetElementCenter();
+            this.Rotate(angle, cen);
+        }
 
         /// <summary>
         /// Combines a scale, rotate and move operation for simplicity
