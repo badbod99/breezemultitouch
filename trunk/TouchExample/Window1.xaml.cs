@@ -440,7 +440,7 @@ namespace TouchExample
                 LoadMyPictures();
                 LoadMyVideos();
 
-                nonBlockDelay = 1000;
+                nonBlockDelay = 4000;
                 AnimateStartPos();
             }
             else if (e.Key == Key.Space)
