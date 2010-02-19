@@ -134,10 +134,16 @@ namespace TouchFramework
         public override void Move(float offsetX, float offsetY)
         {
             if (!Supports(TouchAction.Move)) return;
+            
             PointF target = TranslateFilter.Target;
             target.X += offsetX;
             target.Y += offsetY;
             TranslateFilter.Target = target;
+
+            PointF cen = CenterFilter.Target;
+            cen.X += offsetX;
+            cen.Y += offsetY;
+            CenterFilter.Target = cen;
         }
         
         /// <summary>
@@ -149,6 +155,8 @@ namespace TouchFramework
         {
             if (!Supports(TouchAction.Rotate)) return;
             SetCenterTarget(centerPoint);
+            //Resetting the center filter every time to the current center may or may not be correct, Need to test on table.
+            //this.CenterFilter.Reset(centerPoint, centerPoint);
             if (angle < 170 && angle > -170)
             {
                 this.RotateFilter.Target += angle;
@@ -162,7 +170,7 @@ namespace TouchFramework
         /// <param name="scaleFactor">Value to multiply the object's width and height by.</param>
         /// <param name="offsetX">Number of pixels to move the object on the x axis.</param>
         /// <param name="offsetY">Number of pixels to move the object on the y axis.</param>
-        /// <param name="centerPoint">Point in screen space for the center of the scale operation.</param>
+        /// <param name="centerPoint">Point in screen space for the center of the scale/rotate operation.</param>
         public override void ScaleRotateMove(float angle, float scaleFactor, float offsetX, float offsetY, PointF centerPoint)
         {
             PointF target = TranslateFilter.Target;

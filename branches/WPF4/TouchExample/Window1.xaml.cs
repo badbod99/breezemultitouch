@@ -108,13 +108,9 @@ namespace TouchExample
             LoadMyPictures();
             LoadMyVideos();
 
+            nonBlockDelay = 4000;
             AnimateStartPos();
         }
-
-        void NonBlockingDelay(object sender, DoWorkEventArgs e)
-        {
-            Thread.Sleep(200);
-        }        
 
         /// <summary>
         /// Displays all points from the collection of points on the screen as elipses.
@@ -326,18 +322,30 @@ namespace TouchExample
             cont.MinY = (int)(this.screen_width / 10);
         }
 
+        int nonBlockDelay = 1000;
+
+        void NonBlockingDelay(object sender, DoWorkEventArgs e)
+        {
+            Thread.Sleep(nonBlockDelay);
+        } 
+
+        void AnimateStartPos()
+        {
+            BackgroundWorker bw = new BackgroundWorker();
+            bw.DoWork += new DoWorkEventHandler(NonBlockingDelay);
+            bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(AnimateStartPos);
+            bw.RunWorkerAsync();
+        }
+        
         /// <summary>
         /// Creates a non-blocking delay using a callback to delay the animation of the items to their intial start position.
         /// </summary>
-        void AnimateStartPos()
+        void AnimateStartPos(object sender, RunWorkerCompletedEventArgs e)
         {
             // Move then wait a bit and rotate
+            RotateAll();
             Move();
-
-            BackgroundWorker wk = new BackgroundWorker();
-            wk.DoWork += new DoWorkEventHandler(NonBlockingDelay);
-            wk.RunWorkerCompleted += new RunWorkerCompletedEventHandler(DelayedRotate);
-            wk.RunWorkerAsync();
+            
         }
 
         /// <summary>
@@ -356,22 +364,18 @@ namespace TouchExample
                 // Get random position and rotation
                 int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
                 int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
+                Rect curPos = cont.GetElementBounds();
+                x -= (int)curPos.Left;
+                y -= (int)curPos.Top;
 
-                //cont.Move(x, y);
-                Canvas.SetTop(cont.WorkingObject, y);
-                Canvas.SetLeft(cont.WorkingObject, x);
-                cont.StartX = x;
-                cont.StartY = y;
+                cont.Move(x, y);
             }
         }
 
         /// <summary>
-        /// Called via callback in the Main UI thread.
         /// Rotates all elements registered in the framework by a random angle between -90 and 90 degrees
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        void DelayedRotate(object sender, RunWorkerCompletedEventArgs e)
+        void RotateAll()
         {
             foreach (var cont in this.framework.Assigner.Elements.Values)
             {
@@ -380,6 +384,19 @@ namespace TouchExample
                 cont.Rotate(a, p);
             }
         }
+
+        /// <summary>
+        /// Rotates all elements registered in the framework by the specified angle
+        /// </summary>
+        void RotateAll(int angle)
+        {
+            foreach (var cont in this.framework.Assigner.Elements.Values)
+            {
+                PointF p = cont.GetElementCenter();
+                cont.Rotate(angle, p);
+            }
+        }
+
 
         /// <summary>
         /// Creates a new video and adds it as a touch managed object to the MTElementDictionary withing the framework.
@@ -425,7 +442,17 @@ namespace TouchExample
                 LoadMyPictures();
                 LoadMyVideos();
 
+                nonBlockDelay = 4000;
                 AnimateStartPos();
+            }
+            else if (e.Key == Key.Space)
+            {
+                RotateAll();
+                Move();
+            }
+            else if (e.Key == Key.S)
+            {
+                RotateAll(10);
             }
             else if (e.Key == Key.Return)
             {
