@@ -109,6 +109,13 @@ namespace TouchFramework
         }
 
         /// <summary>
+        /// Allows you to reset the container after making manual changes to the elements positions.
+        /// </summary>
+        public virtual void Reset()
+        {
+        }
+
+        /// <summary>
         /// Returns the hascode of the working object so it matches the hashcode from the hit test.
         /// </summary>
         /// <returns>int identifier from the FrameworkElement.GetHashCode()</returns>
