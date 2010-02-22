@@ -80,6 +80,12 @@ namespace TouchFramework
             this.DampingDelay = 1200;
         }
 
+        public override void Reset()
+        {
+            centerInit = false;
+            base.Reset();
+        }
+
         /// <summary>
         /// Delay in Milliseconds which handles the length of time the filters run for.
         /// A lower delay values makes movement faster, a higher value slows everything down.
