@@ -66,7 +66,7 @@ namespace TouchFramework
 
         void timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            lock (sync)
+            lock (eles.SyncRoot)
             {
                 foreach (MTContainer cont in eles.Values)
                 {
