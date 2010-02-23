@@ -45,6 +45,8 @@ namespace TouchFramework
     {
         public readonly FrameworkElement Parent;
         public int MaxZIndex = 0;
+
+        object sync = new object();
         
         /// <summary>
         /// Constructor for MTElementDictionary.
@@ -61,7 +63,10 @@ namespace TouchFramework
         /// <param name="toAdd">The fully initialised container.</param>
         public void Add(MTContainer toAdd)
         {
-            this.Add(toAdd.GetHashCode(), toAdd);
+            lock (sync)
+            {
+                this.Add(toAdd.GetHashCode(), toAdd);
+            }
         }
 
         /// <summary>
