@@ -76,7 +76,7 @@ namespace TouchExample
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
         /// Lightning tracking system.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
