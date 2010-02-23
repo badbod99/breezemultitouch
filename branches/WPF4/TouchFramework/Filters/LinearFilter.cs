@@ -185,7 +185,7 @@ namespace TouchFramework
                 {
                     //If we finished, we make sure to be on target
                     elapsed = delay;
-                    //this.isfiltering = false;
+                    this.isfiltering = false;
                     this.position = target;
                     this.velocity = 0;
 

@@ -53,11 +53,27 @@ namespace TouchFramework.ControlHandlers
         }
 
         public Image SetPicture(string path)
-        {            
-            BitmapImage bi = new BitmapImage(new Uri(path));
+        {
+            BitmapSource bi = new BitmapImage(new Uri(path));
+
+            double aspectRatio = bi.Width / bi.Height;
+            //Uncomment this to enable automatic resize of pictures
+            //bi = Photo.GenerateBitmapSource(bi, 500 * aspectRatio, 500);
             image2.Source = bi;
             bi.Freeze();
             return image2;
+        }
+
+        public static BitmapSource GenerateBitmapSource(ImageSource img, double renderWidth, double renderHeight)
+        {
+            var dv = new DrawingVisual();
+            using (DrawingContext dc = dv.RenderOpen())
+            {
+                dc.DrawImage(img, new Rect(0, 0, renderWidth, renderHeight));
+            }
+            var bmp = new RenderTargetBitmap((int)renderWidth, (int)renderHeight, 96, 96, PixelFormats.Pbgra32);
+            bmp.Render(dv);
+            return bmp;
         }
     }
 }

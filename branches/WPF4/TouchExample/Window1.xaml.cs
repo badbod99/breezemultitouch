@@ -78,7 +78,7 @@ namespace TouchExample
         /// 
         /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -107,9 +107,9 @@ namespace TouchExample
 
             LoadMyPictures();
             LoadMyVideos();
-
-            nonBlockDelay = 4000;
-            AnimateStartPos();
+            
+            PosAll();
+            DelayedRotate(4000);
         }
 
         /// <summary>
@@ -309,7 +309,6 @@ namespace TouchExample
 
             ElementProperties prop = new ElementProperties();
             prop.ElementSupport.AddSupportForAll();
-            // prop.ElementSupport.AddSupport(TouchAction.Move | TouchAction.Rotate | TouchAction.Resize);
 
             MTContainer cont = new MTSmoothContainer(p, canvas1, prop);
             framework.RegisterElement(cont);
@@ -321,31 +320,54 @@ namespace TouchExample
             cont.MinX = (int)(this.screen_height / 10);
             cont.MinY = (int)(this.screen_width / 10);
         }
-
-        int nonBlockDelay = 1000;
-
-        void NonBlockingDelay(object sender, DoWorkEventArgs e)
-        {
-            Thread.Sleep(nonBlockDelay);
-        } 
-
-        void AnimateStartPos()
+        
+        /// <summary>
+        /// Creates a non-blocking delay using a callback to delay the rotation until the element has been positioned.
+        /// Required as the center point is calculated using the built-in render location.  If you've moved the element
+        /// the you need to wait for it to be rendered before WPF knows the location of the object.
+        /// </summary>
+        void DelayedRotate(int delayMs)
         {
             BackgroundWorker bw = new BackgroundWorker();
             bw.DoWork += new DoWorkEventHandler(NonBlockingDelay);
-            bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(AnimateStartPos);
-            bw.RunWorkerAsync();
+            bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(DelayedRotateCallback);
+            bw.RunWorkerAsync(delayMs);
+        }
+
+        void NonBlockingDelay(object sender, DoWorkEventArgs e)
+        {
+            int delay = (int)e.Argument;
+            Thread.Sleep(delay);
         }
         
-        /// <summary>
-        /// Creates a non-blocking delay using a callback to delay the animation of the items to their intial start position.
-        /// </summary>
-        void AnimateStartPos(object sender, RunWorkerCompletedEventArgs e)
+        void DelayedRotateCallback(object sender, RunWorkerCompletedEventArgs e)
         {
-            // Move then wait a bit and rotate
-            RotateAll();
-            Move();
-            
+            RotateAll();    
+        }
+
+        /// <summary>
+        /// Positions all the elements to random locations within the window.
+        /// Uses SetTop and SetLeft and provides an example of how to position or re-position an element
+        /// to an arbitary location without messing up the center point calculations.
+        /// </summary>
+        void PosAll()
+        {
+            foreach (var cont in this.framework.Assigner.Elements.Values)
+            {
+                // Just incase canvas is too small
+                int difX = canvas1.ActualWidth > 200 ? 200 : 0;
+                int difY = canvas1.ActualWidth > 200 ? 200 : 0;
+
+                // Get random position and rotation
+                int x = randomGen.Next(0, (int)canvas1.ActualWidth - difX);
+                int y = randomGen.Next(0, (int)canvas1.ActualHeight - difY);
+
+                Canvas.SetTop(cont.WorkingObject, y);
+                Canvas.SetLeft(cont.WorkingObject, x);
+                cont.Reset();
+                cont.StartX = x;
+                cont.StartY = y;
+            }
         }
 
         /// <summary>
@@ -353,7 +375,7 @@ namespace TouchExample
         /// Uses SetTop and SetLeft of the Canvas for positioning.  The timer behaviour in the MTSmoothContainer
         /// means that Move is not suitable to set initial positioning.
         /// </summary>
-        void Move()
+        void MoveAll()
         {
             foreach (var cont in this.framework.Assigner.Elements.Values)
             {
@@ -427,6 +449,9 @@ namespace TouchExample
         /// Handles key presses to clear the background etc...
         /// B = clear background
         /// Return = Full screen toggle
+        /// R = Reload everything
+        /// Space = Reposition elements
+        /// S = Spin
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -442,17 +467,17 @@ namespace TouchExample
                 LoadMyPictures();
                 LoadMyVideos();
 
-                nonBlockDelay = 4000;
-                AnimateStartPos();
+                PosAll();
+                DelayedRotate(3000);
             }
             else if (e.Key == Key.Space)
             {
                 RotateAll();
-                Move();
+                MoveAll();
             }
             else if (e.Key == Key.S)
             {
-                RotateAll(10);
+                RotateAll(30);
             }
             else if (e.Key == Key.Return)
             {
