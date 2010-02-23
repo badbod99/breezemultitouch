@@ -254,13 +254,13 @@ namespace TouchFramework
                 dCenY = (centerPoint.Y + this.DampingFilter.CumulativePosition.Y) - StartY;
 
                 // If we are supposed to check the bounds with the container, check using the intersect
-                if (this.Supports(TouchAction.BoundsCheck))
-                {
-                    if (dPosX > 0 && checkIntersects(IntersectEdge.Right)) this.DampingFilter.Stop();
-                    if (dPosX < 0 && checkIntersects(IntersectEdge.Left)) this.DampingFilter.Stop();
-                    if (dPosY < 0 && checkIntersects(IntersectEdge.Top)) this.DampingFilter.Stop();
-                    if (dPosY > 0 && checkIntersects(IntersectEdge.Bottom)) this.DampingFilter.Stop();
-                }
+                //if (this.Supports(TouchAction.BoundsCheck))
+                //{
+                //    if (dPosX > 0 && checkIntersects(IntersectEdge.Right)) this.DampingFilter.Stop();
+                //    if (dPosX < 0 && checkIntersects(IntersectEdge.Left)) this.DampingFilter.Stop();
+                //    if (dPosY < 0 && checkIntersects(IntersectEdge.Top)) this.DampingFilter.Stop();
+                //    if (dPosY > 0 && checkIntersects(IntersectEdge.Bottom)) this.DampingFilter.Stop();
+                //}
             }
 
             if (this.AngularDampingFilter.IsFiltering)

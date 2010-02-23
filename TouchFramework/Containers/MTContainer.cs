@@ -158,13 +158,13 @@ namespace TouchFramework
             float moveY = ObjectTouches.MoveY;
 
             // If we are supposed to check the bounds with the container, check using the intersect
-            if (this.Supports(TouchAction.BoundsCheck))
-            {
-                if (moveX > 0 && checkIntersects(IntersectEdge.Right)) { moveX = 0; }
-                if (moveX < 0 && checkIntersects(IntersectEdge.Left)) { moveX = 0; }
-                if (moveY < 0 && checkIntersects(IntersectEdge.Top)) { moveY = 0; }
-                if (moveY > 0 && checkIntersects(IntersectEdge.Bottom)) { moveY = 0; }
-            }
+            //if (this.Supports(TouchAction.BoundsCheck))
+            //{
+            //    if (moveX > 0 && checkIntersects(IntersectEdge.Right)) { moveX = 0; }
+            //    if (moveX < 0 && checkIntersects(IntersectEdge.Left)) { moveX = 0; }
+            //    if (moveY < 0 && checkIntersects(IntersectEdge.Top)) { moveY = 0; }
+            //    if (moveY > 0 && checkIntersects(IntersectEdge.Bottom)) { moveY = 0; }
+            //}
             
             this.ScaleRotateMove(angle, scale, moveX, moveY, ObjectTouches.ActionCenter);
         }
@@ -383,29 +383,29 @@ namespace TouchFramework
             Right
         }
 
-        protected bool checkIntersects(IntersectEdge edge)
-        {
-            Rect objectBounds = getBounds(WorkingObject, TopContainer);
-            bool intersect = false;
+        //protected bool checkIntersects(IntersectEdge edge)
+        //{
+        //    Rect objectBounds = getBounds(WorkingObject, TopContainer);
+        //    bool intersect = false;
 
-            switch (edge)
-            {
-                case IntersectEdge.Top:
-                    intersect = (objectBounds.Top <= 0);
-                    break;
-                case IntersectEdge.Bottom:
-                    intersect = (objectBounds.Bottom >= TopContainer.ActualHeight);
-                    break;
-                case IntersectEdge.Right:
-                    intersect = (objectBounds.Right >= TopContainer.ActualWidth);
-                    break;
-                case IntersectEdge.Left:
-                    intersect = (objectBounds.Left <= 0);
-                    break;
-            }
+        //    switch (edge)
+        //    {
+        //        case IntersectEdge.Top:
+        //            intersect = (objectBounds.Top <= 0);
+        //            break;
+        //        case IntersectEdge.Bottom:
+        //            intersect = (objectBounds.Bottom >= TopContainer.ActualHeight);
+        //            break;
+        //        case IntersectEdge.Right:
+        //            intersect = (objectBounds.Right >= TopContainer.ActualWidth);
+        //            break;
+        //        case IntersectEdge.Left:
+        //            intersect = (objectBounds.Left <= 0);
+        //            break;
+        //    }
 
-            return intersect;
-        }
+        //    return intersect;
+        //}
 
         public PointF GetElementCenter()
         {
