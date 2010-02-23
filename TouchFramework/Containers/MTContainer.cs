@@ -314,7 +314,7 @@ namespace TouchFramework
         {
             WorkingObject.RenderTransform = transforms;
 
-            // Store the current tranform ready for use in the next frame
+            // Store the current transform ready for use in the next frame
             oldTranform = WorkingObject.RenderTransform.Value;
 
             // Reset our transform group (each time we will fill it with new tranforms)
@@ -471,6 +471,10 @@ namespace TouchFramework
         ~MTContainer()
         {
             Dispose(false);
+        }
+
+        public virtual void Tick()
+        {
         }
     }
 }

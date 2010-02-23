@@ -105,7 +105,7 @@ namespace TouchExample
 
             LoadMyPictures();
             LoadMyVideos();
-
+            
             PosAll();
             DelayedRotate(4000);
         }
@@ -307,7 +307,6 @@ namespace TouchExample
 
             ElementProperties prop = new ElementProperties();
             prop.ElementSupport.AddSupportForAll();
-            // prop.ElementSupport.AddSupport(TouchAction.Move | TouchAction.Rotate | TouchAction.Resize);
 
             MTContainer cont = new MTSmoothContainer(p, canvas1, prop);
             framework.RegisterElement(cont);
