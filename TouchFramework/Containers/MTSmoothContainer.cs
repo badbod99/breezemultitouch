@@ -49,7 +49,6 @@ namespace TouchFramework
     public class MTSmoothContainer : MTContainer, IDisposable
     {
         object sync = new object();
-        Timer timer;
 
         LinearFilter2d TranslateFilter = new LinearFilter2d();
         LinearFilter2d CenterFilter = new LinearFilter2d();
@@ -69,15 +68,16 @@ namespace TouchFramework
         public MTSmoothContainer(FrameworkElement createFrom, Panel cont, ElementProperties props)
             : base(createFrom, cont, props)
         {
-            this.timer = new Timer();
-            this.timer.Interval = 3;
-            this.timer.Elapsed += new ElapsedEventHandler(timer_Elapsed);
-            this.timer.Start();
-
             this.ScaleFilter.Reset(1.0f, 1.0f);
 
             this.Delay = 100;
             this.DampingDelay = 1200;
+        }
+
+        public override void Reset()
+        {
+            centerInit = false;
+            base.Reset();
         }
 
         /// <summary>
@@ -93,7 +93,6 @@ namespace TouchFramework
                 this.RotateFilter.Delay = value;
                 this.ScaleFilter.Delay = value;
                 this.CenterFilter.Delay = value;
-                this.timer.Enabled = (value > 0);
             }
         }
 
@@ -189,11 +188,6 @@ namespace TouchFramework
                 this.RotateFilter.Target += angle;
             }
         }
-        
-        void timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            smoothActions();
-        }
 
         void smoothActions()
         {
@@ -208,7 +202,7 @@ namespace TouchFramework
                 // NOTE: You can disable this to test spinning move.
                 if (this.ObjectTouches.JustTouched) { this.DampingFilter.Stop(); }
                 if (this.ObjectTouches.TwoOrMoreTouch) { this.AngularDampingFilter.Stop(); }
-
+                
                 // If we support flicking then dampen the movement
                 if (Supports(TouchAction.Flick))
                 {
@@ -231,12 +225,6 @@ namespace TouchFramework
 
                 WorkingObject.Dispatcher.BeginInvoke((InvokeDelegate)delegate() { this.updatePosition(); });
             }
-        }
-
-        void stopDamping()
-        {
-            this.DampingFilter.Stop();
-            this.AngularDampingFilter.Stop();
         }
 
         void updatePosition()
@@ -301,15 +289,14 @@ namespace TouchFramework
             centerInit = true;
         }
 
-        public void Stop()
-        {
-            timer.Stop();
-        }
-
         protected override void  Cleanup()
         {
-            this.Stop();
-            timer.Dispose();
+        }
+
+        public override void Tick()
+        {
+            smoothActions();
+            base.Tick();
         }
     }
 }

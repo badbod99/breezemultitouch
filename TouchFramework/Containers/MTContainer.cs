@@ -109,6 +109,13 @@ namespace TouchFramework
         }
 
         /// <summary>
+        /// Allows you to reset the container after making manual changes to the elements positions.
+        /// </summary>
+        public virtual void Reset()
+        {
+        }
+
+        /// <summary>
         /// Returns the hascode of the working object so it matches the hashcode from the hit test.
         /// </summary>
         /// <returns>int identifier from the FrameworkElement.GetHashCode()</returns>
@@ -307,7 +314,7 @@ namespace TouchFramework
         {
             WorkingObject.RenderTransform = transforms;
 
-            // Store the current tranform ready for use in the next frame
+            // Store the current transform ready for use in the next frame
             oldTranform = WorkingObject.RenderTransform.Value;
 
             // Reset our transform group (each time we will fill it with new tranforms)
@@ -464,6 +471,10 @@ namespace TouchFramework
         ~MTContainer()
         {
             Dispose(false);
+        }
+
+        public virtual void Tick()
+        {
         }
     }
 }

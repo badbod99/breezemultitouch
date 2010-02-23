@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Containers\Ticker.cs" />
     <Compile Include="Containers\MTContainer.cs" />
     <Compile Include="Containers\MTSmoothContainer.cs" />
     <Compile Include="Config\FrameworkConfiguration.cs" />

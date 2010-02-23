@@ -44,6 +44,8 @@ namespace TouchFramework
         public MTElementDictionary Elements = null;
         public TouchElementDictionary Touches = null;
 
+        Ticker t;
+
         /// <summary>
         /// Constructor to create an assigner from a top-level parent which contains ALL the controls which will be assigned for.
         /// Hit test will only run for child controls of the parent object.
@@ -53,6 +55,7 @@ namespace TouchFramework
         {
             Elements = new MTElementDictionary(UIParent);
             Touches = new TouchElementDictionary();
+            t = new Ticker(ref Elements);
         }
 
         public void TouchAdded(Touch t)

@@ -7,8 +7,8 @@
         <Border Name="OuterFrame" CornerRadius="5">
             <Border.Background>
                 <LinearGradientBrush Opacity="0.8">
-                    <GradientStop Color="Azure" Offset="0.0"/>
-                    <GradientStop Color="CadetBlue" Offset="1.0"/>
+                    <GradientStop Color="Silver"  Offset="0.0"/>
+                    <GradientStop Color="AntiqueWhite"  Offset="1.0"/>
                 </LinearGradientBrush>
             </Border.Background>
             <Border Name="InnerFrame" Background="White" BorderBrush="Black" 
