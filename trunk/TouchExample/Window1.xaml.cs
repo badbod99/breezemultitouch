@@ -107,7 +107,7 @@ namespace TouchExample
             LoadMyVideos();
             
             PosAll();
-            DelayedRotate(4000);
+            //DelayedRotate(4000);
         }
 
         /// <summary>
