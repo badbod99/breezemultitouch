@@ -157,16 +157,45 @@ namespace TouchFramework
             float moveX = ObjectTouches.MoveX;
             float moveY = ObjectTouches.MoveY;
 
-            // If we are supposed to check the bounds with the container, check using the intersect
-            //if (this.Supports(TouchAction.BoundsCheck))
-            //{
-            //    if (moveX > 0 && checkIntersects(IntersectEdge.Right)) { moveX = 0; }
-            //    if (moveX < 0 && checkIntersects(IntersectEdge.Left)) { moveX = 0; }
-            //    if (moveY < 0 && checkIntersects(IntersectEdge.Top)) { moveY = 0; }
-            //    if (moveY > 0 && checkIntersects(IntersectEdge.Bottom)) { moveY = 0; }
-            //}
+            var points = getCorners();
+            checkPointEdge(points, ref moveX, ref moveY);
             
             this.ScaleRotateMove(angle, scale, moveX, moveY, ObjectTouches.ActionCenter);
+        }
+
+        protected bool checkPointEdge(System.Windows.Point[] points)
+        {
+            bool hit = false;
+            foreach (var p in points)
+            {
+                hit = (hit || p.X < 0);
+                hit = (hit || p.Y < 0);
+                hit = (hit || p.X > TopContainer.ActualWidth);
+                hit = (hit || p.Y > TopContainer.ActualHeight);
+            }
+            return hit;
+        }
+
+        protected void checkPointEdge(System.Windows.Point[] points, ref float moveX, ref float moveY)
+        {
+            foreach (var p in points)
+            {
+                if (p.X < 0 && moveX < 0) moveX = 0;
+                if (p.Y < 0 && moveY < 0) moveY = 0;
+                if (p.X > TopContainer.ActualWidth && moveX > 0) moveX = 0;
+                if (p.Y > TopContainer.ActualHeight && moveY > 0) moveY = 0;
+            }
+        }
+
+        protected System.Windows.Point[] getCorners()
+        {
+            var t = WorkingObject.TransformToVisual(this.TopContainer);
+            System.Windows.Point topLeft = t.Transform(new System.Windows.Point(0,0));
+            System.Windows.Point topRight = t.Transform(new System.Windows.Point(WorkingObject.ActualWidth,0));
+            System.Windows.Point bottomLeft = t.Transform(new System.Windows.Point(0,WorkingObject.ActualHeight));
+            System.Windows.Point bottomRight = t.Transform(new System.Windows.Point(WorkingObject.ActualWidth,WorkingObject.ActualHeight));
+
+            return new System.Windows.Point[] { topLeft, topRight, bottomLeft, bottomRight };
         }
 
         /// <summary>
