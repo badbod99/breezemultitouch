@@ -72,6 +72,10 @@ namespace TouchFramework.ControlHandlers
             {
                 handler = new ListBoxHandler() as ElementHandler;
             }
+            else if (source is RssList)
+            {
+                handler = new RssListHandler() as ElementHandler;
+            }
             else if (source is VideoControl)
             {
                 handler = new VideoControlHandler() as ElementHandler;
