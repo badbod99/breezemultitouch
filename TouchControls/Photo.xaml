@@ -11,7 +11,7 @@
                     <GradientStop Color="AntiqueWhite"  Offset="1.0"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Border Name="InnerFrame" Background="White" BorderBrush="Black" 
+            <Border Name="InnerFrame" Background="White" BorderBrush="Silver" 
                 Margin="6,6,6,6">
                 <Image Name="image2" Margin="1, 1, 1, 1">
                 </Image>
