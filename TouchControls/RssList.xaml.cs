@@ -25,6 +25,21 @@ namespace TouchFramework.ControlHandlers
     /// </summary>
     public partial class RssList : UserControl
     {
+        string url = string.Empty;
+
+        public object SyncLock = new object();
+
+        public string FeedUrl
+        {
+            get
+            {
+                lock (SyncLock)
+                {
+                    return url;
+                }
+            }
+        }
+
         public RssList()
         {
             InitializeComponent();

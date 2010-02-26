@@ -547,7 +547,7 @@ namespace TouchExample
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStyle = WindowStyle.None;
             this.Topmost = true;
-
+            
             fullscreen = true;
         }
 
