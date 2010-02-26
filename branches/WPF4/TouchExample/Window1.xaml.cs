@@ -107,6 +107,7 @@ namespace TouchExample
 
             LoadMyPictures();
             LoadMyVideos();
+            LoadAllFeeds();
             
             PosAll();
             DelayedRotate(4000);
@@ -201,6 +202,13 @@ namespace TouchExample
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
             LoadAllImages(path);
+        }
+
+        void LoadAllFeeds()
+        {
+            //AddFeed(@"http://twitter.com/statuses/user_timeline/72821989.rss");
+            //AddFeed(@"http://twitter.com/statuses/user_timeline/816653.rss");
+            //AddFeed(@"http://www.microsoft.com/switzerland/xml/socialmedia/community_twitter.xml");
         }
 
         /// <summary>
@@ -314,6 +322,25 @@ namespace TouchExample
             framework.RegisterElement(cont);
 
             canvas1.Children.Add(p);
+
+            cont.MaxX = (int)(this.screen_height);
+            cont.MaxY = (int)(this.screen_width);
+            cont.MinX = (int)(this.screen_height / 10);
+            cont.MinY = (int)(this.screen_width / 10);
+        }
+
+        void AddFeed(string url)
+        {
+            ElementProperties prop = new ElementProperties();
+            prop.ElementSupport.AddSupportForAll();
+
+            RssList r = new RssList();
+            r.Read(url);
+
+            MTContainer cont = new MTSmoothContainer(r, canvas1, prop);
+            framework.RegisterElement(cont);
+
+            canvas1.Children.Add(r);
 
             cont.MaxX = (int)(this.screen_height);
             cont.MaxY = (int)(this.screen_width);
