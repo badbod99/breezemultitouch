@@ -38,8 +38,6 @@ using System.Windows.Controls;
 using TouchFramework.Helpers;
 using TouchFramework.Events;
 
-using WPFMitsuControls;
-
 namespace TouchFramework.ControlHandlers
 {
     /// <summary>
@@ -79,10 +77,6 @@ namespace TouchFramework.ControlHandlers
             else if (source is VideoControl)
             {
                 handler = new VideoControlHandler() as ElementHandler;
-            }
-            else if (source is Book)
-            {
-                handler = new BookHandler() as ElementHandler;
             }
             else
             {
