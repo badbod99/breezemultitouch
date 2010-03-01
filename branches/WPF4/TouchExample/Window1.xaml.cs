@@ -329,10 +329,10 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
 
         void AddFeed(string url)
@@ -348,10 +348,10 @@ namespace TouchExample
 
             canvas1.Children.Add(r);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
         
         /// <summary>
@@ -471,10 +471,10 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
 
 
