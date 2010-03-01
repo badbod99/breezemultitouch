@@ -13,6 +13,10 @@ namespace WpfShaderTest
         public DistortEffect()
         {
             PixelShader = _shader;
+            this.PaddingTop = 0;
+            this.PaddingBottom = 0;
+            this.PaddingLeft = 0;
+            this.PaddingRight = 0;
             UpdateShaderValue(InputProperty);
         }
 
@@ -31,6 +35,4 @@ namespace WpfShaderTest
         private static PixelShader _shader =
             new PixelShader() { UriSource = new Uri("C:\\distort.ps") };
     }
-
-
 }

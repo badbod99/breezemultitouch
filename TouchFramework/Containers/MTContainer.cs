@@ -184,10 +184,10 @@ namespace TouchFramework
                 if (p.X > TopContainer.ActualWidth && moveX > 0) moveX = 0;
                 if (p.Y > TopContainer.ActualHeight && moveY > 0) moveY = 0;
 
-                if (p.X < 0 && scale >= 1) scale = 1;
-                if (p.Y < 0 && scale >= 1) scale = 1;
-                if (p.X > TopContainer.ActualWidth && scale >= 1) scale = 1;
-                if (p.Y > TopContainer.ActualHeight && scale >= 1) scale = 1;
+                //if (p.X < 0 && scale >= 1) scale = 1;
+                //if (p.Y < 0 && scale >= 1) scale = 1;
+                //if (p.X > TopContainer.ActualWidth && scale >= 1) scale = 1;
+                //if (p.Y > TopContainer.ActualHeight && scale >= 1) scale = 1;
 
                 //Doesn't work so well on the angle
                 //if (p.X < 0 && angle != 0) angle = 0;
