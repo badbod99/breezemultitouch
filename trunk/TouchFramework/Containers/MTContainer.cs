@@ -36,7 +36,6 @@ using System.Windows.Media.Animation;
 using System.Windows;
 using System.Windows.Shapes;
 using System.Drawing;
-using System.Timers;
 
 using TouchFramework.ControlHandlers;
 
@@ -151,14 +150,14 @@ namespace TouchFramework
             float angle = ObjectTouches.GetAngleChanged();
             float scale = ObjectTouches.GetDistanceChangeRatio();
 
-            scale = limitScale(scale);
-            updateFullScale(scale);
-
             float moveX = ObjectTouches.MoveX;
             float moveY = ObjectTouches.MoveY;
 
             var points = getCorners();
-            checkPointEdge(points, ref moveX, ref moveY);
+            checkPointEdge(points, ref moveX, ref moveY, ref scale, ref angle);
+
+            scale = limitScale(scale);
+            updateFullScale(scale);            
             
             this.ScaleRotateMove(angle, scale, moveX, moveY, ObjectTouches.ActionCenter);
         }
@@ -176,7 +175,7 @@ namespace TouchFramework
             return hit;
         }
 
-        protected void checkPointEdge(System.Windows.Point[] points, ref float moveX, ref float moveY)
+        protected void checkPointEdge(System.Windows.Point[] points, ref float moveX, ref float moveY, ref float scale, ref float angle)
         {
             foreach (var p in points)
             {
@@ -184,6 +183,17 @@ namespace TouchFramework
                 if (p.Y < 0 && moveY < 0) moveY = 0;
                 if (p.X > TopContainer.ActualWidth && moveX > 0) moveX = 0;
                 if (p.Y > TopContainer.ActualHeight && moveY > 0) moveY = 0;
+
+                //if (p.X < 0 && scale >= 1) scale = 1;
+                //if (p.Y < 0 && scale >= 1) scale = 1;
+                //if (p.X > TopContainer.ActualWidth && scale >= 1) scale = 1;
+                //if (p.Y > TopContainer.ActualHeight && scale >= 1) scale = 1;
+
+                //Doesn't work so well on the angle
+                //if (p.X < 0 && angle != 0) angle = 0;
+                //if (p.Y < 0 && angle != 0) angle = 0;
+                //if (p.X > TopContainer.ActualWidth && angle != 0) angle = 0;
+                //if (p.Y > TopContainer.ActualHeight && angle != 0) angle = 0;
             }
         }
 

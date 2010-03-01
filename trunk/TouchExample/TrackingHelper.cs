@@ -34,6 +34,8 @@ using System.Threading;
 using TouchFramework;
 using TouchFramework.Tracking;
 
+using System.Windows.Controls;
+
 namespace TouchExample
 {
     /// <summary>
@@ -94,7 +96,7 @@ namespace TouchExample
             {
                 Owner = uiParent,
                 UIManagedThreadId = Thread.CurrentThread.ManagedThreadId,
-                EventWindow = (Window)uiParent
+                EventWindow = (Canvas)uiParent
             };
             return conf;
         }

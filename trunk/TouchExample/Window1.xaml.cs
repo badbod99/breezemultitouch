@@ -62,7 +62,7 @@ namespace TouchExample
     public partial class Window1 : Window
     {
         double screen_width = SystemParameters.PrimaryScreenWidth;
-        double screen_height = SystemParameters.PrimaryScreenHeight;   
+        double screen_height = SystemParameters.PrimaryScreenHeight; 
         double window_width = 640;
         double window_height = 480;
         double window_left = 0;
@@ -74,7 +74,9 @@ namespace TouchExample
         /// This sets the tracking mode between all available modes from TouchFrameworkTracking.
         /// NOTE: If you use Traal (Mindstorm's tracking system) you need to copy ALL the dependencies
         /// from the Dependencies folder into the Bin\Debug or Bin\Release folder.  These are the DLLs used for the
-        /// Lightning tracking system.
+        /// Lightning tracking system.  
+        /// 
+        /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
         TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
 
@@ -95,11 +97,14 @@ namespace TouchExample
         /// <param name="e"></param>
         void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            framework = TrackingHelper.GetTracking(this, currentTrackingType);
+            framework = TrackingHelper.GetTracking(canvas1, currentTrackingType);
             framework.OnProcessUpdates += new FrameworkControl.ProcessUpdatesDelegate(this.DisplayPoints);
             framework.Start();
 
             if (AppConfig.StartFullscreen) toggleFullscreen();
+
+            this.canvas1.Width = this.Width;
+            this.canvas1.Height = this.Height;
 
             takeBackground();
 
@@ -108,7 +113,7 @@ namespace TouchExample
             LoadAllFeeds();
             
             PosAll();
-            DelayedRotate(4000);
+            //DelayedRotate(4000);
         }
 
         /// <summary>
@@ -120,7 +125,7 @@ namespace TouchExample
             {
                 if (!framework.AllTouches.Keys.Contains(i)) canvas1.Children.Remove(points[i]);
             }
-            foreach (Touch te in framework.AllTouches.Values)
+            foreach (TouchFramework.Touch te in framework.AllTouches.Values)
             {
                 DisplayPoint(te.TouchId, te.TouchPoint);
             }
@@ -321,10 +326,10 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
 
         void AddFeed(string url)
@@ -340,10 +345,10 @@ namespace TouchExample
 
             canvas1.Children.Add(r);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
         
         /// <summary>
@@ -463,10 +468,10 @@ namespace TouchExample
 
             canvas1.Children.Add(p);
 
-            cont.MaxX = (int)(this.screen_height);
-            cont.MaxY = (int)(this.screen_width);
-            cont.MinX = (int)(this.screen_height / 10);
-            cont.MinY = (int)(this.screen_width / 10);
+            cont.MaxX = (int)(this.screen_width);
+            cont.MaxY = (int)(this.screen_height);
+            cont.MinX = (int)(this.screen_width / 10);
+            cont.MinY = (int)(this.screen_height / 10);
         }
 
 
@@ -493,16 +498,22 @@ namespace TouchExample
                 LoadMyVideos();
 
                 PosAll();
-                DelayedRotate(3000);
+                //DelayedRotate(3000);
             }
             else if (e.Key == Key.Space)
             {
-                RotateAll();
-                MoveAll();
+                //RotateAll();
+                //MoveAll();
+                PosAll();
             }
             else if (e.Key == Key.S)
             {
                 RotateAll(30);
+            }
+            else if (e.Key == Key.W)
+            {
+                this.canvas1.Width = this.Width;
+                this.canvas1.Height = this.Height;
             }
             else if (e.Key == Key.Return)
             {
@@ -529,6 +540,9 @@ namespace TouchExample
             this.Width = window_width;
             this.Height = window_height;
 
+            canvas1.Width = window_width;
+            canvas1.Height = window_height;
+
             fullscreen = false;
         }
 
@@ -546,13 +560,17 @@ namespace TouchExample
             this.Height = screen_height;
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStyle = WindowStyle.None;
-            this.Topmost = true;
+            //this.Topmost = true;
             
+            canvas1.Width = screen_width;
+            canvas1.Height = screen_height;            
+
             fullscreen = true;
         }
 
-        void Window_Closed(object sender, EventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
+            this.ClearAll();
             framework.Stop();
         }
     }

@@ -27,13 +27,13 @@ a commercial licence, please contact Mindstorm via www.mindstorm.com.
 
 using System;
 using System.Windows;
-
+using System.Windows.Controls;
 using TouchFramework;
 
 namespace TouchFramework.Tracking
 {
     public class MouseConfiguration : FrameworkConfiguration
     {
-        public Window EventWindow;
+        public FrameworkElement EventWindow;
     }
 }
