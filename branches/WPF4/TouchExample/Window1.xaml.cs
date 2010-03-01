@@ -79,7 +79,7 @@ namespace TouchExample
         /// 
         /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -109,7 +109,7 @@ namespace TouchExample
 
             takeBackground();
 
-            //this.Effect = new DistortEffect();
+            this.Effect = new DistortEffect();
 
             LoadMyPictures();
             LoadMyVideos();
@@ -566,8 +566,8 @@ namespace TouchExample
             //this.Topmost = true;
 
             canvas1.Width = screen_width;
-            canvas1.Height = screen_height;
-            
+            canvas1.Height = screen_height;            
+
             fullscreen = true;
         }
 
