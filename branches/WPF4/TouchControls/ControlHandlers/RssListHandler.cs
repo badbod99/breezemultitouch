@@ -48,9 +48,11 @@ namespace TouchFramework.ControlHandlers
     /// </summary>
     public class RssListHandler : ElementHandler
     {
+        bool enableScroll = false;
+
         public override void Scroll(float x, float y)
         {
-            base.Scroll(x, y);
+            if (enableScroll) base.Scroll(x, y);
         }
 
         public override void Tap(PointF p)
@@ -64,6 +66,17 @@ namespace TouchFramework.ControlHandlers
             if (item != null) selectItem(l, item);
             
             base.Tap(p);
+        }
+
+        public override void TouchDown(PointF p)
+        {
+            RssList c = Source as RssList;
+            if (c == null) return;
+
+            ListBox l = c.InternalList;
+
+            ListBoxItem item = findSelectedItem(l, new System.Windows.Point(p.X, p.Y));
+            enableScroll = (item != null);
         }
 
         void selectItem(ListBox c, ListBoxItem item)

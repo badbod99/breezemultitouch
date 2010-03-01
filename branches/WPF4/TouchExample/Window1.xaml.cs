@@ -53,6 +53,7 @@ using TouchFramework;
 using TouchFramework.Tracking;
 using TouchFramework.Events;
 using TouchFramework.ControlHandlers;
+using WpfShaderTest;
 
 namespace TouchExample
 {
@@ -62,7 +63,7 @@ namespace TouchExample
     public partial class Window1 : Window
     {
         double screen_width = SystemParameters.PrimaryScreenWidth;
-        double screen_height = SystemParameters.PrimaryScreenHeight;   
+        double screen_height = SystemParameters.PrimaryScreenHeight; 
         double window_width = 640;
         double window_height = 480;
         double window_left = 0;
@@ -78,7 +79,7 @@ namespace TouchExample
         /// 
         /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
-        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
+        TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.Mouse;
 
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
@@ -97,20 +98,25 @@ namespace TouchExample
         /// <param name="e"></param>
         void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            framework = TrackingHelper.GetTracking(this, currentTrackingType);
+            framework = TrackingHelper.GetTracking(canvas1, currentTrackingType);
             framework.OnProcessUpdates += new FrameworkControl.ProcessUpdatesDelegate(this.DisplayPoints);
             framework.Start();
 
             if (AppConfig.StartFullscreen) toggleFullscreen();
 
+            this.canvas1.Width = this.Width;
+            this.canvas1.Height = this.Height;
+
             takeBackground();
+
+            //this.Effect = new DistortEffect();
 
             LoadMyPictures();
             LoadMyVideos();
             LoadAllFeeds();
             
             PosAll();
-            DelayedRotate(4000);
+            //DelayedRotate(4000);
         }
 
         /// <summary>
@@ -495,16 +501,22 @@ namespace TouchExample
                 LoadMyVideos();
 
                 PosAll();
-                DelayedRotate(3000);
+                //DelayedRotate(3000);
             }
             else if (e.Key == Key.Space)
             {
-                RotateAll();
-                MoveAll();
+                //RotateAll();
+                //MoveAll();
+                PosAll();
             }
             else if (e.Key == Key.S)
             {
                 RotateAll(30);
+            }
+            else if (e.Key == Key.W)
+            {
+                this.canvas1.Width = this.Width;
+                this.canvas1.Height = this.Height;
             }
             else if (e.Key == Key.Return)
             {
@@ -531,6 +543,9 @@ namespace TouchExample
             this.Width = window_width;
             this.Height = window_height;
 
+            canvas1.Width = window_width;
+            canvas1.Height = window_height;
+
             fullscreen = false;
         }
 
@@ -548,13 +563,17 @@ namespace TouchExample
             this.Height = screen_height;
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStyle = WindowStyle.None;
-            this.Topmost = true;
+            //this.Topmost = true;
 
+            canvas1.Width = screen_width;
+            canvas1.Height = screen_height;
+            
             fullscreen = true;
         }
 
-        void Window_Closed(object sender, EventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
+            this.ClearAll();
             framework.Stop();
         }
     }

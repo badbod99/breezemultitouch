@@ -220,6 +220,5 @@ namespace TouchFramework.ControlHandlers
         {
             Dispose(false);
         }
-        
     }
 }
