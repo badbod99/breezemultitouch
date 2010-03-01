@@ -4,7 +4,7 @@
     Height="360" Width="300">
 
     <UserControl.Resources>
-        
+
         <DataTemplate x:Key="RssItemTemplate">
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="{Binding Path=Title.Text}" TextWrapping="Wrap" Margin="2,2,2,2" />
@@ -13,12 +13,12 @@
                 <Rectangle Width="10" Height="3" />
             </StackPanel>
         </DataTemplate>
-        
+
         <Style TargetType="ListBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ListBox">
-                                
+
                         <ScrollViewer HorizontalScrollBarVisibility="Disabled"
                          VerticalScrollBarVisibility="Hidden">
                             <StackPanel Orientation="Vertical"
@@ -26,7 +26,7 @@
                            HorizontalAlignment="Left"
                            IsItemsHost="True"/>
                         </ScrollViewer>
-                            
+
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -34,23 +34,29 @@
 
     </UserControl.Resources>
 
-    
-        <Border Name="OuterFrame" CornerRadius="5">
-            <Border.Background>
-                <LinearGradientBrush Opacity="0.8">
-                    <GradientStop Color="Silver" Offset="0.0"/>
-                    <GradientStop Color="AntiqueWhite" Offset="1.0"/>
-                </LinearGradientBrush>
-            </Border.Background>
-            <Border CornerRadius="5" Background="Black"
+
+    <Border Name="OuterFrame" CornerRadius="5">
+        <Border.Background>
+            <LinearGradientBrush Opacity="0.8">
+                <GradientStop Color="#C0DEED" Offset="0.0"/>
+                <GradientStop Color="#FF8EC0DA" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Border CornerRadius="5" Background="Black"
                                 Margin="6,6,6,6">
 
-            <Grid Background="Black">
-                <Label Name="label1" Background="Black" Foreground="White" FontSize="20" Margin="12,6,12,0" Height="53" VerticalAlignment="Top" HorizontalAlignment="Right" />
-                <ListBox Margin="12,65,12,12" Name="listBox1"
-            ItemTemplate="{StaticResource RssItemTemplate}" Background="Black" Foreground="White">
+            <Grid>
+                <Label Name="label1" Foreground="Black" FontSize="20" Margin="12,6,12,0" Height="53" VerticalAlignment="Top" HorizontalAlignment="Right" />
+
+                <ListBox Margin="12,65,12,12" Name="listBox1" ItemTemplate="{StaticResource RssItemTemplate}" Foreground="Black">
                 </ListBox>
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#C0DEED" Offset="0" />
+                        <GradientStop Color="White" Offset="0.543" />
+                    </LinearGradientBrush>
+                </Grid.Background>
             </Grid>
         </Border>
-        </Border>
+    </Border>
 </UserControl>
