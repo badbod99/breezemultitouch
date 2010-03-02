@@ -109,7 +109,9 @@ namespace TouchExample
 
             takeBackground();
 
-            this.Effect = new DistortEffect();
+            canvas1.ClipToBounds = true;
+
+            //this.Effect = new DistortEffect();
 
             LoadMyPictures();
             LoadMyVideos();
@@ -212,9 +214,9 @@ namespace TouchExample
 
         void LoadAllFeeds()
         {
-            //AddFeed(@"http://twitter.com/statuses/user_timeline/72821989.rss");
-            //AddFeed(@"http://twitter.com/statuses/user_timeline/816653.rss");
-            //AddFeed(@"http://www.microsoft.com/switzerland/xml/socialmedia/community_twitter.xml");
+            AddFeed(@"http://twitter.com/statuses/user_timeline/72821989.rss");
+            AddFeed(@"http://twitter.com/statuses/user_timeline/816653.rss");
+            AddFeed(@"http://www.microsoft.com/switzerland/xml/socialmedia/community_twitter.xml");
         }
 
         /// <summary>
@@ -338,7 +340,14 @@ namespace TouchExample
         void AddFeed(string url)
         {
             ElementProperties prop = new ElementProperties();
-            prop.ElementSupport.AddSupportForAll();
+            prop.ElementSupport.AddSupport(TouchFramework.TouchAction.BoundsCheck |
+                TouchFramework.TouchAction.Drag |
+                TouchFramework.TouchAction.Flick |
+                TouchFramework.TouchAction.Move |
+                TouchFramework.TouchAction.Resize |
+                TouchFramework.TouchAction.Rotate |
+                TouchFramework.TouchAction.Spin |
+                TouchFramework.TouchAction.SelectToFront);
 
             RssList r = new RssList();
             r.Read(url);

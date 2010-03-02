@@ -102,15 +102,22 @@ namespace TouchFramework.ControlHandlers
                     refresh = false;
 
                     // Change the value of the feed query string to 'atom' to use Atom format.
-                    XmlReader reader = XmlReader.Create(feedUrl,
-                          new XmlReaderSettings()
-                          {
-                              //MaxCharactersInDocument can be used to control the maximum amount of data 
-                              //read from the reader and helps prevent OutOfMemoryException
-                              //MaxCharactersInDocument = 1024 * 64
-                          });
+                    try
+                    {
+                        XmlReader reader = XmlReader.Create(feedUrl,
+                              new XmlReaderSettings()
+                              {
+                                  //MaxCharactersInDocument can be used to control the maximum amount of data 
+                                  //read from the reader and helps prevent OutOfMemoryException
+                                  //MaxCharactersInDocument = 1024 * 64
+                              });
 
-                    lock (syncLock) feed = SyndicationFeed.Load(reader);
+                        lock (syncLock) feed = SyndicationFeed.Load(reader);
+                    }
+                    catch
+                    {
+                        // We don't really want nasty exceptions from dodgy feeds
+                    }
 
                     this.Dispatcher.BeginInvoke((InvokeDelegate)delegate() { this.updateList(); });
                 }
