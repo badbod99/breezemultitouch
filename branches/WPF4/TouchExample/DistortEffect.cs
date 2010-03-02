@@ -22,8 +22,13 @@ namespace WpfShaderTest
 
         public Brush Input
         {
-            get { return (Brush)GetValue(InputProperty); }
-            set { SetValue(InputProperty, value); }
+            get {
+                Brush b = (Brush)GetValue(InputProperty);
+                return b; 
+            }
+            set {
+                SetValue(InputProperty, value); 
+            }
         }
 
         public static readonly DependencyProperty InputProperty =

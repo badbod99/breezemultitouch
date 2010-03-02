@@ -161,7 +161,7 @@ namespace TouchFramework.ControlHandlers
         /// Override this to implement custom TouchDown behaviour.
         /// </summary>
         /// <param name="p">Point in element relative space of the touch center.</param>
-        public virtual void TouchDown(PointF p)
+        public virtual void TouchDown(PointF global, PointF relative)
         {
             Source.RaiseEvent(new RoutedEventArgs(MTEvents.TouchDownEvent, Source));
         }

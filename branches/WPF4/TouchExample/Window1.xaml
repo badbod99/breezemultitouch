@@ -3,6 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:TouchExample" 
     Title="Window1" Height="661" Width="989" Loaded="Window_Loaded" KeyDown="Window_KeyDown" Background="Black" Closed="Window_Closed">
-        
-    <Canvas Margin="0,0,0,0" Name="canvas1" Background="#FF780000" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="200"></Canvas>
+
+    
+        <Canvas Margin="0,0,0,0" Name="canvas1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="200">
+            
+        </Canvas>
 </Window>

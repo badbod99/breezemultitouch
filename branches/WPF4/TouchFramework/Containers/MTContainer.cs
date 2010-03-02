@@ -136,10 +136,13 @@ namespace TouchFramework
             cumulativeMoveX += ObjectTouches.MoveX;
             cumulativeMoveY += ObjectTouches.MoveY;
 
+            float moveX = ObjectTouches.MoveX;
+            float moveY = ObjectTouches.MoveY;
+
             if (ObjectTouches.JustTouched) DoTouchDown();
             if (ObjectTouches.Lifted) DoTouchUp();
             if (ObjectTouches.Tapped) DoTap();
-            if (ObjectTouches.MoveX != 0 || ObjectTouches.MoveY != 0) DoDrag(); 
+            if (ObjectTouches.MoveX != 0 || ObjectTouches.MoveY != 0) DoDrag();
 
             if (oldRelativePos != relativePos)
             {
@@ -150,12 +153,9 @@ namespace TouchFramework
             float angle = ObjectTouches.GetAngleChanged();
             float scale = ObjectTouches.GetDistanceChangeRatio();
 
-            float moveX = ObjectTouches.MoveX;
-            float moveY = ObjectTouches.MoveY;
-
+            // Limit movement by bounds and max scale
             var points = getCorners();
-            checkPointEdge(points, ref moveX, ref moveY, ref scale, ref angle);
-
+            checkPointEdge(points, ref moveX, ref moveY);
             scale = limitScale(scale);
             updateFullScale(scale);            
             
@@ -175,7 +175,7 @@ namespace TouchFramework
             return hit;
         }
 
-        protected void checkPointEdge(System.Windows.Point[] points, ref float moveX, ref float moveY, ref float scale, ref float angle)
+        protected void checkPointEdge(System.Windows.Point[] points, ref float moveX, ref float moveY)
         {
             foreach (var p in points)
             {
@@ -183,23 +183,21 @@ namespace TouchFramework
                 if (p.Y < 0 && moveY < 0) moveY = 0;
                 if (p.X > TopContainer.ActualWidth && moveX > 0) moveX = 0;
                 if (p.Y > TopContainer.ActualHeight && moveY > 0) moveY = 0;
-
-                //if (p.X < 0 && scale >= 1) scale = 1;
-                //if (p.Y < 0 && scale >= 1) scale = 1;
-                //if (p.X > TopContainer.ActualWidth && scale >= 1) scale = 1;
-                //if (p.Y > TopContainer.ActualHeight && scale >= 1) scale = 1;
-
-                //Doesn't work so well on the angle
-                //if (p.X < 0 && angle != 0) angle = 0;
-                //if (p.Y < 0 && angle != 0) angle = 0;
-                //if (p.X > TopContainer.ActualWidth && angle != 0) angle = 0;
-                //if (p.Y > TopContainer.ActualHeight && angle != 0) angle = 0;
             }
         }
 
         protected System.Windows.Point[] getCorners()
         {
-            var t = WorkingObject.TransformToVisual(this.TopContainer);
+            GeneralTransform t = null;
+            try
+            {
+                t = WorkingObject.TransformToVisual(this.TopContainer);
+            }
+            catch
+            {
+            }
+            if (t == null) return new System.Windows.Point[] {};
+
             System.Windows.Point topLeft = t.Transform(new System.Windows.Point(0,0));
             System.Windows.Point topRight = t.Transform(new System.Windows.Point(WorkingObject.ActualWidth,0));
             System.Windows.Point bottomLeft = t.Transform(new System.Windows.Point(0,WorkingObject.ActualHeight));
@@ -261,7 +259,7 @@ namespace TouchFramework
         /// </summary>
         public void DoTouchDown()
         {
-            handler.TouchDown(relativePos);
+            handler.TouchDown(ObjectTouches.MoveCenter, relativePos);
         }
 
         /// <summary>
