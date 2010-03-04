@@ -109,10 +109,6 @@ namespace TouchExample
 
             takeBackground();
 
-            canvas1.ClipToBounds = true;
-
-            //this.Effect = new DistortEffect();
-
             LoadMyPictures();
             LoadMyVideos();
             LoadAllFeeds();
@@ -510,22 +506,16 @@ namespace TouchExample
                 LoadMyVideos();
 
                 PosAll();
-                //DelayedRotate(3000);
+                DelayedRotate(3000);
             }
             else if (e.Key == Key.Space)
             {
-                //RotateAll();
-                //MoveAll();
-                PosAll();
+                RotateAll();
+                MoveAll();
             }
             else if (e.Key == Key.S)
             {
                 RotateAll(30);
-            }
-            else if (e.Key == Key.W)
-            {
-                this.canvas1.Width = this.Width;
-                this.canvas1.Height = this.Height;
             }
             else if (e.Key == Key.Return)
             {
@@ -572,7 +562,7 @@ namespace TouchExample
             this.Height = screen_height;
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStyle = WindowStyle.None;
-            //this.Topmost = true;
+            this.Topmost = true;
 
             canvas1.Width = screen_width;
             canvas1.Height = screen_height;            
