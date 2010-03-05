@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Config>
+	<Projection>
+    <!-- 
+    These settings are used to allow the tracking data to match the projected area when the projection
+    is scaled and/or offset.  This is the case if you alter the tracking area to the physical surface area
+    in your tracking software and do not modify the screen area to match the surface area for the projection.
+    
+    On a full screen setup with no tracking area changes and no projection scale or offset, the defaults should be fine.
+    E.g. on a LCD touch panel.
+    
+    ScaleX and ScaleY
+    
+    Stretches the points apart on the X and Y axis.  
+    Use this if your TUIO sender sends points for a larger screensize than your projected area.
+    
+    PosY and PosX
+    
+    Control the projection offset.  Modify this if your TUIO sender sends points offset.
+    A value between 0 and 1 of normalised screen size.
+    E.g. a value of 0.5 would move the points down by half the screen.
+    
+    Note: PosY is inverted so a value of 0.5 will move the points up by half the screen.
+    -->
+		<Screen PosY="0.0000" ScaleY="1.0000" PosX="0.0000" ScaleX="1.0000" />
+	</Projection>
+</Config>
