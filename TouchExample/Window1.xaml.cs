@@ -53,7 +53,6 @@ using TouchFramework;
 using TouchFramework.Tracking;
 using TouchFramework.Events;
 using TouchFramework.ControlHandlers;
-using WpfShaderTest;
 
 namespace TouchExample
 {
@@ -114,7 +113,7 @@ namespace TouchExample
             LoadAllFeeds();
             
             PosAll();
-            //DelayedRotate(4000);
+            DelayedRotate(4000);
         }
 
         /// <summary>
@@ -210,9 +209,8 @@ namespace TouchExample
 
         void LoadAllFeeds()
         {
-            AddFeed(@"http://twitter.com/statuses/user_timeline/72821989.rss");
-            AddFeed(@"http://twitter.com/statuses/user_timeline/816653.rss");
-            AddFeed(@"http://www.microsoft.com/switzerland/xml/socialmedia/community_twitter.xml");
+            //Add your RSS feeds in here
+            //AddFeed(@"http://twitter.com/statuses/user_timeline/72821989.rss");
         }
 
         /// <summary>
