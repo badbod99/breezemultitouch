@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFramework", "TouchFramework\TouchFramework.csproj", "{7C59D620-D502-4916-A503-80B237A0DE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchExample", "TouchExample\TouchExample.csproj", "{628E043F-0F45-4658-91C2-BC319439E016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchFrameworkTracking", "TouchFrameworkTracking\TouchFrameworkTracking.csproj", "{045758F1-33E8-4985-9A10-AAA35EC4EFBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchControls", "TouchControls\TouchControls.csproj", "{D9540245-BBB6-4D42-8204-1553777ABF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchHelpers", "TouchHelpers\TouchHelpers.csproj", "{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMitsuControls", "WPFMitsuControls\WPFMitsuControls.csproj", "{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionExample", "ProjectionExample\ProjectionExample.csproj", "{3406AB15-B37D-4E89-AFEA-3B6E6433A271}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C59D620-D502-4916-A503-80B237A0DE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C59D620-D502-4916-A503-80B237A0DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C59D620-D502-4916-A503-80B237A0DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C59D620-D502-4916-A503-80B237A0DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628E043F-0F45-4658-91C2-BC319439E016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628E043F-0F45-4658-91C2-BC319439E016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628E043F-0F45-4658-91C2-BC319439E016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628E043F-0F45-4658-91C2-BC319439E016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045758F1-33E8-4985-9A10-AAA35EC4EFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045758F1-33E8-4985-9A10-AAA35EC4EFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045758F1-33E8-4985-9A10-AAA35EC4EFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045758F1-33E8-4985-9A10-AAA35EC4EFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9540245-BBB6-4D42-8204-1553777ABF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9540245-BBB6-4D42-8204-1553777ABF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9540245-BBB6-4D42-8204-1553777ABF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9540245-BBB6-4D42-8204-1553777ABF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE517DE0-ABE1-4CC3-AD62-92E4AF10A5EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC99C0E-F918-4E3B-B154-C03E212D8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3406AB15-B37D-4E89-AFEA-3B6E6433A271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3406AB15-B37D-4E89-AFEA-3B6E6433A271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3406AB15-B37D-4E89-AFEA-3B6E6433A271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3406AB15-B37D-4E89-AFEA-3B6E6433A271}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

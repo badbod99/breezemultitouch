@@ -1,0 +1,849 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a3d6a1dea3cdb515f814d92b896e3fca7"><param name="Name" value="Acceleration"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a3d6a1dea3cdb515f814d92b896e3fca7"><param name="Name" value="TouchFramework::TouchProperties"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a5aa08578a041b82b6ea0d5c56777f66e"><param name="Name" value="TouchFramework::Tracking::Tuio2DCursor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a9d360f5fdc7e11592c20af35507dde71"><param name="Name" value="Action"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a5609fbb7ac5fe564e3166583bfdf8afc"><param name="Name" value="ActionCenter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3f5705e05aaee0ae317718917491cc34"><param name="Name" value="ActOnTouches"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a93cbbec15db6e23dafeb865100fd3db5"><param name="Name" value="Add"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a93cbbec15db6e23dafeb865100fd3db5"><param name="Name" value="TouchFramework::MTElementDictionary"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a3de342e0f02b62930255b4472186a253"><param name="Name" value="TouchFramework::TouchDictionary"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html#af2ec9c37fbda7f72f1a958f3a37ca8ef"><param name="Name" value="TouchFramework::TouchElementDictionary"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8b78cf009992dd28d55f32615af1f70e"><param name="Name" value="addBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a487710cb1c96e6442107e7d6b6d2e9b4"><param name="Name" value="Address"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a0c27c61353dd992f8a30a8f70b258435"><param name="Name" value="address"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#addeff3b0219854cbea65ca586db9e3a9"><param name="Name" value="AddSupport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#a01c38dfa45bf304df91fe8c05483c7e5"><param name="Name" value="AddSupportForAll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa72c802957d5c993fab2adb84ae14dda"><param name="Name" value="addTransform"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0824cf7bd768a7cd9071e3ab610ea215"><param name="Name" value="addTransforms"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#a5b4a8ec91cecfee603113e157b7462c7"><param name="Name" value="Alignment"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#a5b4a8ec91cecfee603113e157b7462c7"><param name="Name" value="TouchFramework::Tracking::TraalConfiguration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#af2989055d0fa962764939896b4fc0511"><param name="Name" value="TouchFramework::Tracking::TuioConfiguration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a6762819c6eecc00b7456a75b6389193a"><param name="Name" value="AllTouches"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a897b7b7d99e489db1cb601ec0732f075"><param name="Name" value="Append"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a897b7b7d99e489db1cb601ec0732f075"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a499506b000785c135a44438510fefb81"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a45ca3b762112a2bb3db8b0a15137b209"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCPacket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a2b4edffe503bdd3658656daec5f117bc"><param name="Name" value="AppendTag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a1fd3ad2cb5fa9bae351395b793c8f965"><param name="Name" value="ApplyTransforms"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a61663d1722ee1767a92742d5db3dac81"><param name="Name" value="Assigner"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa7a23ddfc85d23f02afe5b2da9a6e45b"><param name="Name" value="BinaryData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aca0b69dc0f433a04a4c7106d5c5ca6b3"><param name="Name" value="binaryData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a1e5165021277df9428834f28b9490aa4"><param name="Name" value="BUNDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6880283c824e60e5a04ab2ae412da1ec"><param name="Name" value="CalculateChanges"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a1d8294ba3c0320de37111def5564a650"><param name="Name" value="Changed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5955bbdee42459a083bcf563b01e2a8a"><param name="Name" value="CheckConfigured"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#a27ed5d9faad3091e88a1627225399d82"><param name="Name" value="CheckSupported"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a6ff867dc4ef2872690d49b9d7182e847"><param name="Name" value="ConfigureFramework"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a6ff867dc4ef2872690d49b9d7182e847"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#af42b1e720efcd6b9a2856a4d59980eaa"><param name="Name" value="TouchFramework::Tracking::MouseTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a354de3bf5612912b813dd87953d1d67e"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a57aedbb7a0babe8fd7efea08ba516850"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#af9ba359c6784854d1ebd7aee139932ba"><param name="Name" value="Container"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#acf38b07e9f57f30d85d63155de8e67c1"><param name="Name" value="CorrectProjection"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#acf38b07e9f57f30d85d63155de8e67c1"><param name="Name" value="TouchFramework::Tracking::TraalConfiguration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#ab78cbadd9ae96465ca13523a47053641"><param name="Name" value="TouchFramework::Tracking::TuioConfiguration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ae2184c10e0432e33b3bc9d84ff1b4019"><param name="Name" value="CumulativePosition"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ae2184c10e0432e33b3bc9d84ff1b4019"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a73f83f2555c259e67dd23a9d9d6c570d"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a96527e7e5a811a3d15a500fc4c4bbe96"><param name="Name" value="currTouchCount"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a19452dbb23eb26fa6713fd0de8b91a06"><param name="Name" value="DampingDelay"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_properties_1_1_settings.html#a42c4792aa16a3ba396efb50e3d803e93"><param name="Name" value="Default"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_properties_1_1_settings.html#a42c4792aa16a3ba396efb50e3d803e93"><param name="Name" value="TouchExample::Properties::Settings"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_properties_1_1_settings.html#afbad98f6181ea6536c8b3fcb4e4514b5"><param name="Name" value="TouchFramework::Properties::Settings"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a85b14bcce5022cd958abc1f793ac78b4"><param name="Name" value="Delay"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a85b14bcce5022cd958abc1f793ac78b4"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a08795e2ab1839f7447844a080f19a65a"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#ab0331a5b9d4d2abed7e5bc7fde0891bf"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ae77c9c29ce44a8b137d4f79ca599d1fb"><param name="Name" value="DoDrag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a910ecba23113121ee88e03d9803cf428"><param name="Name" value="DoScroll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ac4c1804e69559ef7005fc2dd6e30c1fd"><param name="Name" value="DoSlide"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a2519f0bfb04a3b6a50e860a08cdb3f19"><param name="Name" value="DoTap"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#afa5617d8c3c3c1f21c52af1561ec0f96"><param name="Name" value="DoTouchDown"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a69226176cf3f85ad4454f706c68f9aef"><param name="Name" value="DoTouchUp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a9d71e066833eeb9d7c33a22da16a37bf"><param name="Name" value="DOUBLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ae07c331bbb40821e0466d2cbef138c57"><param name="Name" value="Drag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_element_properties.html#a5176bac326120ff20b08b9947757e2a4"><param name="Name" value="DragThresholdPixels"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a92e98da3b71a00765955c20fe16cd8f7"><param name="Name" value="ElementDef"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a5de8e32da77b9540174f14afe3938398"><param name="Name" value="Elements"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_element_properties.html#a1abb6221b2e8c4835841f41caf17fb97"><param name="Name" value="ElementSupport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_configuration.html#abe36aa894183782df0dfe74b90a27f4c"><param name="Name" value="EventWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aa1565c153fc393cdc6bcee0a278f766e"><param name="Name" value="Flip"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aa1565c153fc393cdc6bcee0a278f766e"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#afe7426e0a68609e45f1469bee448a579"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html#ac51abbd1ef3f52bbe94d223ba812495b"><param name="Name" value="FlipX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html#ade21e243871fea4b4224db21370e9ffc"><param name="Name" value="FlipY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ab706e3e173198b231653954d436929f1"><param name="Name" value="FLOAT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ad4405aa9f1e5b28aab22f64792fd1e1b"><param name="Name" value="ForceRefresh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ad4405aa9f1e5b28aab22f64792fd1e1b"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#a09c91acdf50f79a257bc88a99c775203"><param name="Name" value="TouchFramework::Tracking::MouseTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a451a5a3c85ca17afacdcc217852275fd"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#ab08d84b222592c1584cd6e6bfeb3de7a"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#a8ee8db146ddbacb1997d2847dff987f8"><param name="Name" value="GetAliveCursors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a301bcd7418004da64f349b9bbf83ff3e"><param name="Name" value="GetAngle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a301bcd7418004da64f349b9bbf83ff3e"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a15f041520d8f6ad4f21d4f0374ab202f"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a70cd3bf7a903a16b39d1acc06e0d70c0"><param name="Name" value="GetAngleChanged"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a742fa3bc7469d366c7fca7490513a410"><param name="Name" value="GetAngleRadiansTan"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a742fa3bc7469d366c7fca7490513a410"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a9e91d7bf4ff1624493d4b3fa1ef19e70"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a6e15eecfa7b4dce62b4bf8639e91f675"><param name="Name" value="GetAvgCenterPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a6e15eecfa7b4dce62b4bf8639e91f675"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aaf7d9908a307ab9b1ed914ab016164d9"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1ed56423bd00b6f8c4e50f7b05a01df5"><param name="Name" value="GetAvgDistanceFromCenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1ed56423bd00b6f8c4e50f7b05a01df5"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a608d9dadf96a899c5ab4abed1d6c8b03"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a7e73812da7b707b4bfc91acaf151bbfe"><param name="Name" value="GetBoxCenterPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a7e73812da7b707b4bfc91acaf151bbfe"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aeb5671e5c5f988ea474a58f011213af5"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#a2a4077c77f7afcc50a5aede9d9c236c0"><param name="Name" value="GetCursors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1a379a161ed8635c07b5326c8d517995"><param name="Name" value="GetDistance"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1a379a161ed8635c07b5326c8d517995"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aa91da64154d738cd60a153236943b2ff"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ad4c7f4386ea4509df23aa35324f8592a"><param name="Name" value="GetDistanceChangeRatio"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a5b71a54cacafc3d9ef61b76db6b94561"><param name="Name" value="GetDistanceFromCenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a5b71a54cacafc3d9ef61b76db6b94561"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a4020edca8327da7510587613f3189b5d"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#a1cf8a8324da54ef1d3d7a9a46b64be41"><param name="Name" value="GetHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a7368d5ab2275db559302d07be9b3c8a6"><param name="Name" value="GetHashCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a71c5b6554c86ec3e96a9e61eebf800bc"><param name="Name" value="GetMessage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aeb2b88394322c23f795c1ccfa3677a7b"><param name="Name" value="GetScreenPos"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aeb2b88394322c23f795c1ccfa3677a7b"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a24efd5c5f92f138bf4e980b0df3660b9"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#abfe085c0093a91d924812517125f7e6d"><param name="Name" value="GetSequenceNumber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a8c8fbf93256da76c06296b1ede1d1e9f"><param name="Name" value="getTimeStamp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a93c9d0845f879e640a6052cb2e93ab42"><param name="Name" value="Id"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#a50114436618860e14fee31ad6d51c8f1"><param name="Name" value="InitializeComponent"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#a50114436618860e14fee31ad6d51c8f1"><param name="Name" value="TouchExample::App"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_photo.html#a1e9b9744ed41aabb7d4a279be8a29862"><param name="Name" value="TouchExample::Photo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_window1.html#a0702cf61720cc4119e832976dfac7508"><param name="Name" value="TouchExample::Window1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a15894d1cb93e2cc84c97b6e774685d80"><param name="Name" value="INTEGER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a893e23ca4e25b75a100079960bd5f534"><param name="Name" value="IsBundle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a893e23ca4e25b75a100079960bd5f534"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#aa5b75d3cc0df77c872291d7b431de05a"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ab5262ecae6812bf4f2c2503e6dddc6af"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCPacket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a639416d9d08415515e4f79023aa44ac1"><param name="Name" value="IsConfigured"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ab180c0d6bf212f9502a99cb29129657d"><param name="Name" value="IsEqual"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ace261c986ee677cdfd2055e474234ec8"><param name="Name" value="IsFiltering"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ace261c986ee677cdfd2055e474234ec8"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a2d37f144a12278b455e1bef9abcc3239"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#adf245a0102da413934292ebb9608ec26"><param name="Name" value="IsMoving"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a84c81d5d57ebc6495b361eb1df719042"><param name="Name" value="JustTouched"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6ab36f429d0b09e4e9ce73bdeb43fe18"><param name="Name" value="LastMoveX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ac7d3257109b7f23a2efb0dbf746cfd68"><param name="Name" value="LastMoveY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa163ab54eb9c66fa546a9f9a109d66d8"><param name="Name" value="LastVelocityFromSet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa163ab54eb9c66fa546a9f9a109d66d8"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#af441f01ff067bda5ec26f948bf071e76"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ab484dc1a46dce5c895b1589d4446d7cf"><param name="Name" value="LastVelocityX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#afb76ec368d83658d6bf2c0c37f7b2b3f"><param name="Name" value="LastVelocityY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a646b46ed91c41e1e61035e587ab086ef"><param name="Name" value="Lifted"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a169b21f89a369f4f449536e1841c30d6"><param name="Name" value="Load"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a3c7c9b3d1e7b5b903e61e813195a87d6"><param name="Name" value="LoadDefaults"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a6284ec39fa7ee91702530eb45cf07e0f"><param name="Name" value="LONG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#ace611ac3db31a0b59ad0645be0505e33"><param name="Name" value="Main"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa76cbeb0048049cb681ae79f0155c945"><param name="Name" value="MaxX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa4b843873decfce4a74e5637cad25f47"><param name="Name" value="MaxY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ab3c081b0b5ddcf2128a8307476f40710"><param name="Name" value="MaxZIndex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ab3c081b0b5ddcf2128a8307476f40710"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a9e020a1aef2f47ac35f5e3ae8a9a2d44"><param name="Name" value="TouchFramework::MTElementDictionary"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#abd054cbd00e5f2d1d35d6b8f4916c9bf"><param name="Name" value="MinX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#abcd3feb2cec13b331af92ad493fbc8ee"><param name="Name" value="MinY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#aaf4f0eb56ce8e89eda8bf189a33dfc97"><param name="Name" value="MouseTracking"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0bd955754089fea069be5223b8cc9566"><param name="Name" value="Move"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0bd955754089fea069be5223b8cc9566"><param name="Name" value="TouchFramework::MTContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#a42d328bda206a46969d3290c33dade29"><param name="Name" value="TouchFramework::MTDirectContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a81512950bff8e83dc7f81002d10a6471"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a4c1919f1df862a41e71d68fc70c9c8f3"><param name="Name" value="MoveCenter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#af6057b727e7fb275cc4a2bc550d41da6"><param name="Name" value="MoveX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ab7b562c43d6fa9688b8d9bd35f706d78"><param name="Name" value="MoveY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0b59af25b9d43e0dfa7f1c9285174ccd"><param name="Name" value="MTContainer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#abf18aca42b029fd08993aaf9cba890ef"><param name="Name" value="MTDirectContainer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#aeb5740f34246dcab4e605169ac4a3a0d"><param name="Name" value="MTElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a6cbda09acaee1694f2b8f427813f37e8"><param name="Name" value="MTElementDictionary"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#aea6c51cda232737ac0860ab1af55a992"><param name="Name" value="MTSmoothContainer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa2e07dedd4068d076e676dab15ac8028"><param name="Name" value="ObjectTouches"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a223479954a41e3c5bc674b9198a0d4aa"><param name="Name" value="Offset"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a223479954a41e3c5bc674b9198a0d4aa"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#abc984e3732b0efbb70799183df36b03f"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#ab6c51b089cfafb99c200a1313cfe0f63"><param name="Name" value="OffsetX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a9a575c4a0af8c772e60f7696b93a0d53"><param name="Name" value="OffsetY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ac2c78a8b9e9454b7e2fe64ae0084ce38"><param name="Name" value="OneOrMoreLifted"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ac53a7ef00d6b9c4487f1ff3317ef4aa9"><param name="Name" value="OnProcessUpdates"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a223a1d948c3fb68356eccf4f4ab2b9f2"><param name="Name" value="OSCBundle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ab1bf0fc5588afcf6297eb9770097b50d"><param name="Name" value="OSCMessage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html#a5e590256590a763309a3008838d7d105"><param name="Name" value="Owner"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html#a5e590256590a763309a3008838d7d105"><param name="Name" value="TouchFramework::FrameworkConfiguration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5d3c2b975fe71c2654598e36a8756d8f"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a27419f9bb22a48184809e573e3c75771"><param name="Name" value="pack"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a27419f9bb22a48184809e573e3c75771"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a7f4fbcbed501248be91429fe67d20098"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ad0cae89b1b1a0665eddecbb0ae4d25f4"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCPacket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa06c07ff9e4682eaef87849afeb23884"><param name="Name" value="packDouble"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8ba400bd62e01f494e8fa68f847a1324"><param name="Name" value="packFloat"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ae529b541111545c1b6e52974e794c2de"><param name="Name" value="packInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aca19c81f3d3b95f422ee1c5587ead470"><param name="Name" value="packLong"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a9858499706f4392065245d8d81f7501e"><param name="Name" value="packString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ace846eeea5980bf43c5f451f8aa066f8"><param name="Name" value="padNull"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a8a1ff4a17044327d6f1cd2a4780ad792"><param name="Name" value="Parent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#a35f94e9ffccfd2639d6478fb785197a4"><param name="Name" value="Port"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#af7a55344a938dc0734a8c369f474090b"><param name="Name" value="Position"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#af7a55344a938dc0734a8c369f474090b"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a3cdf868fb72748ba87882ec6c2e5fb11"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a8d03f7111f3a667cd3dfdc4eea764a17"><param name="Name" value="PositionX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a85f452f0b89757d410e45be168bed595"><param name="Name" value="PositionY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#acb679bd84e4b67bfa76335d7ad785fc6"><param name="Name" value="PreviousPosition"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a3b53a021a0a26d4f1d05b180dd4bf60b"><param name="Name" value="PreviousVelocity"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a021942d057e8d00caf524a5ed983748a"><param name="Name" value="prevTouchCount"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a042ef3f305e730a5cd92aecd70123a55"><param name="Name" value="ProcessUpdates"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ac441cf14af3a722d24f3cff8d77df462"><param name="Name" value="ProcessUpdatesDelegate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#ad9bcb438dfcdad37b43c573008f60c72"><param name="Name" value="Projection"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#ad9bcb438dfcdad37b43c573008f60c72"><param name="Name" value="TouchFramework::Tracking::TraalConfiguration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#a3e8102dfab8c2deeca7169934e91a44d"><param name="Name" value="TouchFramework::Tracking::TuioConfiguration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a97e9c6851b8f5927fee78444b89efb00"><param name="Name" value="Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5471e3f57682dd57f6317a5b549a77b4"><param name="Name" value="RegisterElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a21ffe034424d144e00ea67e4416def3e"><param name="Name" value="Remove"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a81f68192cf022434a0ac106dd60b2320"><param name="Name" value="RemoveAllPoints"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a8ef8b1a927501f87019372ef12874cb6"><param name="Name" value="Reset"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a8ef8b1a927501f87019372ef12874cb6"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a5dc2158464cc1442713cd2d810b04976"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ad93047ab0b1b044d221ebf44f3553fb1"><param name="Name" value="Rotate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ad93047ab0b1b044d221ebf44f3553fb1"><param name="Name" value="TouchFramework::MTContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#aed5a942502f44ac637f2d11d3d28d343"><param name="Name" value="TouchFramework::MTDirectContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a702bc2ca7226425e6b85eb8ee1e1a422"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ae5ad61e6cb15dda6436dc19f3bcac599"><param name="Name" value="Scale"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ae5ad61e6cb15dda6436dc19f3bcac599"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#af5e43dd1b3f1b65a139ae8b6fc799e3a"><param name="Name" value="TouchFramework::MTContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#a4732ed67a8b6a6722b833cfd5660a1b0"><param name="Name" value="TouchFramework::MTDirectContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a21cd64032c631c0b66f78546ec63b866"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#afb2eba239f7c2294361ff5a225de9f30"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ac001a11f082d10ce5bbd6059c707eeb2"><param name="Name" value="ScaleOffset"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ac001a11f082d10ce5bbd6059c707eeb2"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aac7d32ad7fa18768e89c403aa28a41e2"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aedd02d4aec160249d6e42dcebac459a9"><param name="Name" value="ScaleRotateMove"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aedd02d4aec160249d6e42dcebac459a9"><param name="Name" value="TouchFramework::MTContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#aafb8bab4556f655d47bdd0e0e9024fdd"><param name="Name" value="TouchFramework::MTDirectContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a4acbca3afb7f1233dab9eea054753006"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a263705d0d06babfe6f9d2427cd472309"><param name="Name" value="ScaleX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a666396f973dc2a57451c3962eb0f4183"><param name="Name" value="ScaleY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a9705654063650f66b7133bae6ba29278"><param name="Name" value="ScaleZeroToOne"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a9705654063650f66b7133bae6ba29278"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#ab8046a7df8aa25c75b7cecff53402eb1"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#acf24777d679838541f680f58bffb2992"><param name="Name" value="ScreenHeight"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#acf24777d679838541f680f58bffb2992"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#abb39d1742db27371fd1a8adb138d2a20"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#ae8a15c847d9522d98902e299260dfd58"><param name="Name" value="ScreenWidth"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#ae8a15c847d9522d98902e299260dfd58"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a78cdf3d159f44b82064c9d8ffa66ecb5"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#a5304232cebfc7948a1568e4596604074"><param name="Name" value="Scroll"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#a5304232cebfc7948a1568e4596604074"><param name="Name" value="TouchFramework::ControlHandlers::ElementHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html#a769b7732ce0f59d2f5d8c44739db00a4"><param name="Name" value="TouchFramework::ControlHandlers::ListBoxHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ab53d67fff4db5ac0e4168e6b7b53e9f4"><param name="Name" value="SessionID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a3868d53d5da26c0393bb43696e2c6ee6"><param name="Name" value="SetHeld"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a28bec674ab36374153936ae6832e0ba6"><param name="Name" value="SetMoving"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a4019f34cb005377147efce1b507b4e13"><param name="Name" value="SetNewTouchPoint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_photo.html#adb5651e20268fe7dce2fe22314f0f930"><param name="Name" value="SetPicture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ab1d4e2d752169a27af1816b1ce742f1d"><param name="Name" value="Slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ab1d4e2d752169a27af1816b1ce742f1d"><param name="Name" value="TouchFramework::ControlHandlers::ElementHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_slider_handler.html#a73b8304a4366be3ee88134922d5de4c4"><param name="Name" value="TouchFramework::ControlHandlers::SliderHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ad7a058af99a3a9a1017f73b876d73620"><param name="Name" value="Source"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a383253dd2c2742dc9606472dd4458ae7"><param name="Name" value="Start"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a383253dd2c2742dc9606472dd4458ae7"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#ae61cff520ebdd97f7248ae3467da198b"><param name="Name" value="TouchFramework::Tracking::MouseTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a422ccbbcb789139a252cf166b01bad71"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a8594f9e01bf1be6a4c7dc33a84123cc0"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3bf965aa93861c55dabb5549955a01b4"><param name="Name" value="StartX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a7f160a96649aab0077bd9e29d7afcd95"><param name="Name" value="StartY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a513b49a42f7bb7bed5f4ffd0a2a1ed"><param name="Name" value="Step"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a513b49a42f7bb7bed5f4ffd0a2a1ed"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a87260a04578237ccfef05fd5807a7ee1"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa46bd95b6d53d97cd4dab894add55683"><param name="Name" value="StepIfFiltering"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa46bd95b6d53d97cd4dab894add55683"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a460bbd54d6dea6ac656b5f5048320bcb"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a33aa0110433084ace10b959ad17fcbfa"><param name="Name" value="Stop"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a33aa0110433084ace10b959ad17fcbfa"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a75a601a8758f1cae25344876d6df59ee"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a8143a0071b9281b11478e15dbe7ca423"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#a15ba4f629de073fdb07aef2ac3a9ba84"><param name="Name" value="TouchFramework::Tracking::MouseTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#afe8f15876bbe9eafe8583b885e5fc803"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a4a634075420b1fc3534cdeef1ed32295"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a29462b66438b79166216eaf8e815850f"><param name="Name" value="STRING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3282d870b7c4c4fff0c2e14b9431e338"><param name="Name" value="Supports"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a862ad10f3208112ab2b81bad373e875f"><param name="Name" value="swapEndian"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a2ec9fa8ed71707628bfd1b25de6157f0"><param name="Name" value="SYMBOL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html#a1b6e6cf8be63172950046242a29758a5"><param name="Name" value="Tap"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html#a1b6e6cf8be63172950046242a29758a5"><param name="Name" value="TouchFramework::ControlHandlers::ButtonHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_check_box_handler.html#a93fe419cc823dd3f073342a88f65e9a9"><param name="Name" value="TouchFramework::ControlHandlers::CheckBoxHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#aac7a894434c0427af6df159913d50385"><param name="Name" value="TouchFramework::ControlHandlers::ElementHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html#afa824d5ebfb47647b9895cc57197d53b"><param name="Name" value="TouchFramework::ControlHandlers::ListBoxHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_text_box_handler.html#a3360f7c86f890739e63927c4963d6569"><param name="Name" value="TouchFramework::ControlHandlers::TextBoxHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a378761ea40929e8f2bba25cef35da0fd"><param name="Name" value="Tapped"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a94230a3159ff9f39ca59e2a211c9bb"><param name="Name" value="Target"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a94230a3159ff9f39ca59e2a211c9bb"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a6abec0247900c0675049059ac2a72366"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a44bc3cdee804707693f272bf8b2e9bac"><param name="Name" value="this"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a44bc3cdee804707693f272bf8b2e9bac"><param name="Name" value="TouchFramework::MTElementDictionary"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#adaf852de0e90905f312b899b9bc15222"><param name="Name" value="TouchFramework::TouchDictionary"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html#a8e868bc8284a38c3dbfc57df476bb20f"><param name="Name" value="TouchFramework::TouchElementDictionary"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ac27574ede2d59a1bb3969232201fa51d"><param name="Name" value="TopContainer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ae94c9c413b04747ffec35a7694561ea6"><param name="Name" value="ToString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a83a3c855828b09ef394b1fe4b0e2a2db"><param name="Name" value="Touch"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a83a3c855828b09ef394b1fe4b0e2a2db"><param name="Name" value="TouchFramework::Touch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#a983d90576ec017b8911ab6589a3427a4"><param name="Name" value="TouchFramework::TouchElement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a94958558d31e05dbfc01f512ef954660"><param name="Name" value="TouchAdded"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a94958558d31e05dbfc01f512ef954660"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a7d03219b0ee20e8fef91b603296d21a0"><param name="Name" value="TouchFramework::TouchElementAssigner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a0073539890d77c9c364073c3833faf55"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ad7a71c30228f43bdca2f3e4f2954685a"><param name="Name" value="TouchDown"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#ab8f49ddd536d7e4d169fdcd616dd1bcc"><param name="Name" value="TouchElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a59dd6cc6388892760895b3b78b25b126"><param name="Name" value="TouchElementAssigner"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a4b58980ddaf18291b0a220a89d36fd84"><param name="Name" value="Touches"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html"><param name="Name" value="TouchExample::App"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#a50114436618860e14fee31ad6d51c8f1"><param name="Name" value="InitializeComponent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_app.html#ace611ac3db31a0b59ad0645be0505e33"><param name="Name" value="Main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_photo.html"><param name="Name" value="TouchExample::Photo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_photo.html#a1e9b9744ed41aabb7d4a279be8a29862"><param name="Name" value="InitializeComponent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_photo.html#adb5651e20268fe7dce2fe22314f0f930"><param name="Name" value="SetPicture"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_properties_1_1_settings.html"><param name="Name" value="TouchExample::Properties::Settings"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_example_1_1_window1.html"><param name="Name" value="TouchExample::Window1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_button_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::ButtonHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_check_box_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::CheckBoxHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::ElementHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#af9ba359c6784854d1ebd7aee139932ba"><param name="Name" value="Container"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ae07c331bbb40821e0466d2cbef138c57"><param name="Name" value="Drag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#a1cf8a8324da54ef1d3d7a9a46b64be41"><param name="Name" value="GetHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#a5304232cebfc7948a1568e4596604074"><param name="Name" value="Scroll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ab1d4e2d752169a27af1816b1ce742f1d"><param name="Name" value="Slide"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ad7a058af99a3a9a1017f73b876d73620"><param name="Name" value="Source"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#aac7a894434c0427af6df159913d50385"><param name="Name" value="Tap"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ad7a71c30228f43bdca2f3e4f2954685a"><param name="Name" value="TouchDown"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ae347776f54f93bcc5c6cd83ed309ff6a"><param name="Name" value="TouchUp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::ListBoxHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html#a769b7732ce0f59d2f5d8c44739db00a4"><param name="Name" value="Scroll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_list_box_handler.html#afa824d5ebfb47647b9895cc57197d53b"><param name="Name" value="Tap"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_slider_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::SliderHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_text_box_handler.html"><param name="Name" value="TouchFramework::ControlHandlers::TextBoxHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_element_properties.html"><param name="Name" value="TouchFramework::ElementProperties"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_element_properties.html#a5176bac326120ff20b08b9947757e2a4"><param name="Name" value="DragThresholdPixels"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_element_properties.html#a1abb6221b2e8c4835841f41caf17fb97"><param name="Name" value="ElementSupport"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html"><param name="Name" value="TouchFramework::FrameworkConfiguration"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html#a5e590256590a763309a3008838d7d105"><param name="Name" value="Owner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html#a594cc44a6b514f6731747a06354e53fa"><param name="Name" value="UIManagedThreadId"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a6762819c6eecc00b7456a75b6389193a"><param name="Name" value="AllTouches"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a61663d1722ee1767a92742d5db3dac81"><param name="Name" value="Assigner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5955bbdee42459a083bcf563b01e2a8a"><param name="Name" value="CheckConfigured"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a6ff867dc4ef2872690d49b9d7182e847"><param name="Name" value="ConfigureFramework"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ad4405aa9f1e5b28aab22f64792fd1e1b"><param name="Name" value="ForceRefresh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a639416d9d08415515e4f79023aa44ac1"><param name="Name" value="IsConfigured"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ab3c081b0b5ddcf2128a8307476f40710"><param name="Name" value="MaxZIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ac53a7ef00d6b9c4487f1ff3317ef4aa9"><param name="Name" value="OnProcessUpdates"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5d3c2b975fe71c2654598e36a8756d8f"><param name="Name" value="Owner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a042ef3f305e730a5cd92aecd70123a55"><param name="Name" value="ProcessUpdates"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#ac441cf14af3a722d24f3cff8d77df462"><param name="Name" value="ProcessUpdatesDelegate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5471e3f57682dd57f6317a5b549a77b4"><param name="Name" value="RegisterElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a81f68192cf022434a0ac106dd60b2320"><param name="Name" value="RemoveAllPoints"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a383253dd2c2742dc9606472dd4458ae7"><param name="Name" value="Start"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a33aa0110433084ace10b959ad17fcbfa"><param name="Name" value="Stop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a94958558d31e05dbfc01f512ef954660"><param name="Name" value="TouchAdded"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a345a049033bb416058f19b4b813176b4"><param name="Name" value="TouchHeld"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a08d792281e33b9d6ab66aa112fa748aa"><param name="Name" value="TouchRemoved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5400f934e7c88e502959ca55f6339b01"><param name="Name" value="TouchUpdated"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html"><param name="Name" value="TouchFramework::Helpers::PointTransform"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aa1565c153fc393cdc6bcee0a278f766e"><param name="Name" value="Flip"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a301bcd7418004da64f349b9bbf83ff3e"><param name="Name" value="GetAngle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a742fa3bc7469d366c7fca7490513a410"><param name="Name" value="GetAngleRadiansTan"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a6e15eecfa7b4dce62b4bf8639e91f675"><param name="Name" value="GetAvgCenterPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1ed56423bd00b6f8c4e50f7b05a01df5"><param name="Name" value="GetAvgDistanceFromCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a7e73812da7b707b4bfc91acaf151bbfe"><param name="Name" value="GetBoxCenterPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a1a379a161ed8635c07b5326c8d517995"><param name="Name" value="GetDistance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a5b71a54cacafc3d9ef61b76db6b94561"><param name="Name" value="GetDistanceFromCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#aeb2b88394322c23f795c1ccfa3677a7b"><param name="Name" value="GetScreenPos"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a223479954a41e3c5bc674b9198a0d4aa"><param name="Name" value="Offset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ae5ad61e6cb15dda6436dc19f3bcac599"><param name="Name" value="Scale"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#ac001a11f082d10ce5bbd6059c707eeb2"><param name="Name" value="ScaleOffset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_helpers_1_1_point_transform.html#a9705654063650f66b7133bae6ba29278"><param name="Name" value="ScaleZeroToOne"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a73f83f2555c259e67dd23a9d9d6c570d"><param name="Name" value="CumulativePosition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a08795e2ab1839f7447844a080f19a65a"><param name="Name" value="Delay"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a2d37f144a12278b455e1bef9abcc3239"><param name="Name" value="IsFiltering"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#af441f01ff067bda5ec26f948bf071e76"><param name="Name" value="LastVelocityFromSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a3cdf868fb72748ba87882ec6c2e5fb11"><param name="Name" value="Position"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a5dc2158464cc1442713cd2d810b04976"><param name="Name" value="Reset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a87260a04578237ccfef05fd5807a7ee1"><param name="Name" value="Step"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a460bbd54d6dea6ac656b5f5048320bcb"><param name="Name" value="StepIfFiltering"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a8143a0071b9281b11478e15dbe7ca423"><param name="Name" value="Stop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a6abec0247900c0675049059ac2a72366"><param name="Name" value="Target"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a67c9ed9ae9020c06d4e3e1a262435409"><param name="Name" value="Velocity"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ae2184c10e0432e33b3bc9d84ff1b4019"><param name="Name" value="CumulativePosition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a85b14bcce5022cd958abc1f793ac78b4"><param name="Name" value="Delay"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#ace261c986ee677cdfd2055e474234ec8"><param name="Name" value="IsFiltering"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa163ab54eb9c66fa546a9f9a109d66d8"><param name="Name" value="LastVelocityFromSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#af7a55344a938dc0734a8c369f474090b"><param name="Name" value="Position"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#acb679bd84e4b67bfa76335d7ad785fc6"><param name="Name" value="PreviousPosition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a3b53a021a0a26d4f1d05b180dd4bf60b"><param name="Name" value="PreviousVelocity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a8ef8b1a927501f87019372ef12874cb6"><param name="Name" value="Reset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a513b49a42f7bb7bed5f4ffd0a2a1ed"><param name="Name" value="Step"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#aa46bd95b6d53d97cd4dab894add55683"><param name="Name" value="StepIfFiltering"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a75a601a8758f1cae25344876d6df59ee"><param name="Name" value="Stop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a6a94230a3159ff9f39ca59e2a211c9bb"><param name="Name" value="Target"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a2a5bfd66aa03580ba0b4f7b0b5edb40c"><param name="Name" value="Velocity"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html"><param name="Name" value="TouchFramework::MTContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3f5705e05aaee0ae317718917491cc34"><param name="Name" value="ActOnTouches"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa72c802957d5c993fab2adb84ae14dda"><param name="Name" value="addTransform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0824cf7bd768a7cd9071e3ab610ea215"><param name="Name" value="addTransforms"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a1fd3ad2cb5fa9bae351395b793c8f965"><param name="Name" value="ApplyTransforms"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ae77c9c29ce44a8b137d4f79ca599d1fb"><param name="Name" value="DoDrag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a910ecba23113121ee88e03d9803cf428"><param name="Name" value="DoScroll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ac4c1804e69559ef7005fc2dd6e30c1fd"><param name="Name" value="DoSlide"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a2519f0bfb04a3b6a50e860a08cdb3f19"><param name="Name" value="DoTap"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#afa5617d8c3c3c1f21c52af1561ec0f96"><param name="Name" value="DoTouchDown"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a69226176cf3f85ad4454f706c68f9aef"><param name="Name" value="DoTouchUp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a92e98da3b71a00765955c20fe16cd8f7"><param name="Name" value="ElementDef"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a7368d5ab2275db559302d07be9b3c8a6"><param name="Name" value="GetHashCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a93c9d0845f879e640a6052cb2e93ab42"><param name="Name" value="Id"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa76cbeb0048049cb681ae79f0155c945"><param name="Name" value="MaxX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa4b843873decfce4a74e5637cad25f47"><param name="Name" value="MaxY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#abd054cbd00e5f2d1d35d6b8f4916c9bf"><param name="Name" value="MinX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#abcd3feb2cec13b331af92ad493fbc8ee"><param name="Name" value="MinY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0bd955754089fea069be5223b8cc9566"><param name="Name" value="Move"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a0b59af25b9d43e0dfa7f1c9285174ccd"><param name="Name" value="MTContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aa2e07dedd4068d076e676dab15ac8028"><param name="Name" value="ObjectTouches"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ad93047ab0b1b044d221ebf44f3553fb1"><param name="Name" value="Rotate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#af5e43dd1b3f1b65a139ae8b6fc799e3a"><param name="Name" value="Scale"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#aedd02d4aec160249d6e42dcebac459a9"><param name="Name" value="ScaleRotateMove"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3bf965aa93861c55dabb5549955a01b4"><param name="Name" value="StartX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a7f160a96649aab0077bd9e29d7afcd95"><param name="Name" value="StartY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a3282d870b7c4c4fff0c2e14b9431e338"><param name="Name" value="Supports"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#ac27574ede2d59a1bb3969232201fa51d"><param name="Name" value="TopContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a8a8418f5bf57e11e5cc1e4e23d126698"><param name="Name" value="WorkingObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html"><param name="Name" value="TouchFramework::MTDirectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#a42d328bda206a46969d3290c33dade29"><param name="Name" value="Move"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#abf18aca42b029fd08993aaf9cba890ef"><param name="Name" value="MTDirectContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#aed5a942502f44ac637f2d11d3d28d343"><param name="Name" value="Rotate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#a4732ed67a8b6a6722b833cfd5660a1b0"><param name="Name" value="Scale"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_direct_container.html#aafb8bab4556f655d47bdd0e0e9024fdd"><param name="Name" value="ScaleRotateMove"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html"><param name="Name" value="TouchFramework::MTElementDictionary"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a9d360f5fdc7e11592c20af35507dde71"><param name="Name" value="Action"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a93cbbec15db6e23dafeb865100fd3db5"><param name="Name" value="Add"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a9e020a1aef2f47ac35f5e3ae8a9a2d44"><param name="Name" value="MaxZIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a6cbda09acaee1694f2b8f427813f37e8"><param name="Name" value="MTElementDictionary"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a8a1ff4a17044327d6f1cd2a4780ad792"><param name="Name" value="Parent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_element_dictionary.html#a44bc3cdee804707693f272bf8b2e9bac"><param name="Name" value="this"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html"><param name="Name" value="TouchFramework::MTSmoothContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a19452dbb23eb26fa6713fd0de8b91a06"><param name="Name" value="DampingDelay"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#ab0331a5b9d4d2abed7e5bc7fde0891bf"><param name="Name" value="Delay"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a81512950bff8e83dc7f81002d10a6471"><param name="Name" value="Move"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#aea6c51cda232737ac0860ab1af55a992"><param name="Name" value="MTSmoothContainer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a702bc2ca7226425e6b85eb8ee1e1a422"><param name="Name" value="Rotate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a21cd64032c631c0b66f78546ec63b866"><param name="Name" value="Scale"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_smooth_container.html#a4acbca3afb7f1233dab9eea054753006"><param name="Name" value="ScaleRotateMove"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html"><param name="Name" value="TouchFramework::PointTransform"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#afe7426e0a68609e45f1469bee448a579"><param name="Name" value="Flip"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a15f041520d8f6ad4f21d4f0374ab202f"><param name="Name" value="GetAngle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a9e91d7bf4ff1624493d4b3fa1ef19e70"><param name="Name" value="GetAngleRadiansTan"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aaf7d9908a307ab9b1ed914ab016164d9"><param name="Name" value="GetAvgCenterPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a608d9dadf96a899c5ab4abed1d6c8b03"><param name="Name" value="GetAvgDistanceFromCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aeb5671e5c5f988ea474a58f011213af5"><param name="Name" value="GetBoxCenterPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aa91da64154d738cd60a153236943b2ff"><param name="Name" value="GetDistance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a4020edca8327da7510587613f3189b5d"><param name="Name" value="GetDistanceFromCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#a24efd5c5f92f138bf4e980b0df3660b9"><param name="Name" value="GetScreenPos"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#abc984e3732b0efbb70799183df36b03f"><param name="Name" value="Offset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#afb2eba239f7c2294361ff5a225de9f30"><param name="Name" value="Scale"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#aac7d32ad7fa18768e89c403aa28a41e2"><param name="Name" value="ScaleOffset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_point_transform.html#ab8046a7df8aa25c75b7cecff53402eb1"><param name="Name" value="ScaleZeroToOne"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_properties_1_1_settings.html"><param name="Name" value="TouchFramework::Properties::Settings"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html"><param name="Name" value="TouchFramework::SupportedActions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#addeff3b0219854cbea65ca586db9e3a9"><param name="Name" value="AddSupport"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#a01c38dfa45bf304df91fe8c05483c7e5"><param name="Name" value="AddSupportForAll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_supported_actions.html#a27ed5d9faad3091e88a1627225399d82"><param name="Name" value="CheckSupported"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html"><param name="Name" value="TouchFramework::Touch"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#adf245a0102da413934292ebb9608ec26"><param name="Name" value="IsMoving"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a97e9c6851b8f5927fee78444b89efb00"><param name="Name" value="Properties"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a3868d53d5da26c0393bb43696e2c6ee6"><param name="Name" value="SetHeld"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a28bec674ab36374153936ae6832e0ba6"><param name="Name" value="SetMoving"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a4019f34cb005377147efce1b507b4e13"><param name="Name" value="SetNewTouchPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a83a3c855828b09ef394b1fe4b0e2a2db"><param name="Name" value="Touch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#aad8ee283eed646cc8bdd6ca9aa6938ba"><param name="Name" value="TouchId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a36892ac7286822da64a45e496175efbe"><param name="Name" value="TouchPoint"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html"><param name="Name" value="TouchFramework::TouchDictionary"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a5609fbb7ac5fe564e3166583bfdf8afc"><param name="Name" value="ActionCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a3de342e0f02b62930255b4472186a253"><param name="Name" value="Add"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6880283c824e60e5a04ab2ae412da1ec"><param name="Name" value="CalculateChanges"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a1d8294ba3c0320de37111def5564a650"><param name="Name" value="Changed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a96527e7e5a811a3d15a500fc4c4bbe96"><param name="Name" value="currTouchCount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a70cd3bf7a903a16b39d1acc06e0d70c0"><param name="Name" value="GetAngleChanged"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ad4c7f4386ea4509df23aa35324f8592a"><param name="Name" value="GetDistanceChangeRatio"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a84c81d5d57ebc6495b361eb1df719042"><param name="Name" value="JustTouched"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6ab36f429d0b09e4e9ce73bdeb43fe18"><param name="Name" value="LastMoveX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ac7d3257109b7f23a2efb0dbf746cfd68"><param name="Name" value="LastMoveY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ab484dc1a46dce5c895b1589d4446d7cf"><param name="Name" value="LastVelocityX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#afb76ec368d83658d6bf2c0c37f7b2b3f"><param name="Name" value="LastVelocityY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a646b46ed91c41e1e61035e587ab086ef"><param name="Name" value="Lifted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a4c1919f1df862a41e71d68fc70c9c8f3"><param name="Name" value="MoveCenter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#af6057b727e7fb275cc4a2bc550d41da6"><param name="Name" value="MoveX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ab7b562c43d6fa9688b8d9bd35f706d78"><param name="Name" value="MoveY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#ac2c78a8b9e9454b7e2fe64ae0084ce38"><param name="Name" value="OneOrMoreLifted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a021942d057e8d00caf524a5ed983748a"><param name="Name" value="prevTouchCount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a21ffe034424d144e00ea67e4416def3e"><param name="Name" value="Remove"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a378761ea40929e8f2bba25cef35da0fd"><param name="Name" value="Tapped"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#adaf852de0e90905f312b899b9bc15222"><param name="Name" value="this"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6d7e9e0482ca1741ac4437d620fd3dea"><param name="Name" value="TwoOrMoreTouch"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html"><param name="Name" value="TouchFramework::TouchElement"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#aeb5740f34246dcab4e605169ac4a3a0d"><param name="Name" value="MTElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#a983d90576ec017b8911ab6589a3427a4"><param name="Name" value="Touch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element.html#ab8f49ddd536d7e4d169fdcd616dd1bcc"><param name="Name" value="TouchElement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html"><param name="Name" value="TouchFramework::TouchElementAssigner"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a5de8e32da77b9540174f14afe3938398"><param name="Name" value="Elements"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a7d03219b0ee20e8fef91b603296d21a0"><param name="Name" value="TouchAdded"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a59dd6cc6388892760895b3b78b25b126"><param name="Name" value="TouchElementAssigner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a4b58980ddaf18291b0a220a89d36fd84"><param name="Name" value="Touches"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#ab0a96a159ea686af0ed09cdfd83480aa"><param name="Name" value="TouchHeld"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a3bf8e5a59dca4df73aa180f335ff3eff"><param name="Name" value="TouchMoved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#abdb4432b360387b7e537256fc21e5731"><param name="Name" value="TouchRemoved"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html"><param name="Name" value="TouchFramework::TouchElementDictionary"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html#af2ec9c37fbda7f72f1a958f3a37ca8ef"><param name="Name" value="Add"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_dictionary.html#a8e868bc8284a38c3dbfc57df476bb20f"><param name="Name" value="this"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html"><param name="Name" value="TouchFramework::TouchProperties"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a3d6a1dea3cdb515f814d92b896e3fca7"><param name="Name" value="Acceleration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a866e9273d8c3afabab51b9fe97fb07e1"><param name="Name" value="VelocityX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#ab1772eee070f624c8187bc284c57f034"><param name="Name" value="VelocityY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html"><param name="Name" value="TouchFramework::Tracking::AlignConfig"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html#ac51abbd1ef3f52bbe94d223ba812495b"><param name="Name" value="FlipX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_align_config.html#ade21e243871fea4b4224db21370e9ffc"><param name="Name" value="FlipY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_configuration.html"><param name="Name" value="TouchFramework::Tracking::MouseConfiguration"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html"><param name="Name" value="TouchFramework::Tracking::MouseTracking"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#af42b1e720efcd6b9a2856a4d59980eaa"><param name="Name" value="ConfigureFramework"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#a09c91acdf50f79a257bc88a99c775203"><param name="Name" value="ForceRefresh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#aaf4f0eb56ce8e89eda8bf189a33dfc97"><param name="Name" value="MouseTracking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#ae61cff520ebdd97f7248ae3467da198b"><param name="Name" value="Start"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_mouse_tracking.html#a15ba4f629de073fdb07aef2ac3a9ba84"><param name="Name" value="Stop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html"><param name="Name" value="TouchFramework::Tracking::ProjectionConfig"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a169b21f89a369f4f449536e1841c30d6"><param name="Name" value="Load"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a3c7c9b3d1e7b5b903e61e813195a87d6"><param name="Name" value="LoadDefaults"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#ab6c51b089cfafb99c200a1313cfe0f63"><param name="Name" value="OffsetX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a9a575c4a0af8c772e60f7696b93a0d53"><param name="Name" value="OffsetY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a263705d0d06babfe6f9d2427cd472309"><param name="Name" value="ScaleX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_projection_config.html#a666396f973dc2a57451c3962eb0f4183"><param name="Name" value="ScaleY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html"><param name="Name" value="TouchFramework::Tracking::TraalConfiguration"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#a5b4a8ec91cecfee603113e157b7462c7"><param name="Name" value="Alignment"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#acf38b07e9f57f30d85d63155de8e67c1"><param name="Name" value="CorrectProjection"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#ad9bcb438dfcdad37b43c573008f60c72"><param name="Name" value="Projection"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#aa54d82db71d1fd40da561ae057bf7459"><param name="Name" value="TrackingConfigPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#aaf117a35a0e5632aee19e8f2f28a86e7"><param name="Name" value="UseVfwDriver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html"><param name="Name" value="TouchFramework::Tracking::TraalTracking"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a354de3bf5612912b813dd87953d1d67e"><param name="Name" value="ConfigureFramework"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a451a5a3c85ca17afacdcc217852275fd"><param name="Name" value="ForceRefresh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#acf24777d679838541f680f58bffb2992"><param name="Name" value="ScreenHeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#ae8a15c847d9522d98902e299260dfd58"><param name="Name" value="ScreenWidth"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a422ccbbcb789139a252cf166b01bad71"><param name="Name" value="Start"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#afe8f15876bbe9eafe8583b885e5fc803"><param name="Name" value="Stop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a5b0ddc12cf4ec6db92e656c6672468a3"><param name="Name" value="TraalTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html"><param name="Name" value="TouchFramework::Tracking::Tuio2DCursor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a5aa08578a041b82b6ea0d5c56777f66e"><param name="Name" value="Acceleration"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a71c5b6554c86ec3e96a9e61eebf800bc"><param name="Name" value="GetMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ab180c0d6bf212f9502a99cb29129657d"><param name="Name" value="IsEqual"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a8d03f7111f3a667cd3dfdc4eea764a17"><param name="Name" value="PositionX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a85f452f0b89757d410e45be168bed595"><param name="Name" value="PositionY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ab53d67fff4db5ac0e4168e6b7b53e9f4"><param name="Name" value="SessionID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a66f2dcc8f33d486c9f16e7971a8d0d51"><param name="Name" value="Tuio2DCursor"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ad1fd6fba42b083562e782a8c0d368c40"><param name="Name" value="VelocityX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a5527f1ffa54e66e62e8582ef4988aeac"><param name="Name" value="VelocityY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCBundle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a897b7b7d99e489db1cb601ec0732f075"><param name="Name" value="Append"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a1e5165021277df9428834f28b9490aa4"><param name="Name" value="BUNDLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a8c8fbf93256da76c06296b1ede1d1e9f"><param name="Name" value="getTimeStamp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a893e23ca4e25b75a100079960bd5f534"><param name="Name" value="IsBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a223a1d948c3fb68356eccf4f4ab2b9f2"><param name="Name" value="OSCBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#a27419f9bb22a48184809e573e3c75771"><param name="Name" value="pack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#aa7bdc2309c4fd15c4ce62c8f3d574ea3"><param name="Name" value="Unpack"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCMessage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a499506b000785c135a44438510fefb81"><param name="Name" value="Append"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a2b4edffe503bdd3658656daec5f117bc"><param name="Name" value="AppendTag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a9d71e066833eeb9d7c33a22da16a37bf"><param name="Name" value="DOUBLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ab706e3e173198b231653954d436929f1"><param name="Name" value="FLOAT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a15894d1cb93e2cc84c97b6e774685d80"><param name="Name" value="INTEGER"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#aa5b75d3cc0df77c872291d7b431de05a"><param name="Name" value="IsBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a6284ec39fa7ee91702530eb45cf07e0f"><param name="Name" value="LONG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ab1bf0fc5588afcf6297eb9770097b50d"><param name="Name" value="OSCMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a7f4fbcbed501248be91429fe67d20098"><param name="Name" value="pack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a29462b66438b79166216eaf8e815850f"><param name="Name" value="STRING"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a2ec9fa8ed71707628bfd1b25de6157f0"><param name="Name" value="SYMBOL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ae94c9c413b04747ffec35a7694561ea6"><param name="Name" value="ToString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a9316652ce1c28bca99c0cde5de0e6d7b"><param name="Name" value="typeTag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ad652e0bb3281b95cb8158bcdbd71e403"><param name="Name" value="Unpack"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCPacket"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8b78cf009992dd28d55f32615af1f70e"><param name="Name" value="addBytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a487710cb1c96e6442107e7d6b6d2e9b4"><param name="Name" value="Address"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a0c27c61353dd992f8a30a8f70b258435"><param name="Name" value="address"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a45ca3b762112a2bb3db8b0a15137b209"><param name="Name" value="Append"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa7a23ddfc85d23f02afe5b2da9a6e45b"><param name="Name" value="BinaryData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aca0b69dc0f433a04a4c7106d5c5ca6b3"><param name="Name" value="binaryData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ab5262ecae6812bf4f2c2503e6dddc6af"><param name="Name" value="IsBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ad0cae89b1b1a0665eddecbb0ae4d25f4"><param name="Name" value="pack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa06c07ff9e4682eaef87849afeb23884"><param name="Name" value="packDouble"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8ba400bd62e01f494e8fa68f847a1324"><param name="Name" value="packFloat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ae529b541111545c1b6e52974e794c2de"><param name="Name" value="packInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aca19c81f3d3b95f422ee1c5587ead470"><param name="Name" value="packLong"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a9858499706f4392065245d8d81f7501e"><param name="Name" value="packString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#ace846eeea5980bf43c5f451f8aa066f8"><param name="Name" value="padNull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a862ad10f3208112ab2b81bad373e875f"><param name="Name" value="swapEndian"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8c97b18362aa9d11e6a92319ad3753af"><param name="Name" value="Unpack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa0ac61de9e6a066f7909ff89d021c8a1"><param name="Name" value="unpackDouble"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a40146463cac47393787e987fba9560bc"><param name="Name" value="unpackFloat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a48439d74ebe35019db6fa1d1faa73df0"><param name="Name" value="unpackInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8524276a00e63084a623c08d21e0771a"><param name="Name" value="unpackLong"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a65ae807445ea939ec3f428bb16c056af"><param name="Name" value="unpackString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a3afc894d5aad716836888604b44657bd"><param name="Name" value="Values"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a2e1ac4ca5eb2e4e58c353994ee03ce0d"><param name="Name" value="values"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html"><param name="Name" value="TouchFramework::Tracking::TuioConfiguration"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#af2989055d0fa962764939896b4fc0511"><param name="Name" value="Alignment"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#ab78cbadd9ae96465ca13523a47053641"><param name="Name" value="CorrectProjection"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#a35f94e9ffccfd2639d6478fb785197a4"><param name="Name" value="Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_configuration.html#a3e8102dfab8c2deeca7169934e91a44d"><param name="Name" value="Projection"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html"><param name="Name" value="TouchFramework::Tracking::TuioParser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#a8ee8db146ddbacb1997d2847dff987f8"><param name="Name" value="GetAliveCursors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#a2a4077c77f7afcc50a5aede9d9c236c0"><param name="Name" value="GetCursors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_parser.html#abfe085c0093a91d924812517125f7e6d"><param name="Name" value="GetSequenceNumber"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a57aedbb7a0babe8fd7efea08ba516850"><param name="Name" value="ConfigureFramework"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#ab08d84b222592c1584cd6e6bfeb3de7a"><param name="Name" value="ForceRefresh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#abb39d1742db27371fd1a8adb138d2a20"><param name="Name" value="ScreenHeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a78cdf3d159f44b82064c9d8ffa66ecb5"><param name="Name" value="ScreenWidth"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a8594f9e01bf1be6a4c7dc33a84123cc0"><param name="Name" value="Start"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a4a634075420b1fc3534cdeef1ed32295"><param name="Name" value="Stop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a0073539890d77c9c364073c3833faf55"><param name="Name" value="TouchAdded"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#aeb87e2a5a93ace1e6170074d413a59d3"><param name="Name" value="TouchRemoved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a25122150d4f595313e962677d22815b8"><param name="Name" value="TouchUpdated"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#aab0e569d6d9ecc7d1e19644e9cf8d289"><param name="Name" value="TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a345a049033bb416058f19b4b813176b4"><param name="Name" value="TouchHeld"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a345a049033bb416058f19b4b813176b4"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#ab0a96a159ea686af0ed09cdfd83480aa"><param name="Name" value="TouchFramework::TouchElementAssigner"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#aad8ee283eed646cc8bdd6ca9aa6938ba"><param name="Name" value="TouchId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#a3bf8e5a59dca4df73aa180f335ff3eff"><param name="Name" value="TouchMoved"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch.html#a36892ac7286822da64a45e496175efbe"><param name="Name" value="TouchPoint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a08d792281e33b9d6ab66aa112fa748aa"><param name="Name" value="TouchRemoved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a08d792281e33b9d6ab66aa112fa748aa"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_element_assigner.html#abdb4432b360387b7e537256fc21e5731"><param name="Name" value="TouchFramework::TouchElementAssigner"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#aeb87e2a5a93ace1e6170074d413a59d3"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_control_handlers_1_1_element_handler.html#ae347776f54f93bcc5c6cd83ed309ff6a"><param name="Name" value="TouchUp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5400f934e7c88e502959ca55f6339b01"><param name="Name" value="TouchUpdated"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_control.html#a5400f934e7c88e502959ca55f6339b01"><param name="Name" value="TouchFramework::FrameworkControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#a25122150d4f595313e962677d22815b8"><param name="Name" value="TouchFramework::Tracking::TuioTracking"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_tracking.html#a5b0ddc12cf4ec6db92e656c6672468a3"><param name="Name" value="TraalTracking"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#aa54d82db71d1fd40da561ae057bf7459"><param name="Name" value="TrackingConfigPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a66f2dcc8f33d486c9f16e7971a8d0d51"><param name="Name" value="Tuio2DCursor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_tracking.html#aab0e569d6d9ecc7d1e19644e9cf8d289"><param name="Name" value="TuioTracking"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_touch_dictionary.html#a6d7e9e0482ca1741ac4437d620fd3dea"><param name="Name" value="TwoOrMoreTouch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#a9316652ce1c28bca99c0cde5de0e6d7b"><param name="Name" value="typeTag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_framework_configuration.html#a594cc44a6b514f6731747a06354e53fa"><param name="Name" value="UIManagedThreadId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#aa7bdc2309c4fd15c4ce62c8f3d574ea3"><param name="Name" value="Unpack"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_bundle.html#aa7bdc2309c4fd15c4ce62c8f3d574ea3"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCBundle"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_message.html#ad652e0bb3281b95cb8158bcdbd71e403"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8c97b18362aa9d11e6a92319ad3753af"><param name="Name" value="TouchFramework::Tracking::Tuio::OSCPacket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#aa0ac61de9e6a066f7909ff89d021c8a1"><param name="Name" value="unpackDouble"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a40146463cac47393787e987fba9560bc"><param name="Name" value="unpackFloat"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a48439d74ebe35019db6fa1d1faa73df0"><param name="Name" value="unpackInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a8524276a00e63084a623c08d21e0771a"><param name="Name" value="unpackLong"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a65ae807445ea939ec3f428bb16c056af"><param name="Name" value="unpackString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_traal_configuration.html#aaf117a35a0e5632aee19e8f2f28a86e7"><param name="Name" value="UseVfwDriver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a3afc894d5aad716836888604b44657bd"><param name="Name" value="Values"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio_1_1_o_s_c_packet.html#a2e1ac4ca5eb2e4e58c353994ee03ce0d"><param name="Name" value="values"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a2a5bfd66aa03580ba0b4f7b0b5edb40c"><param name="Name" value="Velocity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter.html#a2a5bfd66aa03580ba0b4f7b0b5edb40c"><param name="Name" value="TouchFramework::LinearFilter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_linear_filter2d.html#a67c9ed9ae9020c06d4e3e1a262435409"><param name="Name" value="TouchFramework::LinearFilter2d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a866e9273d8c3afabab51b9fe97fb07e1"><param name="Name" value="VelocityX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#a866e9273d8c3afabab51b9fe97fb07e1"><param name="Name" value="TouchFramework::TouchProperties"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#ad1fd6fba42b083562e782a8c0d368c40"><param name="Name" value="TouchFramework::Tracking::Tuio2DCursor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#ab1772eee070f624c8187bc284c57f034"><param name="Name" value="VelocityY"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_touch_framework_1_1_touch_properties.html#ab1772eee070f624c8187bc284c57f034"><param name="Name" value="TouchFramework::TouchProperties"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_tracking_1_1_tuio2_d_cursor.html#a5527f1ffa54e66e62e8582ef4988aeac"><param name="Name" value="TouchFramework::Tracking::Tuio2DCursor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_touch_framework_1_1_m_t_container.html#a8a8418f5bf57e11e5cc1e4e23d126698"><param name="Name" value="WorkingObject"></OBJECT>
+</UL>
+</BODY>
+</HTML>
