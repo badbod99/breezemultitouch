@@ -26,6 +26,7 @@ a commercial licence, please contact Mindstorm via www.mindstorm.com.
 */
 
 using System;
+using System.IO;
 using System.Windows;
 using System.Drawing;
 
@@ -67,6 +68,8 @@ namespace TouchFramework.Tracking
             XmlConfigLoader tconf = new XmlConfigLoader();
             tconf.LoadFromFile(trackingConfigPath);
             tconf.Configure(client);
+            string imgPath = Path.Combine(Path.GetDirectoryName(trackingConfigPath), "images");
+            if (Directory.Exists(imgPath)) client.SetReferenceImagePath(imgPath);
             if (useVfw) client.CameraSettings.SetDriver(eCameraDriver.Vfw);
         }
 
