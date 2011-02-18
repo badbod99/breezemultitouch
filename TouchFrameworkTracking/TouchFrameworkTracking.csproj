@@ -37,6 +37,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\Mindstorm.Tracking.dll</HintPath>
     </Reference>
+    <Reference Include="Mindstorm.Tracking.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\Mindstorm.Tracking.Common.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -68,7 +72,6 @@
     <Compile Include="Traal\Config\ProjectionConfig.cs" />
     <Compile Include="Traal\TraalConfiguration.cs" />
     <Compile Include="Traal\TraalTracking.cs" />
-    <Compile Include="Traal\XmlConfigLoader.cs" />
     <Compile Include="TUIO\OSC\OSCBundle.cs" />
     <Compile Include="TUIO\OSC\OSCMessage.cs" />
     <Compile Include="TUIO\OSC\OSCPacket.cs" />
