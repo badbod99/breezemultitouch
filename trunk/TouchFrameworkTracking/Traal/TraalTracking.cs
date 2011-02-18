@@ -65,7 +65,7 @@ namespace TouchFramework.Tracking
 
         void setTrackingConfig(TrackingClient client, string trackingConfigPath, bool useVfw)
         {
-            XmlConfigLoader tconf = new XmlConfigLoader();
+            XmlTrackingConfigurator tconf = new XmlTrackingConfigurator();
             tconf.LoadFromFile(trackingConfigPath);
             tconf.Configure(client);
             string imgPath = Path.Combine(Path.GetDirectoryName(trackingConfigPath), "images");

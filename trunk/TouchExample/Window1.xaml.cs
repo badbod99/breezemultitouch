@@ -79,7 +79,6 @@ namespace TouchExample
         /// Traal/Mindstorm lightning is only available with Mindstorm products.
         /// </summary>
         TrackingHelper.TrackingType currentTrackingType = TrackingHelper.TrackingType.TUIO;
-
         bool fullscreen = false;
         static System.Random randomGen = new System.Random();
         Dictionary<int, UIElement> points = new Dictionary<int, UIElement>();
