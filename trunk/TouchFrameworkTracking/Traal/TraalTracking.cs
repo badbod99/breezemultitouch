@@ -59,7 +59,7 @@ namespace TouchFramework.Tracking
             traalConfig = config as TraalConfiguration;
 
             setTrackingConfig(trackingClient, traalConfig.TrackingConfigPath, traalConfig.UseVfwDriver);
-            
+
             base.ConfigureFramework(config);
         }
 
